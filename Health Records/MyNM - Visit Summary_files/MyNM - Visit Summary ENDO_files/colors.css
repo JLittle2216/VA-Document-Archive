@@ -1,0 +1,1702 @@
+﻿/* Copyright 2018-2024 Epic Systems Corporation */
+html {
+  color: #363636;
+}
+html select.placeholderSelected {
+  color: #565656;
+}
+html select option.placeholder {
+  color: #565656;
+}
+html.darkmode {
+  color: #ffffff;
+}
+html.darkmode button {
+  color: #ffffff;
+}
+
+.bodyTextColor {
+  color: #363636;
+}
+.darkmode .bodyTextColor {
+  color: #ffffff;
+}
+
+#main,
+body:not(.isPrelogin) #footer,
+#content.midlogin #footer,
+#mainFooter,
+.BeforeList input.SearchList {
+  background-color: rgba(255, 255, 255, 0.88);
+}
+
+.midlogin {
+  background-color: white;
+}
+
+#sidebar,
+#sidebarFooter {
+  background-color: rgba(255, 255, 255, 0.75000024);
+  color: #565656;
+}
+
+#content:not(.hasSidebar) #sidebarFooter {
+  background-color: rgba(255, 255, 255, 0.88);
+}
+
+body #footer,
+body #footer a,
+body #mainFooter,
+body #mainFooter a,
+body #sidebarFooter,
+body #sidebarFooter a,
+.datatile #wrap > .copyright a,
+body.md_showform #footer,
+body.md_showform #footer a,
+body.md_saveform #footer,
+body.md_saveform #footer a,
+#scheduling-workflow .confirmationstep .sidebarStyle a {
+  color: #565656;
+}
+
+#footer.moving,
+#footer.moving a {
+  color: transparent !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+.header,
+.heading,
+.hover a.header:focus,
+.hover a.header:hover,
+.hover a.heading:focus,
+.hover a.heading:hover,
+.titlebar,
+.sectionheader,
+table thead tr {
+  color: #7571B0;
+}
+
+.qnr-container [class*=question] .header,
+.section.questionsContainer .questiongroup > legend.header,
+.section.questionsContainer .question > legend.header,
+#questionnaireform [class*=question] .header,
+.section.questionsContainer .question .question-prompt-header {
+  color: inherit;
+}
+
+.section.questionsContainer .question.questionSlider .slider,
+.slider-answer .slidersection.HORIZSLIDER .slider,
+.slider-answer .slidersection.VERTSLIDER .slider {
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px -1px inset, 0 1px 0 0 rgba(255, 255, 255, 0.5);
+  background: rgba(117, 113, 176, 0.4);
+}
+
+.section.questionsContainer .question.HORIZSLIDER .slider.higherbetter,
+.slider-answer .slidersection.HORIZSLIDER .slider.higherbetter {
+  background-image: linear-gradient(to right, rgba(255, 76, 95, 0.85), rgba(255, 255, 135, 0.85), rgba(27, 212, 77, 0.85));
+}
+.section.questionsContainer .question.HORIZSLIDER .slider.lowerbetter,
+.slider-answer .slidersection.HORIZSLIDER .slider.lowerbetter {
+  background-image: linear-gradient(to left, rgba(255, 76, 95, 0.85), rgba(255, 255, 135, 0.85), rgba(27, 212, 77, 0.85));
+}
+.section.questionsContainer .question.VERTSLIDER .slider.higherbetter,
+.slider-answer .slidersection.VERTSLIDER .slider.higherbetter {
+  background-image: linear-gradient(to top, rgba(255, 76, 95, 0.85), rgba(255, 255, 135, 0.85), rgba(27, 212, 77, 0.85));
+}
+.section.questionsContainer .question.VERTSLIDER .slider.lowerbetter,
+.slider-answer .slidersection.VERTSLIDER .slider.lowerbetter {
+  background-image: linear-gradient(to bottom, rgba(255, 76, 95, 0.85), rgba(255, 255, 135, 0.85), rgba(27, 212, 77, 0.85));
+}
+
+.section.questionsContainer .question.questionSlider .noresponse {
+  background: #dbdbdb;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px -1px inset, 0 1px 0 0 rgba(255, 255, 255, 0.5);
+}
+
+.slider-answer .slidersection.HORIZSLIDER .sliderball,
+.slider-answer .slidersection.VERTSLIDER .sliderball {
+  border-color: transparent #363636 transparent;
+}
+
+.section.questionsContainer .question.questionSlider .sliderball {
+  border-color: #7571B0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.section.questionsContainer .question.questionSlider .sliderball:not(.pressed) {
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+.section.questionsContainer .question.questionSlider .slidersection .minmax .min,
+.section.questionsContainer .question.questionSlider .slidersection .minmax .max,
+.slider-answer .slidersection.HORIZSLIDER .minmax,
+.slider-answer .slidersection.VERTSLIDER .minmax,
+.section.questionsContainer .question.questionSlider .noresponselabel,
+.section.questionsContainer .question.questionSlider .slidertools.showall > .slidersection > .minmax > .option .togglebuttontext,
+.section.questionsContainer .question.questionSlider .slidertools > .currentlyselected .answertext {
+  color: #565656;
+}
+
+.slider-answer .slidersection.HORIZSLIDER .minmax > .min.active,
+.slider-answer .slidersection.VERTSLIDER .minmax > .max.active {
+  color: #363636;
+}
+
+body [class*=question] .header {
+  color: inherit;
+}
+
+#divAcpQuestionnaire .qnr-container .questiongroup .group-prompt,
+#divAcpQuestionnaire .qnr-container .questionGroupRulerStyle > .question-prompt-header {
+  color: #7571B0;
+}
+
+.qnr-container .text-error {
+  color: #d80000;
+}
+
+.popupiconcontainer > .popupInstructions > span.header {
+  color: #7571B0;
+}
+
+.md_mychartquestionnaire_questionnaires .qnr_list_table .assignedqnrs .qnr_icon_status_complete {
+  fill: #0f784a;
+}
+
+.md_questionnairelist .header,
+.md_mychartquestionnaire_questionnaires .header {
+  color: #7571B0;
+}
+
+.md_mychartquestionnaire_questionnaires .assigned_qnr_description,
+.md_mychartquestionnaire_questionnaires .optional_qnr_description,
+.md_mychartquestionnaire_questionnaires .qnr_status {
+  color: #767676;
+}
+
+.section.questionsContainer .cardlist .card > .group-yes-no-answers > legend.heading {
+  color: inherit;
+}
+
+.mobile .section.questionsContainer .question .answers .tbContainer label[for], .respquestionnaire .section.questionsContainer .question .answers .tbContainer label[for] {
+  border-color: #dbdbdb;
+}
+
+.section.questionsContainer .questionGroupWithFollowUps .accordion.checkboxAccordion .accordion-heading .answers input.buttoncheck + label.buttoncheck {
+  background-color: transparent;
+}
+
+.qnr-scoring-container > .qnr-scoring-numeric {
+  border-color: #eaeaea;
+}
+
+.section tr .qnr-summary-follow-up-question-container {
+  border-left-color: #eaeaea;
+}
+.section tr div.qnr-summary-child-question-prompt,
+.section tr div.qnr-summary-group-question-answer {
+  border-top-color: #eaeaea;
+}
+.section tr:hover .qnr-summary-follow-up-question-container {
+  border-left-color: #cccccc;
+}
+
+.whiteBG {
+  background-color: #ffffff;
+}
+
+.lightGrayBG {
+  background-color: #eaeaea;
+}
+
+body.md_showform .questiongroup > .row > [class*=col-] > legend,
+body.md_saveform .questiongroup > .row > [class*=col-] > legend {
+  color: #7571B0;
+}
+
+.subheader {
+  color: #7571B0;
+}
+
+.highlight {
+  background-color: #d80000;
+}
+
+.formsection.withSeparator {
+  border-color: #cccccc;
+}
+
+table tr.hover,
+table tr td.selected,
+table.hoverable tr:hover,
+.section .content .hover:not(.button):not(.card),
+.list.hoverable:not(.collapsible) a:not(.button):focus,
+.list.hoverable:not(.collapsible) a:not(.button):hover,
+.list.hoverable:not(.collapsible) li:focus,
+.list.hoverable:not(.collapsible) li:hover,
+.list.hoverable.collapsible a.collapsed:focus,
+.list.hoverable.collapsible a.collapsed:hover,
+.list.hoverable.collapsible li.collapsed:focus,
+.list.hoverable.collapsible li.collapsed:focus a,
+.list.hoverable.collapsible li.collapsed:hover,
+.list.hoverable.collapsible li.collapsed:hover a,
+.list.hoverable.collapsible li.collapsed a:focus,
+.list.hoverable.collapsible li.collapsed a:hover,
+.MessageList .SingleMessage.collapsed .inlinedelete:focus,
+.SingleIndicator.collapsed.hover,
+.listHolder > .listRow.hover,
+.listHolder > .listRow.selected,
+.clickable:hover,
+.clickable:focus,
+.clickable a:focus {
+  background: #f4f4f9;
+}
+
+.list.hoverable:not(.collapsible) a:not(.button),
+.list.hoverable:not(.collapsible) a:not(.button):focus,
+.list.hoverable:not(.collapsible) a:not(.button):hover,
+.list.hoverable.collapsible a:not(.linkcolor).collapsed:focus,
+.list.hoverable.collapsible a:not(.linkcolor).collapsed:hover,
+.list.hoverable.collapsible li.collapsed:focus a:not(.linkcolor),
+.list.hoverable.collapsible li.collapsed:hover a:not(.linkcolor),
+.list.hoverable.collapsible li.collapsed a:not(.linkcolor):focus,
+.list.hoverable.collapsible li.collapsed a:not(.linkcolor):hover,
+.clickable:hover,
+.clickable:hover a,
+.clickable:focus,
+.clickable a:focus {
+  color: #363636;
+}
+
+.list.hoverable:not(.collapsible) li:not(.cardContainer) > a:not(.button):focus, .list.hoverable:not(.collapsible) li:not(.cardContainer) > a:not(.button):hover,
+.list.hoverable.collapsible li:not(.cardContainer) > a.collapsed:focus,
+.list.hoverable.collapsible li:not(.cardContainer) > a.collapsed:hover,
+.list.hoverable:not(.collapsible) li li:focus,
+.list.hoverable:not(.collapsible) li li:hover,
+.list.hoverable.collapsible li.collapsed li:focus,
+.list.hoverable.collapsible li.collapsed li:hover,
+.list.hoverable:not(.collapsible) li.cardContainer:focus,
+.list.hoverable:not(.collapsible) li.cardContainer:hover,
+.list.hoverable.collapsible li.cardContainer:focus,
+.list.hoverable.collapsible li.cardContainer:hover {
+  background: none;
+}
+
+.list.hoverable .nohover {
+  background: inherit !important;
+}
+
+.listRow,
+.embedded .card,
+.department_map,
+#filterControls {
+  border-color: #dbdbdb;
+}
+
+a,
+.linkcolor,
+.subtle.linkcolor {
+  color: #7571B0;
+}
+
+.linkcolorOverride, .linkcolorOverride:visited {
+  color: #7571B0 !important;
+}
+.linkcolorOverride:focus, .linkcolorOverride:hover {
+  color: #67639b !important;
+}
+
+a:focus,
+a:hover,
+.linkcolor:focus,
+.linkcolor:hover {
+  color: #67639b;
+}
+
+.statusClosed,
+.subtlecolor {
+  color: #767676;
+}
+
+#sidebar .subtle,
+#sidebar .subtlecolor,
+.slightlySubtle {
+  color: #565656;
+}
+
+.messagedisplay {
+  color: #565656;
+}
+
+.emphasis {
+  color: #000000;
+}
+
+.label,
+.inlinelabel,
+.formsection fieldset legend {
+  color: #767676;
+}
+
+legend .qnr-prompt-text {
+  color: inherit;
+}
+
+.qnr-container .answers input.invalid:not(:focus),
+.qnr-container .answers textarea.invalid:not(:focus) {
+  border-color: #d80000;
+}
+
+.verticalDate {
+  color: #41a0ff;
+}
+
+body.md_showform .section .question > legend,
+body.md_saveform .section .question > legend {
+  color: #767676;
+}
+
+.alert,
+.alertHeader,
+.abnormal {
+  color: #d80000;
+}
+
+.abnormal svg.icon {
+  fill: currentColor;
+}
+
+.overdue {
+  color: #d80000;
+}
+
+.warning {
+  color: #d80000;
+}
+
+.softwarning {
+  background-color: #ffffa1;
+}
+
+.warningbgcolor {
+  background-color: #ffe8e8;
+}
+
+.informationalWarning {
+  background-color: #e0f1ff;
+}
+
+.attention,
+ul.MessageList .actionButtons .inlinedelete span {
+  color: #d80000;
+}
+
+.statusAuthorized,
+.statusOpen,
+.positiveValue {
+  color: #0f784a;
+}
+
+:not(tr):not(td).nodata:not(:empty) {
+  background-color: rgba(204, 204, 204, 0.25);
+  color: #565656;
+}
+.darkmode :not(tr):not(td).nodata:not(:empty) {
+  color: #cccccc;
+}
+
+#sidebar .nodata:not(:empty) {
+  background-color: rgba(204, 204, 204, 0.45);
+}
+
+a.link.cancel {
+  color: #d80000;
+}
+
+input:checked + label.togglebutton[for],
+input.buttoncheck:checked + label.buttoncheck {
+  background-color: #bfe1ff;
+  color: #000000;
+}
+
+label.buttoncheck[for]:hover,
+label.togglebutton[for]:hover,
+input:focus + label.buttoncheck,
+input:focus + label.togglebutton[for] {
+  color: #000000;
+}
+
+.buttoncheck,
+.buttoncheck:focus,
+.buttoncheck:hover {
+  background: none;
+}
+
+input.prettycheck + label:before,
+input.buttoncheck + label.buttoncheck:before,
+input.prettyradio + label:before {
+  background-color: #ffffff;
+}
+
+input.prettycheck:checked + label:before,
+input.buttoncheck:checked + label.buttoncheck:before {
+  background-color: #B8B7DA;
+  border-color: #B8B7DA;
+}
+
+input.prettyradio:checked + label:before {
+  background-color: #B8B7DA;
+}
+
+input.buttoncheck:disabled + label,
+input.prettycheck:disabled + label:before,
+input.prettyradio:disabled + label:before,
+input.buttoncheck:disabled + label.buttoncheck:before {
+  background-color: #eaeaea;
+  border-color: #dbdbdb;
+}
+
+input.buttoncheck:disabled:checked + label,
+input.prettycheck:disabled:checked + label:before,
+input.buttoncheck:disabled:checked + label.buttoncheck:before {
+  background-color: #f2f2f2;
+}
+
+input.prettyradio:disabled:checked + label:before {
+  background-color: #565656;
+}
+
+input.buttoncheck:disabled + label {
+  color: #000000;
+}
+
+select.selected {
+  border-left-color: #7571B0;
+}
+
+.messageOverlay {
+  background-color: rgba(118, 118, 118, 0.9);
+  color: #cccccc;
+}
+.messageOverlay .alert {
+  color: #ffffff;
+}
+
+.subway,
+.subway a,
+.subway a:focus,
+.subway a:hover {
+  color: #7571B0;
+}
+
+.line .trainrail {
+  background-color: #7571B0;
+}
+.line .trainrail.future:not(.visited) {
+  background-color: rgba(117, 113, 176, 0.5);
+}
+
+.stops .future:not(.visited) {
+  color: #767676;
+}
+.stops .trainstation {
+  background: #bab8d8;
+  border-color: #7571B0;
+}
+.stops .now .trainstation {
+  background-color: #7571B0;
+}
+.stops .future:not(.visited) .trainstation {
+  background: #ffffff;
+  border-color: rgba(117, 113, 176, 0.5);
+}
+
+.subway.scrollable .nav .scrollleft,
+.subway.scrollable .nav .scrollright {
+  border-color: #dbdbdb;
+}
+
+.subwaycontentbody {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+table th a, table th a:focus, table th a:hover {
+  color: inherit;
+}
+
+.card {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+.card.popupInstructions.hover {
+  background-color: #ffffff !important;
+  cursor: default !important;
+}
+.card.helptip.success:not(.moreToDo) {
+  background-color: #cbf1f8;
+}
+.card.helptip.success:not(.moreToDo) .header.medium {
+  color: #0d663f;
+}
+.card.helptip.success.moreToDo {
+  background-color: #ffffff;
+}
+.card.helptip.success.moreToDo .header.medium {
+  color: #7571B0;
+}
+
+.verticalSubwayStop:before {
+  background-color: #7571B0;
+}
+
+.verticalSubwayStopContents:before {
+  border-color: #7571B0;
+  background-color: #ffffff;
+}
+
+ul.MessageList,
+.HPcell.component > .content,
+.component.pocdefault > a.viewmore,
+.lightShadow {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.Popup .card.addItem.noprint {
+  background: #f8f8f8;
+}
+.Popup .card.addItem.noprint.hover {
+  background: #ffffff;
+}
+
+.component.Popup > .scrollable > .titlebar {
+  background-color: #f4f4f9;
+}
+body:not(.graphicHeader) .component.Popup > .scrollable > .titlebar {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.noinfo.component > .content {
+  background: transparent !important;
+  box-shadow: 0 0 0 !important;
+  border-radius: 0 !important;
+}
+
+.addbuttonlabel {
+  color: #767676;
+}
+
+.navparent .membertab a,
+.tabcontainer .sectiontabs a,
+.externalorganizations .orgname,
+tfoot tr.amount.header {
+  color: #363636;
+}
+
+.popupiconcontainer .popupInstructions {
+  background-color: #ffffff;
+  color: #363636;
+}
+
+.infoBubbleWrapper .infoBubblePopup {
+  background-color: #ffffff;
+}
+.infoBubbleWrapper .infoBubblePopup .infoBubbleBody {
+  color: #363636;
+}
+
+.list.hoverable:not(.collapsable) a.addItem, .list.hoverable:not(.collapsable) a.addItem:hover {
+  color: #7571B0;
+}
+.list.hoverable:not(.collapsable) a.addItem:hover {
+  background-color: #ffffff;
+}
+
+tfoot tr.amount.header {
+  color: #363636;
+}
+
+.lb_content.template,
+.component.Popup,
+.HProw .component,
+.component > a.viewmore,
+.todotiles,
+.todotooltip .arrow:after,
+.HPcell.component > .content,
+.medicationslist.component .filteredwarningtooltip,
+.component.pocdefaultpopup.careteam ul.careteam li.listelement.careteam.selected,
+.goalslarge .goalsleft .goalslist.list .goalslistelement.selected,
+.todotooltip,
+.loginalert.tab > a,
+.loginalert .body,
+.component.news .newscard,
+.loginalert .contentbody .apptoffer,
+.externalorganizations .badge.orglink {
+  background-color: #ffffff;
+}
+
+.HPcell.component.pocdefault .titlebar button.selected,
+.ToDoEventsPopup.container .titlebar .buttons button.selected,
+.HPcell.pocdefault.component .todolistelement .rightsection .overdue.requestappointment,
+.todotiles .actionButton a.overdue.requestappointment,
+.HPcell.pocdefault.component .todolistelement .rightsection .echeckin,
+.goalsvb6 .buttons button.selected,
+.loginalert .contentbody a,
+.externalorganizations .alertscount,
+.highlighttext,
+.highlighttext a {
+  color: #ffffff;
+}
+
+.goalsleft .goalslistelement,
+.component.pocdefaultpopup.careteam ul li.listelement {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.menudetailstable.leftmenu .leftcolumn {
+  background-color: #f4f4f9;
+}
+body:not(.graphicHeader) .menudetailstable.leftmenu .leftcolumn {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.todotiles.appointment .eventdetails::after,
+.todotiles .providerimage,
+.visittype .providerimage,
+.fullscreen li.careteam .col1 .providerimage,
+.fullscreen.careteam div.column2 .providerimage {
+  background-color: #dbdbdb;
+}
+
+.Alerts .loginalert a::after,
+.component.quickLinks.vertical a::after,
+.component ul li.listelement:after,
+.Alerts .loginalert .loginalert.tab::after,
+.Alerts .loginalert.h2gAlert::after {
+  background-color: #dbdbdb;
+}
+
+.subdued.component.quickLinks.vertical a::after,
+.subdued.component ul li.listelement:after {
+  background-color: rgba(118, 118, 118, 0.25);
+}
+
+.subdued.component.quickLinks a:hover,
+.component.subdued ul li.listelement:hover {
+  color: initial;
+}
+
+.ReviewMessages .BeforeList .tabs a[data-checked=checked] {
+  border-bottom-color: #7571B0;
+}
+
+.urgent,
+.PickOrganization .content > p {
+  color: #7571B0;
+}
+
+.fullscreen ul.careteam li.selected:before,
+.goalslarge li.goalslistelement.selected:before {
+  background-color: #7571B0;
+}
+
+.todolistelement .title a,
+.todotiles .titleholder .title a {
+  color: #000000;
+}
+
+.Popup.component,
+.todotiles:not(.healthadvisory) .knowmore a,
+.goalssmall .goalslist .noncompliant,
+.goalslarge .goalslist .noncompliant,
+.goalslarge .chartgraph .noncompliant,
+.goalssmall .goaltitlerow,
+.goalsleft .goaltitlerow,
+.goalsvb6 .goaltitle,
+.goalsdetails .noteslabel,
+.careteam .fullscreen .providerTitle a,
+.softwarningtext,
+.softwarningtext a,
+.informationalWarningText,
+.informationalWarningText a {
+  color: #363636;
+}
+
+.goalssmall .goaldatarow,
+.goalsleft .goaldatarow,
+.goalsvb6 .goalrecentvalue {
+  color: #565656;
+}
+
+/* #region Plan of Care Widget Styles */
+.HPcell.component.pocdefault ul li.listelement:after {
+  background: #eaeaea;
+}
+
+.component.pocdefaultpopup.careteam .fullscreen ul.careteam li:hover,
+.goalslarge .goalsleft .goalslist.list .goalslistelement:hover {
+  background: #ffffff;
+}
+
+.component .todolistelement .echeckinstatus,
+.todotiles .echeckinstatus {
+  color: #0f784a;
+}
+
+.component .medicationlistelement .refilldisabledstatus {
+  color: #d80000;
+}
+
+.goalssmall .goalslist .compliant {
+  color: #7571B0;
+}
+
+.goalslarge .goalslist .compliant,
+.goalslarge .chartgraph .compliant {
+  color: #0079b7;
+}
+
+.medicationspopup .medcard.selected {
+  box-shadow: 0 8px 9px 1px #00778a;
+}
+
+.medicationslist.component .filteredwarningtooltip {
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+ul.MessageList .MessageSummary .Preview,
+ul.MessageList .ExpandedSummary .Viewers .label,
+ul.MessageList .SenderDetails .Date {
+  color: #767676;
+}
+
+.loginalert .body .apptDateDetails,
+.BeforeList .top a,
+.messagefooter .loadall,
+.ToDolist li.healthadvisory a.requestappointment:not(.button) {
+  color: #7571B0;
+}
+
+.ToDoEventsPopup.container .titlebar .buttons button.selected,
+.goalsvb6 .buttons button.selected {
+  background: #767676;
+}
+
+.todolistspopup .todotiles {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4);
+}
+.todotiles.healthadvisory:after {
+  background-color: #c786bc;
+}
+.todotiles.appointment:after {
+  background-color: #1180ff;
+}
+.todotiles.order:after {
+  background-color: #9657ff;
+}
+.todotiles.appointment.selected {
+  box-shadow: 0 9px 18px 2px #a0ccff;
+}
+.todotiles.healthadvisory.selected {
+  box-shadow: 0 9px 18px 2px #edcae7;
+}
+.todotiles.order.selected {
+  box-shadow: 0 9px 18px 2px #d5bcff;
+}
+
+.todotiles .providerimage {
+  border-color: #dbdbdb;
+}
+
+.ToDoEventsPopup.container .titlebar .buttons button,
+.HPcell.component.pocdefault .titlebar .buttons button,
+.goalsvb6 .buttons .button {
+  color: #767676;
+}
+
+.goalsleft .goalslistelement.selected,
+.goalsleft .goalslistelement.selected:hover {
+  background: #ffffff;
+}
+
+.arrow:after {
+  box-shadow: 6px 5px 9px -9px #000000, 5px 6px 9px -9px #000000;
+}
+
+.tooltip {
+  background: #ffffff;
+  border-color: #cccccc;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+.todotooltip .arrow:after,
+.todotooltip,
+ul.MessageList > li .head img.photo,
+ul.MessageList > li .head span.photo,
+.roundedimage {
+  border-color: #cccccc;
+}
+
+#todotooltip .todotiles {
+  border-bottom-color: #dbdbdb;
+}
+
+.todotooltip {
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.todotooltip .more {
+  border-top-color: #cccccc;
+}
+
+.goalsdetails .noteslabel:before {
+  border-top-color: #eaeaea;
+}
+
+.patientActions a.button.message::before {
+  background-color: transparent;
+}
+.patientActions a.button.schedule::before {
+  background-color: transparent;
+}
+
+.visittypecontainer a.visitlink.request {
+  color: #7571B0;
+  background-color: #ffffff;
+}
+
+.visittype .providerimage {
+  border-color: #dbdbdb;
+}
+
+.visittypecontainer a.visitlink {
+  box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.75);
+}
+
+ul.careteam li.careteam .col1 .providerimage,
+.todotiles .providerimage {
+  border-color: #cccccc;
+}
+
+.loginalert .body .offertitle {
+  background: #ecebf4;
+}
+
+/* #endregion Plan of Care Widget Styles */
+/* #region Billing - Account Summary */
+.ba_card_header,
+.ba_card_status,
+.ba_recent_activity_row {
+  border-color: #eaeaea;
+}
+
+.ba_card_header_paperless {
+  border-top-color: #00778a;
+  border-right-color: transparent;
+  border-left-color: #00778a;
+  border-bottom-color: transparent;
+}
+
+.ba_card_status .ba_up_to_date,
+.ba_card_status .ba_up_to_date_until,
+.ba_details_payment_plan_status .positive,
+.ba_details_plan_up_to_date {
+  color: #0f784a;
+}
+
+/* #endregion Billing - Account Summary */
+/* #region Billing - account details */
+div.ChargeGroupContainer {
+  border-left-color: #7571B0;
+}
+
+/* #endregion Billing - account details */
+/* #region Billing - Payment Pages */
+.moneyColor,
+.essMoneyColor,
+.HARSAutopay {
+  color: #0f784a;
+}
+
+.pmtEmphasis {
+  color: #363636;
+}
+
+.payplanoverdue .paymentplanautocontainer .payplanamount {
+  color: #d80000;
+}
+
+/* #endregion */
+/* #region Billing - Estimates */
+/* #region Billing - Estimates - General */
+.essLtrBtn,
+.essDocBtn {
+  color: #ffffff !important;
+}
+.essLtrBtn:not(.nextstep),
+.essDocBtn:not(.nextstep) {
+  background-image: none !important;
+  background-color: #B8B7DA !important;
+}
+
+/* #endregion */
+/* #region Billing - Estimates - Saved Estimates */
+div.essSuccessAlert {
+  border-left-color: #0f784a;
+}
+
+div.essEstimateCardFooter {
+  border-top-color: #dbdbdb;
+}
+
+li.essJustSaved, li.essNew {
+  border-color: #a6c7e7;
+}
+
+div.essEstimateCardButtons a:hover span,
+div.essEstimateCardButtons a:focus span {
+  color: #d80000;
+}
+
+.essPageSelectorLink.selected {
+  box-shadow: 0px 4px 4px -1px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  color: #000000;
+}
+.essPageSelectorLink.disabled {
+  color: #565656;
+}
+.essPageSelectorLink:not(.selected):not(.disabled):hover {
+  background-color: #f4f4f9;
+}
+
+/* #endregion */
+/* #region Billing - Estimates - Service Selection */
+span.essSearchHighlight {
+  background-color: #ffff00;
+}
+
+.essSearchResultsMsg {
+  color: #7571B0;
+}
+
+span.essCategoryListLabel,
+.essServiceDesc p:first-of-type {
+  color: #767676;
+}
+
+div.essNoResults {
+  background-color: #dbdbdb;
+  color: #363636;
+  border-color: #eaeaea;
+}
+
+/* #endregion */
+/* #region Billing - Estimates - Estimate Details */
+div.essEstimateLoader {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+div.essEstimateLoader > div {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#essProgressBar {
+  border-color: #ffffff;
+}
+
+#essProgressBarFill {
+  background-color: #ffffff;
+}
+
+div.essEstimateLoader .loadingmessage {
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000000;
+}
+div.essEstimateLoader p {
+  color: #ffffff;
+  text-align: center;
+}
+
+.mobile #essSpecificBenefitsContainer .essBenefitLineHeader li {
+  color: #626087;
+  background: #f6f6f9 none repeat scroll 0 0;
+}
+
+#essSectionContainer hr {
+  border-bottom-color: #cccccc !important;
+}
+
+div.essDropdown a.essCardTitle {
+  color: #363636;
+}
+
+div.essDrilldownRange {
+  border-bottom-color: #eaeaea;
+}
+
+line.essRangeMidpoint {
+  stroke: #0f784a;
+  fill: #0f784a;
+}
+
+circle.essRangeEndpoint {
+  stroke: #565656;
+  fill: #565656;
+}
+
+line.essRangeLine {
+  stroke: #c8c8c8;
+}
+
+.line-label--avg {
+  color: #0f784a;
+}
+
+.subtext p {
+  border-color: #dbdbdb;
+}
+
+.essMOOPHit {
+  color: #ed9200;
+}
+
+div.essWarningCard {
+  border-left-color: #d80000;
+}
+
+@keyframes redFlash {
+  from {
+    background-color: #d80000;
+  }
+  to {
+    background-color: #ffffff;
+  }
+}
+div.essInfoCard {
+  border-left-color: #B8B7DA;
+}
+
+div.detailHeader {
+  border-top-color: #dbdbdb;
+}
+
+p.subtext {
+  border-color: #dbdbdb;
+}
+
+div.estimateFailed h2 {
+  color: #363636;
+}
+
+input.essInvalidEntry {
+  border-color: #d80000;
+  background-color: #ffe8e8;
+}
+input.essInvalidEntry:focus {
+  border-color: #d80000;
+}
+
+html:not(.mobile) .hoverable div.essSlideshowCard p.essCardTitle {
+  color: #ffffff;
+  text-shadow: 1px 1px 3px #000000, 1px 1px 3px #000000;
+}
+
+.list.hoverable a.essCardTitle:focus {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+div.essSlideshowCard p.essSlideshowCardMuted {
+  background-color: #f2f2f2;
+  border-bottom-color: #dbdbdb;
+}
+.hoverable div.essSlideshowCard p.essSlideshowCardMuted a {
+  color: #7571B0;
+}
+
+/* #endregion */
+.timeLine:before {
+  background: #dbdbdb;
+}
+
+.timeLine .timeLineSection:before {
+  background: #ffffff;
+}
+
+.ReviewMessages .messageheader .filters select {
+  background-color: #ffffff;
+}
+.ReviewMessages .messageheader .filters {
+  background-color: rgba(117, 113, 176, 0.05);
+  border-top-color: #cccccc;
+}
+
+li.SingleMessage .indeterminateLinkWarning {
+  background-color: #f8f8f8;
+}
+
+/* #region BedsideMessages */
+.messagebackgrounduser {
+  background: #d3ecaf;
+  border-color: #b8e07c;
+}
+
+.messagebackgroundprovider {
+  background: #dfdfdf;
+  border-color: #cccccc;
+}
+
+/* #endregion BedsideMessages */
+.membertab {
+  border-color: transparent transparent #cccccc;
+}
+.membertab.selected {
+  border-color: #7571B0 #cccccc transparent;
+}
+.membertab a {
+  color: #565656;
+}
+.membertab.selected a {
+  color: #363636;
+}
+.membertab.hover:not(.selected) {
+  border-color: #cccccc;
+}
+.membertab a img.tabimg {
+  border-color: #cccccc;
+}
+
+/* #region Jp Player */
+.jplayer-controlbar,
+.jp-video,
+.jp-audio,
+.jp-jplayer {
+  background-color: #000000;
+}
+
+.jp-current-time {
+  color: #ffffff;
+}
+
+.jp-volume-bar {
+  background-color: #cccccc;
+}
+
+.jp-volume-bar-value {
+  background-color: #ffffff;
+}
+
+.jplayer-progress-container {
+  background-color: #333333;
+}
+
+.jp-play-bar {
+  background-color: #049be7;
+}
+
+/* #endregion */
+.SingleIndicator {
+  border-bottom-color: #dbdbdb;
+}
+
+.flyout {
+  box-shadow: 0px 4px 4px -1px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+
+/* #region Scheduling */
+.button[data-type=workflow]:hover,
+.button[data-type=workflow]:focus {
+  background-color: #9c9cb9;
+}
+
+.slot.selected,
+.slotgroup.preview .slot,
+html:not(.mobile) .slot:hover,
+html:not(.mobile) .slot:focus {
+  background-color: #f8f8fb;
+  color: #6663a7;
+}
+
+.solutionpreview, .slotwarning {
+  border-top-color: #9c9cb9;
+  border-bottom-color: #9c9cb9;
+}
+
+.slotsData.card :not(tr):not(td).nodata:not(:empty) {
+  background-color: transparent;
+}
+
+.requestheader {
+  background-color: rgba(117, 113, 176, 0.05);
+}
+
+.card .photo.nondefault {
+  background-color: #ffffff;
+}
+
+.mobile .quickschedule.loadingoverlay {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.loadingoverlay .loadingmessage, .defaultajaxoverlay .loadingmessage,
+.translucentBG {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.apptDeptInstructions .section.flat {
+  background-color: #f4f4f9;
+}
+
+.summary .titlebar,
+.sidebarlinks .titlebar {
+  background-color: #7571B0;
+}
+.summary .titlebar .title,
+.sidebarlinks .titlebar .title {
+  color: #ffffff;
+}
+
+a.summaryInfo {
+  color: #000000;
+}
+a.summaryInfo:hover, a.summaryInfo.summaryActive {
+  background-color: rgba(117, 113, 176, 0.1);
+}
+
+.summaryInfo.summaryActive .subtle.edit, .summaryInfo.summaryComplete .subtle, .summaryInfo.summaryIncomplete .subtle {
+  color: #7571B0;
+}
+.summaryInfo .subtle.editText {
+  color: #636096;
+}
+.summaryInfo:before {
+  background-color: #7571B0;
+}
+
+.mobile .summary, .sidebarlinks {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.timepreferencecontainer .daytimetable thead th {
+  color: #000000;
+}
+
+#scheduling-workflow .banner::before, #scheduling-workflow .helpBanner {
+  background-color: rgba(117, 113, 176, 0.05);
+}
+
+#standardworkflowselector > .separator > p {
+  color: #7571B0;
+}
+#standardworkflowselector > .separator > .line {
+  background-color: #dbdbdb;
+}
+
+#scheduling-workflow .extrasContainer {
+  background-color: #f4f4f9;
+}
+
+.headerwrapper.selected {
+  background-color: #eaeaea;
+}
+
+.mobile .summary.clearfix {
+  background-color: #ffffff;
+}
+
+.mobile .summaryInfo.summaryComplete:not(.summaryActive) .mobileedittext,
+.mobile .summaryInfo.summaryIncomplete:not(.summaryActive) .mobileedittext {
+  color: #636096;
+}
+
+.mobile .verificationContent {
+  background-color: transparent;
+}
+
+.slotsstep .schedulinginstructions .helptip {
+  border-color: #dbdbdb;
+}
+
+.summary {
+  border-top: 8px solid rgba(117, 113, 176, 0.2);
+}
+
+.mobile .summary.clearfix {
+  box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.4);
+}
+
+.slotFilterToggle h3.filtertext {
+  color: #565656;
+}
+
+html:not(.mobile) .nodays.nodata.jqHidden.request.requestheader,
+html:not(.mobile) .slotsData.card .nodays.nodata.jqHidden.expandable {
+  border-color: #dbdbdb;
+}
+
+/* #endregion */
+/* #region On My Way */
+#onMyWayPopup .walkInButton:hover:not([disabled]),
+#onMyWayPopup .walkInButton:focus:not([disabled]) {
+  background-color: #9c9cb9;
+}
+
+/* #endregion */
+/* #region Self Triage */
+.selfTriage .landingPage .inProgressStatus .status {
+  background: #ffe8c9;
+  color: black;
+  border: 1px solid;
+  border-color: #ffa020;
+}
+.selfTriage .helperSection.narrowSymptoms:after,
+.selfTriage .helperSection.nextSteps:after {
+  border-color: rgba(117, 113, 176, 0.5);
+}
+.selfTriage .actionNode .instruction.collapsed .expandInstructionLink, .selfTriage .actionNode .instruction.expanded .collapseInstructionLink {
+  background: #ffffff;
+  border-top-color: #dbdbdb;
+}
+.selfTriage .actionNode .instruction.collapsed .expandInstructionLink::before {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.8) 100%);
+}
+.selfTriage .actionNodeWorkflow .actionNode .successStatus .successMessage {
+  color: #0f784a;
+}
+.selfTriage .actionNodeWorkflow .actionNode .noSecurityMessage {
+  border-top-color: #dbdbdb;
+}
+.selfTriage .actionNodeWorkflow .visitWorkflow {
+  border-top-color: #cccccc;
+}
+.selfTriage .actionNodeWorkflow .card.createAcctCard .personalInformationContainer, .selfTriage .actionNodeWorkflow .card.orders .personalInformationContainer, .selfTriage .actionNodeWorkflow .card.eVisit .personalInformationContainer, .selfTriage .actionNodeWorkflow .card.apptRequest .personalInformationContainer {
+  background: rgba(117, 113, 176, 0.05);
+}
+.selfTriage .collapsableInstructionSection .expandableLinkSection:before {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.8) 100%);
+}
+.selfTriage .pastTriage .date {
+  color: #41a0ff;
+}
+
+/* #endregion */
+/* #region Decision Trees */
+#dt-container .dtbanner {
+  background-color: #ffffd0;
+  border-color: #cccccc;
+}
+
+/* #endregion */
+/* #region upload widget */
+.upload--limit-reached {
+  color: #d80000;
+}
+
+/* #endregion */
+/* #region Campaigns */
+.buttonReplacementText {
+  color: #0f784a;
+}
+
+/* #endregion */
+/* #region Medications */
+.refill-workflow .medcard.refill-disabled,
+.refill-workflow .medcard.refill-disabled .medbottom {
+  background-color: #eaeaea;
+}
+.refill-workflow .medcard.refill-disabled *:not(a) {
+  color: #767676;
+}
+.refill-workflow .medcard.refill-disabled .medmessage {
+  background-color: #f8f8f8;
+  border-color: #cccccc;
+}
+
+.medcard .selection-disabled .cardline.medmessage {
+  background-color: #767676;
+}
+
+.refill-step .prescription-list .see-more-banner .text-layer {
+  background-color: #ffffff;
+}
+
+.section .rxholder .rx .rxsig.temporary {
+  background-color: #ffffa1;
+}
+
+.medcard .selection-enabled input[type=checkbox] + svg {
+  fill: #767676;
+}
+.medcard .selection-enabled input[type=checkbox] + svg:hover {
+  fill: #B8B7DA;
+}
+
+.med-selection-box input[type=checkbox]:focus + svg {
+  box-shadow: 0 0 10px rgba(184, 183, 218, 0.5);
+}
+
+.refill-workflow .selection-enabled input[type=checkbox] + svg {
+  fill: #B8B7DA;
+}
+
+.medcard .med-selection-box .selection-disabled svg {
+  fill: #767676;
+}
+
+.confirmationMessage h2 {
+  color: #363636;
+}
+
+.medbottom .buttonList,
+.pendingUpdatesSection .buttonList {
+  background: #ffffff;
+  border-color: #eaeaea;
+}
+.medbottom .buttonList .button.inlinesave,
+.medbottom .buttonList .button.inlinedelete,
+.pendingUpdatesSection .buttonList .button.inlinesave,
+.pendingUpdatesSection .buttonList .button.inlinedelete {
+  color: #7571B0;
+  background: #ffffff;
+  border-color: #eaeaea;
+}
+.medbottom .buttonList .button.inlinesave:hover,
+.medbottom .buttonList .button.inlinedelete:hover,
+.pendingUpdatesSection .buttonList .button.inlinesave:hover,
+.pendingUpdatesSection .buttonList .button.inlinedelete:hover {
+  background-color: #f4f4f9;
+}
+
+.mobile .medbottom .buttonList .button.inlinesave:hover,
+.mobile .medbottom .buttonList .button.inlinedelete:hover,
+.mobile .pendingUpdatesSection .buttonList .button.inlinesave:hover,
+.mobile .pendingUpdatesSection .buttonList .button.inlinedelete:hover {
+  background-color: #ffffff;
+}
+
+.card.medcard .medwarning {
+  background-color: #fceda2;
+  border-color: #af9308;
+}
+.card.medcard .warning {
+  background-color: #f8f8f8;
+}
+
+.medcard .medmessage {
+  background-color: #f8f8f8;
+  border-color: #000000;
+}
+.medcard .statusBadge {
+  border-color: #cccccc;
+}
+.medcard .statusBadge.neutral {
+  background-color: #e2f1fe;
+  border-color: #0085f2;
+}
+.medcard .statusBadge.positive {
+  background-color: #eafbea;
+  border-color: #10a341;
+}
+
+.mobile .card.phrcard .header,
+.mobile .card.medcard .header,
+.mobile .card.medcard .medtitle,
+.mobile .card.clinicalcard .header,
+.mobile .banner-notifications .card .header,
+.mobile .rxReviewDetailsCardList .card .header {
+  color: #363636;
+}
+
+/* #endregion */
+/* #region colors for small screens */
+@media only screen and (max-width: 768px) {
+  .smallWhiteBG.translucentBG {
+    background: #ffffff;
+  }
+}
+/* #endregion */
+/* #region status badge colors */
+.statusBadge.neutral {
+  background-color: #dddceb;
+  border-color: #7571B0;
+  color: #363636;
+}
+
+.statusBadge.positive {
+  background-color: #97e3f0;
+  border-color: #00778a;
+  color: #0b3c44;
+}
+
+.statusBadge.negative {
+  background-color: #dbdbdb;
+  border-color: #767676;
+  color: #363636;
+}
+
+.statusBadge.pending {
+  background-color: #ffe8c9;
+  border-color: #ffa020;
+  color: #935d15;
+}
+
+.statusBadge.critical {
+  background-color: #ffe8e8;
+  border-color: #d80000;
+  color: #d80000;
+}
+
+/* #endregion */
+/* #region provider finder status badge colors */
+.statusBadge.themedSecondary {
+  background-color: #f4f4f9;
+  border-color: #adaccd;
+  color: #5c5c6d;
+}
+
+.statusBadge.themed {
+  background-color: #dddceb;
+  border-color: #7571B0;
+  color: #585584;
+}
+
+/* #endregion */
+/* #region Questionnaires */
+.section.questionsContainer .questiongroup .grouptable .grouptablerow[data-zebrastripeon=true] {
+  background-color: rgba(117, 113, 176, 0.05);
+}
+.section.questionsContainer .questiongroup .grouptable .grouptablerow .grouptablecolumn:not(.responseheader) .groupresponsecolumn:hover {
+  background-color: #e3e3f0;
+}
+.section.questionsContainer .questiongroup .grouptable .grouptablerow .groupresponsecolumn span {
+  color: #767676;
+}
+.mobile .section.questionsContainer .groupRulerCard.card, .mobile .section.questionsContainer > .question.accordion.accordion-show, .mobile .section.questionsContainer > .question.accordion.accordion-expanding, .mobile .section.questionsContainer .questionGroupRulerStyle.promptlessgroup.nohelptext .question.accordion.accordion-show, .mobile .section.questionsContainer .questionGroupRulerStyle.promptlessgroup.nohelptext .question.accordion.accordion-expanding {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+.respquestionnaire .section.questionsContainer > .question.accordion.accordion-show, .respquestionnaire .section.questionsContainer > .question.accordion.accordion-expanding, .respquestionnaire .section.questionsContainer .questionGroupRulerStyle.promptlessgroup.nohelptext .question.accordion.accordion-show, .respquestionnaire .section.questionsContainer .questionGroupRulerStyle.promptlessgroup.nohelptext .question.accordion.accordion-expanding {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+.section.questionsContainer .questionGroupRulerStyle {
+  border-color: #cccccc;
+}
+.section.questionsContainer .questionGroupRulerStyle .flatradiogrouper {
+  background-color: transparent;
+}
+.section.questionsContainer .questionGroupRulerStyle .flatradiogrouper .question.questiongroupitem:after,
+.section.questionsContainer .questionGroupRulerStyle .flatradiogrouper .flatradio.container:after {
+  border-bottom: 1px solid #cccccc;
+}
+.section.questionsContainer .questionGroupRulerStyle.promptlessgroup.nohelptext .question.accordion.firstRow:before {
+  border-top-color: #cccccc;
+}
+
+qnr-banner-header {
+  color: #7571B0;
+}
+
+/* #endregion */
+/* #region Appointments and Visits */
+.Visits .date div,
+.visitdetails .date div {
+  color: #41a0ff;
+}
+
+.pastvisit.card .unviewed-indicator {
+  background-color: #005ebb;
+}
+
+.md_visitdetails_index .telemedicine,
+.md_visitdetails_index .visitactionbanner {
+  background-color: #cbf1f8;
+}
+.md_visitdetails_index .telemedicine.monochrome,
+.md_visitdetails_index .visitactionbanner.monochrome {
+  background-color: rgba(118, 118, 118, 0.02);
+}
+
+/* #endregion */
+/* #region Billing related */
+#letters tbody tr.new td a:before,
+#statements tbody tr.new td a:before,
+.ba_details_statement_indicator .unreaddot:before,
+.ba_details_letter_indicator .unreaddot:before {
+  background-color: #005ebb;
+  border-color: #ffffff;
+}
+
+.pmtStep p.separator {
+  color: #626087;
+}
+
+.mobile #letters tbody tr.new td a:before,
+.mobile #statements tbody tr.new td a:before {
+  background-color: #d80000;
+}
+
+/* #endregion */
+/* #region COVID-19 Status activity */
+#CovidStatusContainer .statusDetected,
+#CovidStatusContainer .statusHighRisk, #CovidBarcodesContainer .statusDetected,
+#CovidBarcodesContainer .statusHighRisk {
+  color: #d80000 !important;
+}
+#CovidStatusContainer .statusComplete, #CovidBarcodesContainer .statusComplete {
+  color: #0f784a;
+}
+#CovidStatusContainer .statusSubheader, #CovidBarcodesContainer .statusSubheader {
+  color: #767676;
+}
+#CovidStatusContainer .iconStatus, #CovidBarcodesContainer .iconStatus {
+  fill: #363636;
+}
+#CovidStatusContainer .iconStatusDetected,
+#CovidStatusContainer .iconStatusHighRisk, #CovidBarcodesContainer .iconStatusDetected,
+#CovidBarcodesContainer .iconStatusHighRisk {
+  fill: #d80000;
+}
+#CovidStatusContainer .iconStatusComplete, #CovidBarcodesContainer .iconStatusComplete {
+  fill: #0f784a;
+}
+#CovidStatusContainer .iconArrow, #CovidBarcodesContainer .iconArrow {
+  fill: #999999;
+}
+#CovidStatusContainer .iconLink, #CovidBarcodesContainer .iconLink {
+  fill: #7571B0;
+}
+#CovidStatusContainer .questionnaireContainer .printLink, #CovidBarcodesContainer .questionnaireContainer .printLink {
+  background: #ffffff;
+}
+#CovidStatusContainer .covidQuestionnaireLinkContainer .covidQuestionnaireLink, #CovidBarcodesContainer .covidQuestionnaireLinkContainer .covidQuestionnaireLink {
+  color: #7571B0;
+}
+#CovidStatusContainer .factorContainer:after, #CovidBarcodesContainer .factorContainer:after {
+  border-bottom-color: #cccccc;
+}
+
+.covidbarcodecontainer .barcodeCardIcon {
+  fill: #7571B0;
+}
+
+.covidExportContainer .exportOptionIcon {
+  fill: #7571B0;
+}
+.covidExportContainer .covidExportHeader .headerIcon {
+  fill: #7571B0;
+}
+
+.dialogContent .orgQuerySuccess {
+  fill: #0f784a;
+}
+
+/* #endregion */
+/* #region document-center */
+.docTableRow {
+  border-bottom-color: #dbdbdb;
+}
+
+/* #endregion */

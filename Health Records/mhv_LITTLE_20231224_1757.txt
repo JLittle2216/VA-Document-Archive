@@ -1,0 +1,719 @@
+--------------- MY HEALTHEVET PERSONAL INFORMATION REPORT ---------------
+                    Produced by the VA Blue Button (v18.4)
+                               24 Dec 2023 @ 1757
+
+This Personal Information Report is a copy of information that you have selected from one or more of
+the following:
+
+- Your Personal Health Record - Health related information that you self-entered.
+- Key information from your official VA medical health record. Please contact your VA health care
+  team if you have any questions about this information or if changes are needed.
+- Information from your Department of Defense military service record.
+
+This report is intended for your personal use. It is not shared with VA. Portions of this report may 
+contain sensitive personal health information from your official VA medical record. Protection of the 
+information contained in this report is your responsibility and of those with whom you choose to share 
+this information.
+
+Note:Your Personal Health Record does NOT contain all the information from your official VA medical
+record. If your VA medical center has transitioned to the new electronic health record system  My VA
+Health you can access your medical information at www.patientportal.myhealth.va.gov.If there is 
+medical information not available to you online, contact your local VA facility Release of Information
+office.
+
+Key:  Double dashes (--) mean there is no information to display.
+
+
+Name: LITTLE, JAMAR D               Date of Birth: 13 Jun 1986
+
+------------------------ DOWNLOAD REQUEST SUMMARY -----------------------
+
+System Request Date/Time:  24 Dec 2023 @ 1757
+File Name:                 mhv_LITTLE_20231224_1757.txt
+
+Date Range Selected:       24 Jun 2023 to 24 Dec 2023
+Data Types Selected:
+  My HealtheVet Account Summary
+  Self Reported Demographics
+  VA Demographics
+  Self Reported Health Care Providers
+  Self Reported Treatment Facilities
+  Self Reported Health Insurance
+  VA Wellness Reminders
+  VA Appointments (Future)
+  VA Appointments (Limited to past 2 years)
+  VA Allergies
+  Self Reported Allergies
+  VA Medication History
+  Self Reported Medications and Supplements
+  VA Problem List
+  VA Admissions and Discharges
+  VA Notes
+  Self Reported Medical Events
+  VA Immunizations
+  Self Reported Immunizations
+  VA Laboratory Results: Chemistry/Hematology/Microbiology
+  VA Pathology Reports: Surgical Pathology/Cytology/Electron Microscopy
+  Self Reported Labs and Tests
+  VA Vitals and Readings
+  Self Reported Vitals and Readings
+  VA Radiology Reports
+  VA Electrocardiogram (EKG) Reports
+  Self Reported Family Health History
+  Self Reported Military Health History
+  Self Reported Activity Journal
+  Self Reported Food Journal
+  DoD Military Service Information
+  Self Reported My Goals Current
+  Self Reported My Goals Completed 
+
+--------------------- MY HEALTHEVET ACCOUNT SUMMARY ---------------------
+
+Source: VA
+
+Authentication Status:         Authenticated
+Authentication Date:           01 Jun 2023
+Authentication Facility ID:    200MH
+Authentication Facility Name:  AUSTIN MHV
+
+   VA Treatment Facility                           Type
+   ---------------------------------               ------  
+     Jesse Brown VAMC (537)                        VAMC
+
+   Note: The X represents your self-selected VA Medical Center preference.
+
+---------------------- SELF REPORTED DEMOGRAPHICS -----------------------
+
+Source:  Self-Entered
+Your self-entered information saved in My HealtheVet is not shared with 
+other sources. 
+
+First Name:          JAMAR
+Middle Initial:      D
+Last Name:           LITTLE
+Suffix:              
+Alias:               
+Relationship to VA:  Patient, Veteran
+
+Birth Sex:  Male        Blood Type:         Organ Donor: 
+
+Date of Birth:       13 Jun 1986
+Marital Status:       
+Current Occupation:   
+
+Mailing or Destination Address:          6529%20S%20EBERHART%20AVE,%20APT%201
+Mailing or Destination Address2:         
+Mailing or Destination City:             CHICAGO
+Mailing or Destination State:            IL
+Mailing or Destination Country:          
+Mailing or Destination Province:         
+Mailing or Destination Zip/Postal Code:  60637
+
+Home Phone Number:  
+Work Phone Number:  
+Pager Number:       
+Cell Phone Number:  7733979225
+FAX Number:         
+
+Email Address:                JLittle2216@gmail.com
+Preferred Method of Contact:  Email
+
+---------------------------- VA DEMOGRAPHICS ----------------------------
+
+Source:        VA
+Last Updated:  24 Dec 2023 @ 1756
+Sorted By:     VA Treating Facility
+
+Some of your demographic data is not updated across all of your VA 
+treatment centers. If you have questions or your information needs to be 
+updated, contact your VA health care team. 
+
+
+=========================================================================
+VA Treating Facility: Jesse Brown VAMC
+-------------------------------------------------------------------------
+
+First Name:          JAMAR
+Middle Name:         D
+Last Name:           LITTLE
+Religion:            --
+Ethnicity:           --
+Date of Birth:       13 Jun 1986
+Place of Birth:       
+Age:                 37
+Gender:              Male
+Marital Status:      DIVORCED
+
+-------------------------------------------------------------------------
+
+PERMANENT ADDRESS AND CONTACT INFORMATION
+  Street Address:     6529 S EBERHART AVE
+  Work Phone Number:  --
+  City:               CHICAGO
+  State:              ILLINOIS
+  Zip Code:           60637
+  County:             031
+  Country:            USA
+
+  Home Phone Number:  --
+  Work Phone Number:  --
+  Cell Phone Number:  --
+  Email Address:      JLittle2216@gmail.com
+
+-------------------------------------------------------------------------
+
+ELIGIBILITY
+  Primary Eligibility Code:      --
+  Service Connected Percentage:  0
+
+EMPLOYMENT
+  Employment Status: --
+  Employer Name:     --
+
+-------------------------------------------------------------------------
+
+ACTIVE INSURANCE            
+  Insurance Company:        --
+  Effective Date:           --
+  Expiration Date:          --
+  Group Name:               --
+  Group Number:             --
+  Subscriber ID:            --
+  Subscriber Name:          --
+  Subscriber Relationship:  --
+
+-------------------------------------------------------------------------
+
+PRIMARY NEXT OF KIN  
+  Name:               --
+  Street Address:     --
+  City:               --
+  State:              --
+  Zip Code:           --
+
+  Home Phone Number:  --
+  Work Phone Number:  --
+
+-------------------------------------------------------------------------
+
+EMERGENCY CONTACT     
+  Name:               --
+  Street Address:     --
+  City:               --
+  State:              --
+  Zip Code:           --
+
+  Home Phone Number:  --
+  Work Phone Number:  --
+
+-------------------------------------------------------------------------
+
+VA GUARDIAN           
+  Name:               --                      
+  Street Address:     --
+  City:               --
+  State:              --
+  Zip Code:           --
+
+  Home Phone Number:  --
+  Work Phone Number:  --
+
+-------------------------------------------------------------------------
+
+CIVIL GUARDIAN  
+  Name:               --
+  Street Address:     --
+  City:               --
+  State:              --
+  Zip Code:           --
+
+  Home Phone Number:  --
+  Work Phone Number:  --
+
+-------------------------------------------------------------------------
+
+------------------ SELF REPORTED HEALTH CARE PROVIDERS ------------------
+
+Source: Self-Entered
+No information was available that matched your selection.
+
+------------------ SELF REPORTED TREATMENT FACILITIES--------------------
+
+Source: Self-Entered
+No information was available that matched your selection.
+
+------------------- SELF REPORTED HEALTH INSURANCE ----------------------
+
+Source: Self-Entered
+No information was available that matched your selection.
+
+--------------------------- VA WELLNESS REMINDERS -----------------------
+
+Source: VA
+Last Updated: 
+Wellness Reminders are no longer updated.
+No information was available that matched your selection.
+
+--------------------------- VA APPOINTMENTS -----------------------------
+
+Source: VA
+Last Updated: 24 Dec 2023 @ 1756
+
+Sort By: Date (Descending)
+
+The future VA appointments listed below may be by telephone, video, or 
+in-person. Your local facility determines which appointments appear in My 
+HealtheVet. VA appointment details can be updated to reflect current 
+information. Consult your VA medical record for status, appointment type, 
+and other updates. 
+***Please remember to bring your insurance information with you to your appointment.
+
+
+PAST APPOINTMENTS:
+--------------------
+Date/Time:                   28 Jul 2023 @ 0900 CDT
+Medical Center Division:     Jesse Brown Department of Veterans Affairs Medical Center
+Status:                      Canceled
+Clinic Name:                 Audio
+                             Also Called: JB/COMP & PEN-FEE AUDIO
+Location Information:        DAMEN BLDG 6FLR RM 6435
+Clinic Contact Information:  3125697372
+Additional Contact:          --
+Type:                        Compensation and Pension Appointment
+
+Date/Time:                   28 Jun 2023 @ 0800 CDT
+Medical Center Division:     Jesse Brown Department of Veterans Affairs Medical Center
+Status:                      Canceled
+Clinic Name:                 JB COMPENSATION AND PENSION B CLINIC
+                             Also Called: JB/COMP & PEN-B
+Location Information:        DAMEN BLDG 6TH FL RM 6435
+Clinic Contact Information:  3125697372
+Additional Contact:          --
+Type:                        Compensation and Pension Appointment
+
+------------------------------ VA ALLERGIES AND ADVERSE REACTIONS -----------------------------
+
+Source: VA
+Last Updated: 24 Dec 2023 @ 1756
+
+No known allergies or adverse reactions are available that matched your selection.
+
+
+-------------------------- SELF REPORTED ALLERGIES --------------------
+
+Source: Self-Entered
+No information was available that matched your selection.
+
+-------------------------- VA MEDICATION HISTORY ----------------------
+
+Source: VA
+Last Updated: 
+
+No information was available that matched your selection.
+
+----------------- SELF-REPORTED MEDICATIONS AND SUPPLEMENTS -------------
+
+Source: Self-Entered
+No information was available that matched your selection.
+
+---------------------------- VA PROBLEM LIST ----------------------------
+
+Source: VA
+Last Updated: 24 Dec 2023 @ 1756
+
+Sorted By: Date/Time Entered (Descending) then alphabetically by Problem
+
+Your VA Problem List contains a comprehensive list of health problems 
+your VA providers are helping you to manage. This information is 
+available thirty-six (36) hours after it has been entered. It may not 
+contain active problems managed by non-VA health care providers. If you 
+have any questions about your information contact your VA health care 
+team. 
+
+
+Problem:            Tinnitus of right ear (SCT 4851000119108)
+Date/Time Entered:  23 Jun 2023 @ 1200
+Location:           Jesse Brown VAMC
+Status:             ACTIVE
+Provider:           TANNER,BETH
+Comments:           --
+
+
+--------------------- VA ADMISSIONS AND DISCHARGES ----------------------
+
+Source: VA
+Last Updated: 24 Dec 2023 @ 1756
+
+No information was available that matched your selection. However, if you 
+were recently discharged, your summary may be available thirty-six (36) 
+hours after it is completed. 
+
+
+------------------------------- VA NOTES --------------------------------
+
+Source: VA
+Last Updated: 24 Dec 2023 @ 1756
+
+Sorted By: Date/Time (Descending)
+
+VA Notes from January 1, 2013 forward are available thirty-six (36) hours 
+after they have been completed (except C&P Notes) and signed by all 
+required members of your VA health care team. If you have any questions 
+about your information please contact your VA health care team 
+
+=========================================================================
+Date/Time:               28 Jun 2023 @ 0800
+Note Title:              COMPENSATION & PENSION EXAMINATION
+Location:                Jesse Brown VAMC
+Signed By:               DAGHESTANI,AMIN N
+Co-signed By:            DAGHESTANI,AMIN N
+Date/Time Signed:        13 Nov 2023 @ 0910
+-------------------------------------------------------------------------
+
+ LOCAL TITLE: COMPENSATION & PENSION EXAMINATION                 
+STANDARD TITLE: C & P EXAMINATION NOTE                          
+DATE OF NOTE: JUN 28, 2023@08:00     ENTRY DATE: NOV 13, 2023@09:10:15      
+      AUTHOR: DAGHESTANI,AMIN N    EXP COSIGNER:                           
+     URGENCY:                            STATUS: COMPLETED                     
+
+
+                                 Medical Opinion
+                        Disability Benefits Questionnaire
+
+    Name of patient/Veteran:  Jamar D Little
+    
+    ACE and Evidence Review
+    -----------------------
+    
+        Indicate method used to obtain medical information to complete this
+        document:
+        
+        [X] Review of available records (without in-person or video telehealth
+            examination) using the Acceptable Clinical Evidence (ACE) process
+            because the existing medical evidence provided sufficient 
+information
+            on which to prepare the questionnaire and such an examination will
+            likely provide no additional relevant evidence.
+
+    Evidence Review
+    ---------------
+    
+        Evidence reviewed (check all that apply):
+        
+        [X] VA e-folder
+        [X] VA electronic health record
+
+
+    MEDICAL OPINION SUMMARY
+    -----------------------
+    
+        DIAGNOSIS: 
+        Bilateral Pes Planus -M21.4
+
+
+        Does the Veteran have a diagnosis of toe(s) that is at least as likely as 
+
+        not (likelihood is at least approximately balanced or nearly equal, if
+        not 
+        higher) incurred in or caused by (the) sprained toes during service?
+
+        Yes, Veteran reports LEFT GREAT TOE pain since his injury during active
+        duty service. Noted in November 9, 2006 is toe strain. He had tenderness
+        on exam.
+        It is at least as likely as not that his current left toe pain is a
+        continuation of left toe pain incurred in AD service. 
+
+
+        Medical Opinion completed by Heidi Baruch MD
+        
+
+
+ 
+/es/ AMIN N DAGHESTANI, M.D.
+Compensation & Pension 
+Signed: 11/13/2023 09:10
+
+-------------------------------------------------------------------------
+
+
+--------------------- SELF REPORTED MEDICAL EVENTS ----------------------
+Source: Self-Entered
+No information was available that matched your selection.
+
+
+=========================================================================
+This section shows all the vaccinations listed in your official VA health 
+record, grouped by vaccination. 
+
+Sorted By: Immunization Name, then Date (Descending)
+----------------------------- VA IMMUNIZATIONS/VACCINATIONS --------------------------
+
+Source: VA
+Last Updated: 24 Dec 2023 @ 1756
+No information was available that matched your selection.
+
+
+-------------------- SELF REPORTED IMMUNIZATIONS ------------------------
+Source: Self-Entered
+No information was available that matched your selection.
+
+------------------------- VA LABORATORY RESULTS -------------------------
+
+Source: VA
+Last Updated: 24 Dec 2023 @ 1756
+
+No information was available that matched your selection. However, if you 
+recently had a VA laboratory test done, your results may be available 
+thirty-six (36) hours after laboratory analysis is finalized. Your VA 
+provider may need additional time to review the results. 
+Note: COVID-19 results are available immediately after receipt by VA. If 
+you have any concerns about your results, contact your VA health care 
+team. 
+
+
+------------------------- VA PATHOLOGY REPORTS --------------------------
+
+Source: VA
+Last Updated: 24 Dec 2023 @ 1756
+
+No information was available that matched your selection. However, if you 
+recently had a VA pathology specimen collected, the reports may be 
+available thirty-six (36) hours after they have been completed. Some 
+studies done at a non-VA facility may not be available or they may not 
+necessarily include an interpretation. 
+Note: Your provider may not have had a chance to read your VA pathology 
+reports. If you have any concerns about your reports, contact your health 
+care team. 
+
+-------------------- SELF REPORTED LABS AND TESTS -----------------------
+
+Source: Self-Entered
+No information was available that matched your selection.
+
+
+------------------------ VA VITALS AND READINGS -------------------------
+
+Source: VA
+Last Updated: 24 Dec 2023 @ 1756
+
+No information was available that matched your selection.
+
+
+-------------------- SELF REPORTED VITALS AND READINGS ------------------
+
+Source: Self-Entered
+No information was available that matched your selection.
+
+-------------------------- VA RADIOLOGY REPORTS -------------------------
+
+Source: VA
+Last Updated: 24 Dec 2023 @ 1756
+
+No information was available that matched your selection. However, if you 
+recently had a VA radiology test or procedure, your reports may be 
+available thirty-six (36) hours after they have been completed. Some 
+studies done at a non-VA facility may not be available or they may not 
+necessarily include an interpretation. 
+Note: Your provider may not have had a chance to read your VA radiology 
+reports. If you have any concerns about your reports, contact your health 
+care team. 
+
+
+------------- VA ELECTROCARDIOGRAM HISTORICAL EXAM DATES ---------------
+
+Source: VA
+Last Updated: 24 Dec 2023 @ 1756
+
+VA Electrocardiogram (EKG) dates are no longer updated. No Information 
+was available that matched your selection. 
+
+------------------ SELF REPORTED FAMILY HEALTH HISTORY ------------------
+Source: Self-Entered
+No information was available that matched your selection.
+
+------------------ SELF REPORTED MILITARY HEALTH HISTORY ----------------
+
+Source: Self-Entered
+No information was available that matched your selection.
+
+-------------------- SELF REPORTED ACTIVITY JOURNAL ---------------------
+
+Source: Self-Entered
+No information was available that matched your selection.
+
+----------------------- SELF REPORTED FOOD JOURNAL ----------------------
+
+Source: Self-Entered
+No information was available that matched your selection.
+-------------------- DoD Military Service Information -------------------
+
+Source: DoD
+Last Updated: 24 Dec 2023 @ 1756
+
+NOTES:
+1) This report may not show your complete DoD Military Service Information.
+   For more information go to the FAQ tab.  Data prior to establishment of
+   DEERS and full service reporting (c. 1980) may not appear.
+2) It is normal for the begin/end dates in DoD records, adjusted by the
+   Personnel Center after separation, to vary slightly from the DD-214.
+3) No peacetime deployments will be displayed.  For Gulf War I, only one
+   period will be displayed even if you deployed more than once.  No conflict
+   prior to Gulf War I will be displayed.  Kosovo, Bosnia, and Southern Watch
+   data is incomplete and may not display.
+4) For Guard/Reserve, periods of active duty may not display.  No periods of
+   Active duty service less than 30 days will display.
+
+-- Regular Active Service
+Service      Begin Date  End Date    Character of Service   Rank
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+-- Reserve/Guard Association Periods
+Service      Begin Date  End Date    Character of Service   Rank
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Navy Reserve 06/08/2006  03/08/2009  Under honorable conditiSN
+
+-- Reserve/Guard Activation Periods
+Service      Begin Date  End Date    Activated Under (Title 10, 32, etc.)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Navy Reserve 06/23/2006  12/01/2006  
+Navy Reserve 07/12/2008  07/26/2008  
+
+-- Deployment Periods
+Service      Begin Date  End Date    Conflict               Location
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+-- DoD MOS/Occupation Codes 
+-- Note: Both Service and DoD Generic codes may not be present in all records
+Service      Begin Date  Enl/Off   Type       Svc Occ Code       DoD Occ Code
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Navy Reserve 08/23/2006  Enlisted  Primary    SR                 950 
+Navy Reserve 08/23/2006  Enlisted  Secondary  SR                 950 
+Navy Reserve 09/08/2006  Enlisted  Duty       SN                 063 
+Navy Reserve 09/30/2006  Enlisted  Primary    UT                 720 
+Navy Reserve 09/30/2006  Enlisted  Secondary  UT                 720 
+Navy Reserve 09/30/2006  Enlisted  Duty       UT  ZZZZ           720 
+Navy Reserve 07/31/2007  Enlisted  Duty       UT  6104           720 
+
+-- Military/Combat Pay Details
+Service      Begin Date  End Date    Military Pay Type      Location
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+-- Separation Pay Details
+Service      Begin Date  End Date    Separation Pay Type
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+-- Retirement Periods
+Service      Begin Date  End Date    Retirement Type                     Rank
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+-- DoD Retirement Pay
+Service      Begin Date  End Date  Dsblty %  Pay Stat  Term Rsn  Stop Pay Rsn
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Translations of Codes Used in this Section:
+
+Service Occupation Codes
+SN      Enlisted     (obsolete) Seaman
+SR      Enlisted     (obsolete) Seaman Recruit
+UT      Enlisted     (obsolete) Utilitiesman
+
+DoD Occupation Codes
+063     Enlisted     Seamanship, General                                                                                 
+720     Enlisted     Utilities, General                                                                                  
+950     Enlisted     Not Occupationally Qualified, General                                                               
+
+Military Pay Type Code
+01      Combat Zone Tax Exclusion (CZTE)
+02      Hostile Fire/Imminent Danger
+03      Hazardous Duty incentive
+
+Separation Pay Type Code
+01      Separation Pay
+02      Readjustment Pay
+03      Non-Disability Severance Pay
+04      Disability Severance Pay
+05      Discharge Gratuity
+06      Death Gratuity
+07      Special Separation Benefit
+08      Voluntary Separation Incentive Pay
+09      Voluntary Separation Pay (VSP)
+10      Contract Cancellation Pay and Allowances
+11      Separation Pay Recoupment
+12      Severance Pay Recoupment
+
+Retirement Type Code
+A       Mandatory
+B       Voluntary
+C       Fleet Reserve
+D       Temporary Disability Retirement List
+E       Permanent Disability Retirement List
+F       Title III
+G       Special Act
+H       Philippine Scouts
+Z       Unknown
+
+Retired Pay Status Code
+1       Receiving retired pay
+2       Eligible, not receiving pay
+3       Eligible, not receiving direct SBP remittance
+4       Terminated
+5       Suspended
+
+Retired Pay Termination Reason Code
+C       Pay condition terminated
+S       Pay terminated for the reason reported in the Stop Payment Reason Code
+W       Not terminated
+
+Stop Payment Reason Code
+A       Member died
+B       Recalled to Active Duty
+C       Removed from TDRL, returned to Active Duty
+D       Removed from TDRL, returned to Civilian
+E       Pay suspended, failure to report for TDRL physical
+F       Civil Service retirement waiver
+G       VA compensation waiver
+H       Dual compensation, pay cap offset
+J       Refused retired pay
+K       Pay suspended, whereabouts unknown
+L       Suspected death
+M       Pay suspended, miscellaneous
+Z       Not applicable
+
+
+-------------------- SELF REPORTED MY GOALS: CURRENT GOALS ---------------
+
+Source:               Self-Entered
+Sorted By:            Priority, then by Goal Start Date (Descending)
+
+Remember to share your self-entered information with your VA health care 
+team. 
+
+This section contains your My Goals: Current Goals information included in 
+the date range selected when you requested your VA Blue Button. 
+
+==========================================================================
+ALL CURRENT GOALS - SUMMARY LIST (BY PRIORITY)
+--------------------------------------------------------------------------
+
+None Entered
+
+
+
+---------------- SELF REPORTED MY GOALS: COMPLETED GOALS --------------
+
+Source:               Self-Entered
+Sorted By:            Date Goal Completed (Descending)
+
+Remember to share your self-entered information with your VA health care 
+team. 
+
+This section contains your My Goals: Completed Goals information included 
+in the date range selected when you requested your VA Blue Button. 
+
+==========================================================================
+COMPLETED GOALS - SUMMARY LIST (BY DATE GOAL COMPLETED)
+--------------------------------------------------------------------------
+
+None Entered
+
+----------- END OF MY HEALTHEVET PERSONAL INFORMATION REPORT ----------

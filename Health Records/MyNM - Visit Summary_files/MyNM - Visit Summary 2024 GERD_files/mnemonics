@@ -1,0 +1,30 @@
+$$WP.Strings.addMnemonic("@MYCHART@DATE@",HTMLUnencode("Monday, August 26, 2024"), false, "Global");
+$$WP.Strings.addMnemonic("@MYCHART@TIME@",HTMLUnencode("3:57:43 PM"), false, "Global");
+$$WP.Strings.addMnemonic("@MYCHART@CURRENT_YEAR@",HTMLUnencode("2024"), false, "Global");
+$$WP.Strings.addMnemonic("@MYCHART@BrandECheckIn@",HTMLUnencode(""), false, "Global");
+$$WP.Strings.addMnemonic("@MYCHART@BrandEOLPlanning@",HTMLUnencode(""), false, "Global");
+$$WP.Strings.addMnemonic("@MYCHART@BrandVideoVisits@",HTMLUnencode(""), false, "Global");
+$$WP.Strings.addMnemonic("@MYCHART@EVisit@",HTMLUnencode(""), false, "Global");
+$$WP.Strings.addMnemonic("@MYCHART@BrandEVisit@",HTMLUnencode(""), false, "Global");
+$$WP.Strings.addMnemonic("@MYCHART@BrandEDSelfRegistration@",HTMLUnencode(""), false, "Global");
+$$WP.Strings.addMnemonic("@MYCHART@APPTITLE@","MyNM", false, "Global", $$WP.Strings.EncodingTypes.None)
+$$WP.Strings.addMnemonic("@MYCHART@ABSOLUTEURL@",HTMLUnencode("/MyChart/"), false, "Global");
+$$WP.Strings.addMnemonic("@MYCHART@LOCALIZEDURL@",HTMLUnencode("/MyChart/en-US/"), false, "Global");
+$$WP.Strings.addMnemonic("@MYCHART@HELPDESKPHONE@","<span dir='ltr'><a href='tel:8554576966'>855.457.6966</a>, TTY: 711</span>", false, "Global", $$WP.Strings.EncodingTypes.None)
+$$WP.Strings.addMnemonic("@MYCHART@SCHEDULINGPHONE@","<span dir='ltr'><a href='tel:8443446663'>844.344.6663</a></span>", false, "Global", $$WP.Strings.EncodingTypes.None)
+$$WP.Strings.addMnemonic("@MYCHART@EMERGENCYPHONE@","<span dir='ltr'>911</span>", false, "Global", $$WP.Strings.EncodingTypes.None)
+$$WP.Strings.addMnemonic("@MYCHART@BILLINGPHONE@","<span dir='ltr'><a href='tel:8556942866'>855.694.2866</a></span>", false, "Global", $$WP.Strings.EncodingTypes.None)
+$$WP.Strings.addMnemonic("@MYCHART@HELPEMAIL@",HTMLUnencode("MyChartSupport@DoNotUse.DoNotUse"), false, "Global");
+$$WP.Strings.addMnemonic("@MYCHART@PATIENT@",HTMLUnencode("Jamar Little"), false, "Global");
+$$WP.Strings.addMnemonic("@MYCHART@PROXY@",HTMLUnencode("Jamar Little"), false, "Global");
+$$WP.Strings.addMnemonic("@MYCHART@WEBUSER@",HTMLUnencode("Jamar Little"), false, "Global");
+$$WP.Strings.addMnemonic("@MYCHART@PATIENTLEGALNAME@",HTMLUnencode("Jamar Little"), false, "Global");
+$$WP.Strings.addMnemonic("@MYCHART@WEBUSERLEGALNAME@",HTMLUnencode("Jamar Little"), false, "Global");
+$$WP.Strings.addMnemonic("@MYCHART@MRN@",HTMLUnencode("111012202087"), false, "Global");
+$$WP.Strings.addMnemonic("@MYCHART@DOB@",HTMLUnencode("6/13/1986"), false, "Global");
+$$WP.Strings.addMnemonic("@MYCHART@PCP@",HTMLUnencode("Naveed Muhammad, MD"), false, "Global");
+$$WP.Strings.addMnemonic("@MYCHART@SSNFORMAT@",HTMLUnencode("NNN-NN-NNNN"), false, "Global");
+$$WP.Strings.addMnemonic("@MYCHART@NationalIDLabel@",HTMLUnencode("Social Security number"), false, "Global");
+$$WP.Strings.addMnemonic("@MYCHART@NationalIDShortLabel@",HTMLUnencode("SSN"), false, "Global");
+$$WP.Strings.addMnemonic("@MYCHART@CURRENCYSYMBOL@",HTMLUnencode("$"), false, "Global");
+$$WP.Strings.addMnemonic("@MYCHART@CURRENCYCODE@",HTMLUnencode("USD"), false, "Global");

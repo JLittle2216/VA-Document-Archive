@@ -1,0 +1,39 @@
+﻿/* Copyright 2018 Epic Systems Corporation */
+.zindexHelper {
+  position: absolute;
+  border: 0;
+  z-index: -1;
+}
+.zindexHelper.forFF {
+  background-color: #ffffff;
+}
+#header .zindexHelper {
+  height: 105%;
+  width: 100%;
+  margin-top: -0.5rem;
+}
+#header .submenu .zindexHelper {
+  height: calc(100% + 1px);
+  width: calc(100% + 2px);
+  max-width: none;
+  margin-left: calc(-0.5rem - 1px);
+}
+
+.pdfobject-container embed {
+  height: 73vw !important;
+  min-height: 1130px;
+}
+.pdfobject-container[data-ua=Firefox] embed {
+  height: 76vw !important;
+  min-height: 1185px;
+  max-height: 1370px;
+}
+
+p.staticPdfWarning {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.hidePdf {
+  visibility: hidden;
+}

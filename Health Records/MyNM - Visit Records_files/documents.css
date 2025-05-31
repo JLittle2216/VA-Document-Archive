@@ -1,0 +1,671 @@
+﻿/* Copyright 2018-2023 Epic Systems Corporation */
+#visitRecords {
+  background: #ffffff;
+  display: inline-table;
+  padding: 0;
+  min-height: 0;
+}
+#visitRecords tr > td {
+  vertical-align: middle;
+}
+#visitRecords input[type=radio] {
+  background-color: transparent;
+}
+
+tr.clickable.selectedVisitRecord {
+  background-color: #e3e3f0;
+}
+
+#findVisits {
+  display: inline;
+  vertical-align: top;
+  top: 0.25rem;
+}
+
+.loadingHeart {
+  display: block;
+  margin: auto;
+}
+
+#dateRangeText, #dateRangeTextLoading {
+  margin: 20px 0 10px;
+}
+
+#dateRangeList {
+  margin-left: 0;
+  width: 100%;
+}
+
+#dateRangeText.notice {
+  background-color: #ffffa1;
+  padding: 20px;
+  text-align: center;
+}
+
+#daterangeformaterror {
+  margin: 10px 0;
+}
+
+li.dateRangeList {
+  display: inline-block;
+  width: 49%;
+  margin: 10px 0px 10px 5px;
+  vertical-align: top;
+}
+
+#allVisitsList {
+  max-height: 330px;
+  overflow-y: auto;
+}
+
+.multiVisitList {
+  max-height: 330px;
+  overflow-y: auto;
+}
+
+.recordModeView {
+  background: transparent;
+}
+
+.previewPopupMulti iframe {
+  width: 100%;
+  height: 700px;
+  border: none;
+}
+
+.pagerBtn.first {
+  background-position: 0 0;
+}
+.pagerBtn.prev {
+  background-position: -20px 0;
+}
+.pagerBtn.next {
+  background-position: -40px 0;
+}
+.pagerBtn.last {
+  background-position: -60px 0;
+}
+.pagerBtn.first.disabled {
+  background-position: 0 -20px;
+}
+.pagerBtn.prev.disabled {
+  background-position: -20px -20px;
+}
+.pagerBtn.next.disabled {
+  background-position: -40px -20px;
+}
+.pagerBtn.last.disabled {
+  background-position: -60px -20px;
+}
+.pagerBtn {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/pagerarrows.svg");
+}
+
+.pager > a {
+  display: inline-block;
+  vertical-align: middle;
+}
+.pager > a.active {
+  cursor: default;
+}
+.pager > a.active:hover, .pager > a.active:active, .pager > a.active:focus {
+  text-decoration: none;
+}
+
+.pager {
+  text-align: center;
+  padding: 10px;
+}
+
+.pageNum {
+  color: #7571B0;
+  margin: 0 10px;
+  font-weight: bold;
+}
+.pageNum.active {
+  color: #363636;
+}
+
+.pagerBtn.disabled {
+  cursor: default;
+}
+
+.previewCCD.component.Popup > div.content {
+  padding: 0;
+}
+
+.previewCCD .inlineloading.component {
+  padding: 10px;
+  position: static;
+  height: 100%;
+}
+
+.printIcon {
+  width: 2rem;
+  padding: 0 0 0 0.25rem;
+}
+
+.previewPopupMulti {
+  max-height: 700px;
+}
+.previewPopupMulti > .content {
+  display: table;
+  max-height: 700px;
+}
+.previewPopupMulti .menu {
+  width: 260px;
+  display: table-cell;
+  text-align: left;
+  margin: 0;
+  vertical-align: top;
+}
+.previewPopupMulti .menu a {
+  color: #000000;
+}
+.previewPopupMulti .SubMenuHeaders {
+  padding-left: 0.5em;
+}
+
+li.viewNoVisitsText {
+  font-size: 1em;
+}
+
+ul.visitlist li.previewVisitElement .col1,
+ul.visitlist li.previewVisitElement .col2 {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+}
+ul.visitlist li.previewVisitElement .col1 {
+  width: 22%;
+  padding: 0 3px 0 0;
+  text-align: center;
+}
+ul.visitlist li.previewVisitElement .col2 {
+  width: 75%;
+  padding-left: 3px;
+  border: 0 none;
+}
+ul.visitlist li.previewVisitElement .col2 > div {
+  line-height: 1rem;
+}
+
+.previewPopupMulti ul.visitlist li.listelement .col2 {
+  vertical-align: middle;
+}
+html[lang=fi] .previewPopupMulti ul.visitlist li.listelement .col2 {
+  padding-left: 1.2rem;
+}
+
+ul.visitlist li.previewVisitElement .col2 .name {
+  font-size: 0.96rem;
+  font-weight: bold;
+}
+ul.visitlist li.previewVisitElement .col2 .other {
+  text-indent: -0.75em;
+  padding-left: 0.75em;
+  font-size: 0.9em;
+  display: inline-block;
+}
+ul.visitlist li.previewVisitElement .visitIcon {
+  height: 45px;
+  width: 45px;
+  margin: 0 auto;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+ul.visitlist li.previewVisitElement .visitIcon.lucysummary {
+  background-image: url("../images/medical_history.svg");
+}
+ul.visitlist li.previewVisitElement .visitIcon.multivisitsummary {
+  background-image: url("../images/daterange.svg");
+}
+ul.visitlist li.previewVisitElement .visitIcon.admissionicon {
+  background-image: url("../images/bed.svg");
+}
+
+li.listelement {
+  border-bottom: 1px #dbdbdb solid;
+}
+
+li .anchorListElement.clickable:hover {
+  background: inherit;
+}
+
+li.listheaderelement {
+  padding: 2px 0 0 0;
+  margin: 0;
+  background-color: #7571B0;
+  color: #ffffff;
+}
+li.listheaderelement:hover {
+  cursor: default;
+}
+
+h3.listheaderelement {
+  padding: 2px 8px;
+  margin: 0;
+  background-color: #7571B0;
+  color: #ffffff;
+}
+h3.listheaderelement:hover {
+  cursor: default;
+}
+
+.previewCCD .previewPopupMulti .listelement.selected {
+  background-color: #e3e3f0;
+}
+
+.previewPopupMulti .details {
+  display: table-cell;
+  width: 715px;
+  height: 700px;
+  padding: 0 0 0 5px;
+  position: relative;
+}
+.previewPopupMulti div.menu ul.visitlist {
+  margin: 0px;
+  max-height: 700px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  min-height: 500px;
+}
+.previewPopupMulti .listelement {
+  cursor: pointer;
+  padding: 10px 8px;
+}
+.previewPopupMulti .overallHealthSummary, .previewPopupMulti .specifiVisitInformation {
+  background-color: #FFFFFF;
+}
+
+a.contactcard, a.contactcard:not(.selectedDisplay):hover {
+  text-decoration: none;
+}
+a.contactcard.selectedDisplay {
+  cursor: default;
+}
+
+a.loadmore {
+  font-weight: bold;
+}
+
+#popupdirectaddressexplanation {
+  margin: 5px;
+}
+
+.listelement .date div {
+  color: #41a0ff;
+  text-align: center;
+  font-size: 1rem;
+}
+.listelement .date .verticalDateOfMonth {
+  font-size: 1.5rem;
+  line-height: 1rem;
+}
+.listelement .date .verticalMonth {
+  text-transform: uppercase;
+}
+html[lang=fi] .listelement .date .verticalMonth {
+  font-size: 0.9rem;
+}
+
+.rerenderiframe {
+  visibility: none;
+  display: table-caption;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.singlevisitrow {
+  height: 60px;
+}
+
+#visitRecords .singlevistrowtext {
+  vertical-align: text-top;
+}
+
+.singlevisitrow.hidden + .singlevisitrow:not(.hidden) td {
+  border-top: none;
+}
+
+.singlevisitrow .shortColumn {
+  width: 2rem;
+}
+
+.rowDateTime {
+  float: right;
+}
+
+.downloadpopsection {
+  padding-bottom: 0px;
+}
+
+div .nosidetab #showondownload {
+  padding: 5px 0 15px 0px;
+}
+
+#sendingspinner {
+  display: none;
+  text-align: center;
+}
+
+.downloadspinner p {
+  margin: 0 20px 20px 20px;
+}
+
+.downloaddocs div.content > p.pretext {
+  padding: 15px;
+}
+
+div.sidetab ul.sectiontabs li a.clickable img {
+  top: inherit;
+  left: inherit;
+  float: left;
+  width: inherit;
+}
+
+div.sidetab ul.sectiontabs li {
+  position: relative;
+}
+
+div.section div.sidetab,
+div.section div.sidetab ul.sectiontabs li {
+  border-radius: 0px;
+  border-color: #dbdbdb;
+  border-width: 1px;
+}
+div.section div.sidetab ul.sectiontabs li.selected {
+  background: #ffffff;
+  min-width: 217px;
+}
+div.section div.sidetab ul.sectiontabs {
+  margin-left: -224px;
+}
+div.section div.sidetab ul.sectiontabs li {
+  background: #eaeaea;
+  height: 74px;
+}
+
+div.sidetab ul.sectiontabs li a .subtitle {
+  display: table-cell;
+  line-height: 120%;
+}
+
+.downloadicontext {
+  padding-top: 10px;
+  line-height: 120%;
+}
+
+div.downloaddocs .sidetab {
+  min-height: 8.5rem;
+  padding: 0.5rem 0.4rem 1.5rem;
+  margin-bottom: 15px;
+}
+
+div.alert {
+  margin: 5px 0px 5px 5px;
+}
+
+div.nosidetab {
+  padding: 0 15px;
+}
+
+.Popup.medium p.helptext {
+  padding-top: 5px;
+  padding-left: 0px;
+}
+
+.listOfProviders {
+  margin-bottom: 20px;
+}
+
+.selectproviderbuttons {
+  padding-bottom: 8px;
+}
+
+a > div.address, a > div.specialties {
+  padding: 10px 10px 0px 10px;
+  color: #000000;
+  float: left;
+  width: 49.5%;
+}
+
+.listOfProviders.card,
+.selectedProviderView.card {
+  background: #f8f8f8;
+  padding: 0 0 20px;
+}
+
+ul.selectedProviderView {
+  width: 50%;
+}
+
+.Popup.component div.titlebar.providerName {
+  padding: 10px 10px 0 10px;
+}
+
+.providerDetails {
+  padding-left: 10px;
+  color: #000000;
+}
+
+.loadMoreProvidersPrompt {
+  text-align: center;
+}
+
+a.contactcard div > span {
+  padding: 0px;
+}
+
+.Popup.medium p {
+  text-align: left;
+}
+
+p.addressLink {
+  padding-bottom: 10px;
+}
+
+#SearchInfoContent select {
+  width: 50%;
+}
+
+#SearchInfoContent ul {
+  margin-top: 10px;
+}
+
+div.selectedProviderView div p {
+  margin-bottom: 10px;
+}
+
+div.inlineloading.component .loadingHeartPreview {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#ccd_container div.menu {
+  width: 23%;
+}
+#ccd_container div.details {
+  width: 77%;
+}
+#ccd_container div.inlineloading.component .loadingHeartPreview {
+  position: relative;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#embedded_ccd.previewCCD {
+  position: relative;
+  box-shadow: none;
+  left: auto;
+}
+#embedded_ccd #ccd_container.previewPopupMulti {
+  max-height: none;
+}
+#embedded_ccd .visitlist,
+#embedded_ccd .previewPopupMulti,
+#embedded_ccd iframe,
+#embedded_ccd div.details,
+#embedded_ccd div.menu {
+  min-height: 0;
+}
+#embedded_ccd iframe::-webkit-scrollbar {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #embedded_ccd #ccd_container .menu {
+    width: 100%;
+    display: block;
+  }
+  #embedded_ccd #ccd_container .menu .visitlist {
+    max-height: none;
+  }
+  #embedded_ccd #ccd_container .menu .listelement.selected {
+    background-color: #ffffff;
+  }
+  #embedded_ccd #ccd_container .details {
+    display: none;
+  }
+}
+
+.noErrorMsgFormInput {
+  margin-bottom: 2rem;
+}
+
+div#datechooserFrom_message,
+div#dateChooserTo_message {
+  max-width: 8.8rem;
+}
+
+#recentContent > #loadingScreen {
+  margin-top: 12px;
+}
+
+.encryptionArea {
+  width: fit-content;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  width: fit-content;
+}
+.encryptionArea > .infoBubbleWrapper {
+  display: flex;
+}
+
+.cardline.docTitleSection {
+  overflow: visible;
+  display: flex;
+}
+.cardline.docTitleSection .heading.name {
+  width: fit-content;
+}
+.cardline.subtle.bottom {
+  position: initial;
+  margin: 0.25rem 0;
+}
+
+.cardBanner .standardBanner {
+  margin: 0.5rem 0 0.5rem;
+}
+.cardBanner .standardBanner .header {
+  font-size: 1rem;
+}
+.cardBanner .standardBanner .banner-text {
+  font-size: 0.9rem;
+}
+
+@media only screen and (min-width: 769px) {
+  .bottomButton {
+    position: absolute;
+    bottom: 0.5rem;
+  }
+  .bottomButton.right {
+    right: 0.5rem;
+  }
+
+  .formButtonSpacer {
+    padding-bottom: 2rem;
+    width: 100%;
+  }
+}
+.grid.recordList {
+  margin-bottom: 0;
+}
+.grid.recordList > .row:last-child {
+  margin-bottom: 0;
+}
+.grid.recordList > .row > .card {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+@media only screen and (max-width: 768px) {
+  .grid.recordList > .row > .card {
+    margin-left: 0px;
+  }
+}
+
+.collasped.recordList {
+  display: none;
+}
+
+.collapsible.sectionHeader {
+  cursor: pointer;
+}
+
+.arrow {
+  background-image: url("../images/up_chevron.png");
+  width: 16px;
+  height: 10px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: 16px 10px;
+  transition: 0.5s;
+  margin-left: 10px;
+}
+
+.arrow.collasped {
+  transform: rotate(180deg);
+}
+
+.refreshIcon {
+  background-image: url("../images/refresh.svg");
+  display: inline-flex;
+  height: 16px;
+  width: 16px;
+  vertical-align: middle;
+  margin-right: 1px;
+  background-size: 16px 16px;
+}
+
+div.cardline.cardDescription {
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 1300px) {
+  html:not(.datatile) .md_downloadmyrecord_visitrecordactivity .component.Popup.large,
+html:not(.datatile) .md_downloadmyrecord_visitrecordactivity .component.Popup.medium,
+html:not(.datatile) .md_downloadmyrecord_visitrecordactivity .component.Popup.small {
+    width: 75vw;
+    min-width: 0px;
+    margin-left: 12.5vw;
+    margin-right: 12.5vw;
+    left: 0px !important;
+  }
+}
+
+.component.Popup.large .content {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}

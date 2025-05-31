@@ -1,0 +1,151 @@
+﻿/* Copyright 2018-2024 Epic Systems Corporation */
+@media only screen and (min-width: 1px) and (max-width: 768px) {
+  #header .menugroup.droppeddown .submenu {
+    position: absolute;
+    width: 100vw;
+  }
+}
+@media only screen and (min-width: 266px) and (max-width: 768px) {
+  #header:not(.compact) .patient_name_switch:not(:only-child) {
+    max-width: 40vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body:not(.workflowRestricted):not(.midlogin):not(.isPrelogin) #header:not(.compact) #graphicHeader:not(:empty):not(.isFromMCC) #header_extras_actions_group {
+    flex-direction: column;
+    row-gap: 5px;
+    align-items: flex-end;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 1px) {
+  #header[lang=ar] #menu {
+    padding: 18px 0 0;
+  }
+
+  #header[lang=ar] #proxies .proxy {
+    margin: 0 -0.6em;
+  }
+}
+@media only screen and (min-width: 1px) and (max-width: 768px) {
+  #header_extras_actions .proxySelectorDropDownContainer .currentlySelectedNameInner {
+    max-width: 100px;
+  }
+}
+html {
+  -webkit-overflow-scrolling: touch;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+  #graphicHeader:not(:empty) #header_menu {
+    padding: 0;
+    width: 2.25rem;
+  }
+  #graphicHeader:not(:empty) #header_menu #header_menu_icon {
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    margin-right: 0;
+  }
+  [data-altstylesheet="High Contrast"] #graphicHeader:not(:empty) #header_menu #header_menu_icon {
+    background-color: #000000;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #graphicHeader:not(:empty) #locale_container #morelocales {
+    right: 0;
+    top: 2.6rem;
+  }
+}
+@media only screen and (min-width: 769px) {
+  #header.static #graphicHeader:not(:empty) #locale_container #morelocales {
+    top: 3.1rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #graphicHeader:not(:empty) #header_logo,
+#graphicHeader:not(:empty) #header_logo_by_epic {
+    height: 2.25rem;
+  }
+  #graphicHeader:not(:empty) #header_logo .header_logo_link,
+#graphicHeader:not(:empty) #header_logo_by_epic .header_logo_link {
+    top: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #graphicHeader:not(:empty) #header_menu_name,
+#graphicHeader:not(:empty) .headerButton,
+#graphicHeader:not(:empty) #localeswitch,
+#graphicHeader:not(:empty) .currentlySelectedNameInner,
+#graphicHeader:not(:empty) .switchPatientsTextOuter {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #graphicHeader:not(:empty) #header_menu #header_menu_name {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #graphicHeader:not(:empty) #home_button #homeLabel {
+    display: none;
+  }
+  #graphicHeader:not(:empty) #home_button .header_button_icon {
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #graphicHeader:not(:empty) #header_navigation {
+    flex-direction: column-reverse;
+    row-gap: 5px;
+  }
+}
+@media only screen and (max-width: 426px) {
+  #graphicHeader:not(:empty) #header_extras_actions {
+    margin-right: 0.1rem;
+  }
+}
+
+@media only screen and (max-width: 265px) {
+  body:not(.midlogin) #header:not(.compact):not(.isFromMCC) .header_navigation_buttons {
+    flex-direction: column;
+    row-gap: 0.25rem;
+    align-items: flex-end;
+  }
+}
+body:not(.midlogin) #header:not(.compact):not(.isFromMCC) #header_extras {
+  max-width: 66%;
+}
+
+@media only screen and (max-width: 768px) {
+  #header.compact #header_logo,
+#header.compact #header_go_home,
+#header.compact #header_logo_by_epic,
+#header.compact #locale_container {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) and (max-width: 321px) {
+  #header.isFromMCC #header_logo_by_epic {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) and (max-width: 265px) {
+  #header:not(.isFromMCC) #header_navigation #header_go_home,
+#header:not(.isFromMCC) #header_logo_by_epic {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #header.isFromMCC .header_navigation_buttons {
+    max-width: 220%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body:not(.midlogin):not(.isPrelogin):not(.workflowRestricted) #header #header_extras .header_navigation_buttons + .logOutContainer {
+    display: none;
+  }
+}

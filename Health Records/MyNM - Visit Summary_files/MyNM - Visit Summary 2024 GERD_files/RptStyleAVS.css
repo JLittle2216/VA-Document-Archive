@@ -1,0 +1,2095 @@
+﻿@media screen {
+  .ACVRContent, ._contentPadding,
+.section .report {
+    width: 8.5in;
+    height: auto;
+    margin: 16px auto;
+    padding: 0.5in !important;
+    background-color: white !important;
+    background-image: none !important;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  }
+  .ACVRContent:after, ._contentPadding:after,
+.section .report:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .footerAVS {
+    display: none;
+  }
+}
+.rpt .hlt15:not(.svgNoFill), .rpt .hlt15 *:not(.svgNoFill) {
+  fill: #056dff !important;
+}
+.rpt .hlt15:not(.svgNoStroke), .rpt .hlt15 *:not(.svgNoStroke) {
+  stroke: #056dff !important;
+}
+.rpt .sectionHeader .title {
+  color: #056dff !important;
+}
+.rpt .hlt13, .rpt .hlt14, .rpt .hlt15, .rpt .hlt16 {
+  color: #056dff;
+}
+.rpt .fs14 .sectionHeader .title, .rpt .fs18 .sectionHeader .title {
+  color: #177cba !important;
+}
+.rpt .fs14 .hlt13, .rpt .fs14 .hlt14, .rpt .fs14 .hlt15, .rpt .fs14 .hlt16, .rpt .fs18 .hlt13, .rpt .fs18 .hlt14, .rpt .fs18 .hlt15, .rpt .fs18 .hlt16 {
+  color: #177cba;
+}
+.rpt table.fmtConvTable:not(.fmtConvDisableOverrides) td {
+  word-wrap: normal !important;
+}
+.rpt table.fmtConvTable:not(.fmtConvDisableOverrides) .fmtConvWidth {
+  max-width: none !important;
+}
+.rpt .fmtConv {
+  font-size: 10pt;
+}
+
+.rpt.Universal .mainColumn {
+  line-height: 120%;
+}
+.rpt.Universal .mainColumn .hlt13, .rpt.Universal .mainColumn .hlt14 {
+  font-size: 1.2em;
+  line-height: 100%;
+}
+.rpt.Universal .mainColumn .hlt13 {
+  font-family: "Segoe UI semilight", "Segoe UI", "Arial", sans-serif;
+}
+.rpt.Universal .mainColumn .hlt14, .rpt.Universal .mainColumn .hlt16, .rpt.Universal .mainColumn .hlt1 {
+  font-family: "Segoe UI Semibold", "Segoe UI", "Arial", sans-serif;
+  font-weight: 600;
+}
+.rpt.Universal .mainColumn .title, .rpt.Universal .mainColumn .groupHeaderTitle {
+  line-height: 130%;
+}
+.rpt.Universal .mainColumn, .rpt.Universal .mainColumn.singleColWide {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  box-shadow: none;
+}
+.rpt.Universal .mainColumn .iconValueWrapper {
+  display: table;
+  min-width: 100%;
+  max-width: 100%;
+  -ro-pdf-tag-type: "Div";
+}
+.rpt.Universal .mainColumn .iconValueWrapper > .iconValueBody {
+  display: table-row-group;
+  -ro-pdf-tag-type: "Div";
+}
+.rpt.Universal .mainColumn .iconValueWrapper > .iconValueBody > .iconValueContainer {
+  display: table-row;
+  -ro-pdf-tag-type: "Div";
+}
+.rpt.Universal .mainColumn .iconValueWrapper > .iconValueBody > .iconValueContainer > div {
+  display: table-cell;
+  -ro-pdf-tag-type: "Div";
+}
+.rpt.Universal .mainColumn .iconValueWrapper > .iconValueBody > .iconValueContainer > .textContainer {
+  padding-left: 4px;
+  width: 100%;
+}
+@media -ro-pdfreactor {
+  .rpt.Universal .mainColumn .iconValueWrapper > .iconValueBody > .iconValueContainer > .textContainer {
+    max-width: 350px;
+  }
+}
+.rpt.Universal .mainColumn .iconValueWrapper > .iconValueBody > .iconValueContainer > .svgIcon {
+  padding-left: 0;
+}
+.rpt.Universal .mainColumn .iconValueWrapper > .iconValueBody > .iconValueContainer > .svgIcon svg {
+  -ro-pdf-tag-type: "Artifact";
+  height: 1em;
+  width: 1em;
+}
+@media -ro-pdfreactor {
+  .rpt.Universal .mainColumn .pillIcon {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    padding-right: 5px;
+  }
+  .rpt.Universal .mainColumn .pillIcon .svgFill {
+    fill: currentColor !important;
+  }
+  .rpt.Universal .mainColumn .pillIcon .svgStroke {
+    stroke: currentColor !important;
+  }
+}
+.rpt.Universal .mainColumn tr.spacedRow > td {
+  padding-bottom: 7px;
+  padding-top: 4px;
+}
+.rpt.Universal .mainColumn tr.spacedRow:not(.noBorder) > td {
+  border-top: 1px solid #cecece;
+}
+.rpt.Universal .mainColumn tr.spacedRow:first-child > td {
+  padding-top: 0;
+  border-top: none;
+}
+.rpt.Universal .mainColumn .rptList:not(.inlineList) > li {
+  margin-top: 6px;
+  margin-bottom: 0;
+  line-height: 100%;
+}
+.rpt.Universal .mainColumn .rptList:not(.inlineList) > li:first-child, .rpt.Universal .mainColumn .rptList:not(.inlineList) > li.childList {
+  margin-top: 0;
+}
+.rpt.Universal .mainColumn .alertBanner {
+  border-radius: 1px;
+}
+.rpt.Universal .mainColumn .alertBanner .alertContent {
+  padding: 6px 12px;
+}
+.rpt.Universal .mainColumn .alertBanner.sectHlt4 {
+  background-color: #ffc800;
+  border: none;
+}
+@media -ro-pdfreactor {
+  .rpt.Universal .mainColumn .alertBanner.sectHlt4 {
+    background-color: #ffc800 !important;
+    border: none;
+  }
+}
+.rpt.Universal .mainColumn .alertBanner.sectHlt4 .alertContent, .rpt.Universal .mainColumn .alertBanner.sectHlt4 .alertContent .hlt-1 {
+  color: black;
+}
+.rpt.Universal .mainColumn .alertBanner.sectHlt7 {
+  background-color: #ffe8b0;
+  border: none;
+}
+@media -ro-pdfreactor {
+  .rpt.Universal .mainColumn .alertBanner.sectHlt7 {
+    background-color: #ffe8b0 !important;
+    border: none;
+  }
+}
+.rpt.Universal .mainColumn .alertBanner.sectHlt7 .sectionHeader .title {
+  color: #f44336 !important;
+}
+.rpt.Universal .mainColumn .alertBanner.sectHlt7 .hlt13, .rpt.Universal .mainColumn .alertBanner.sectHlt7 .hlt14, .rpt.Universal .mainColumn .alertBanner.sectHlt7 .hlt15, .rpt.Universal .mainColumn .alertBanner.sectHlt7 .hlt16 {
+  color: #f44336;
+}
+.rpt.Universal .mainColumn .alertBanner.sectHlt7 .alertContent, .rpt.Universal .mainColumn .alertBanner.sectHlt7 .alertContent .hlt-1 {
+  color: black;
+}
+.rpt.Universal .mainColumn .breakBefore {
+  page-break-before: always;
+  clear: both;
+}
+.rpt.Universal .mainColumn .breakAfter {
+  page-break-after: always;
+}
+.rpt.Universal .mainColumn .breakAvoid {
+  page-break-inside: avoid;
+}
+.rpt.Universal .mainColumn .groupHeader .groupHeaderTitle {
+  font-size: 2em;
+}
+.rpt.Universal .mainColumn .groupHeader.groupHeaderEnd {
+  margin: 0;
+}
+.rpt.Universal .mainColumn .pgSection > .sectionHeader {
+  display: inline-block;
+  width: 100%;
+  border-bottom: none;
+  page-break-inside: avoid;
+}
+.rpt.Universal .mainColumn .pgSection > .sectionHeader .title {
+  font-family: "Segoe UI semilight", "Segoe UI", "Arial", sans-serif;
+  font-weight: normal;
+}
+.rpt.Universal .mainColumn .pgSection > .sectionHeader .subtitle {
+  clear: none;
+  display: inline;
+}
+.rpt.Universal .mainColumn .pgSection > .sectionHeader:after {
+  content: "";
+  display: inline;
+}
+.rpt.Universal .mainColumn .pgSection > .sectionHeader .title, .rpt.Universal .mainColumn .pgSection > .sectionHeader .subtitle, .rpt.Universal .mainColumn .pgSection > .sectionHeader .titleDetail, .rpt.Universal .mainColumn .pgSection > .sectionHeader .rightDetail, .rpt.Universal .mainColumn .pgSection > .sectionHeader .sectionHeader {
+  position: static;
+  z-index: initial;
+}
+.rpt.Universal .mainColumn .pgSection > .pgContent {
+  padding-left: 0;
+}
+.rpt.Universal .mainColumn .pgSection > .pgContent > table {
+  background-color: transparent;
+}
+.rpt.Universal .mainColumn .pgSection.mirroredSection > .pgContent {
+  padding-right: 0;
+}
+@media -ro-pdfreactor {
+  .rpt.Universal .mainColumn .pgSection.mirroredSection > .sectionHeader::after {
+    display: none;
+  }
+}
+.rpt.Universal .mainColumn .pgSection[data-sectdepth="1"] {
+  padding-bottom: 24px;
+}
+.rpt.Universal .mainColumn .pgSection[data-sectdepth="1"] > .sectionHeaderLine {
+  border-top: none;
+}
+.rpt.Universal .mainColumn .pgSection[data-sectdepth="1"] > .sectionHeader .title, .rpt.Universal .mainColumn .pgSection[data-sectdepth="1"] > .sectionHeader .subtitle, .rpt.Universal .mainColumn .pgSection[data-sectdepth="1"] > .sectionHeader .titleDetail, .rpt.Universal .mainColumn .pgSection[data-sectdepth="1"] > .sectionHeader .rightDetail {
+  background-color: transparent;
+}
+.rpt.Universal .mainColumn.runningHeader {
+  padding-bottom: 0.2em;
+}
+.rpt.Universal .mainColumn.runningHeader * {
+  -ro-pdf-tag-type: "Artifact";
+}
+.rpt.Universal .mainColumn.runningHeader .pgSection > .sectionHeader .title, .rpt.Universal .mainColumn.runningHeader .groupHeader .groupHeaderTitle {
+  font-size: 1.4em;
+}
+.rpt.Universal .mainColumn.runningHeader .groupHeader {
+  margin: 0;
+}
+.rpt.Universal .mainColumn.runningHeader .groupHeader .groupHeaderTitle {
+  display: block;
+}
+.rpt.Universal .mainColumn.runningHeader h1, .rpt.Universal .mainColumn.runningHeader h2, .rpt.Universal .mainColumn.runningHeader h3, .rpt.Universal .mainColumn.runningHeader h4, .rpt.Universal .mainColumn.runningHeader h5, .rpt.Universal .mainColumn.runningHeader h6 {
+  -ro-pdf-bookmark-level: 0;
+}
+.rpt.Universal .mainColumn#RptSidebar.right #RptSidebarWrapper {
+  padding-left: 16px;
+}
+.rpt.Universal .mainColumn#RptSidebar.left #RptSidebarWrapper {
+  padding-right: 16px;
+}
+.rpt.Universal .mainColumn#RptSidebar #RptSidebarWrapper {
+  border-top: 4px solid #bbdefb;
+  border-bottom: 4px solid #bbdefb;
+  background-color: #e5f6fe;
+  padding: 8px 16px 8px 16px;
+}
+.rpt.Universal .mainColumn#RptSidebar #RptSidebarWrapper .pgSection {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.rpt.Universal .mainColumn#RptSidebar #RptSidebarWrapper .pgSection[data-sectdepth="1"] {
+  padding-bottom: 12px;
+}
+.rpt.Universal .mainColumn#RptSidebar #RptSidebarWrapper .pgSection:not([class*=" sectHlt"]) .sectionHeader .title {
+  color: #056dff;
+}
+.rpt.Universal .mainColumn#RptSidebar #RptSidebarWrapper .pgSection:not([class*=" sectHlt"]) .hlt13, .rpt.Universal .mainColumn#RptSidebar #RptSidebarWrapper .pgSection:not([class*=" sectHlt"]) .hlt14, .rpt.Universal .mainColumn#RptSidebar #RptSidebarWrapper .pgSection:not([class*=" sectHlt"]) .hlt15, .rpt.Universal .mainColumn#RptSidebar #RptSidebarWrapper .pgSection:not([class*=" sectHlt"]) .hlt16 {
+  color: #056dff;
+}
+.rpt.Universal .mainColumn#RptSidebar #RptSidebarWrapper .pgSection:not([class*=" sectHlt"]) .hlt15:not(.svgNoFill), .rpt.Universal .mainColumn#RptSidebar #RptSidebarWrapper .pgSection:not([class*=" sectHlt"]) .hlt15 *:not(.svgNoFill) {
+  fill: #056dff !important;
+}
+.rpt.Universal .mainColumn#RptSidebar #RptSidebarWrapper .pgSection:not([class*=" sectHlt"]) .hlt15:not(.svgNoStroke), .rpt.Universal .mainColumn#RptSidebar #RptSidebarWrapper .pgSection:not([class*=" sectHlt"]) .hlt15 *:not(.svgNoStroke) {
+  stroke: #056dff !important;
+}
+.rpt.Universal .mainColumn#RptSidebar #RptSidebarWrapper .ipSidebarHeader {
+  display: block;
+  margin: auto;
+}
+.rpt.Universal .mainColumn#RptSidebar #RptSidebarWrapper .ipSidebarHeader:not(.svgNoFill), .rpt.Universal .mainColumn#RptSidebar #RptSidebarWrapper .ipSidebarHeader *:not(.svgNoFill) {
+  fill: #056dff !important;
+}
+.rpt.Universal .mainColumn#RptSidebar #RptSidebarWrapper .ipSidebarHeader:not(.svgNoStroke), .rpt.Universal .mainColumn#RptSidebar #RptSidebarWrapper .ipSidebarHeader *:not(.svgNoStroke) {
+  stroke: #056dff !important;
+}
+.rpt.Universal .mainColumn#RptSidebar #RptSidebarWrapper .ipSidebarHeader .ipHeaderCircleSvg:not(.svgNoStroke) {
+  stroke-width: 12;
+  stroke: #BBDEFB !important;
+}
+.rpt.Universal .mainColumn#RptSidebar #RptSidebarWrapper .ipSidebarHeader svg {
+  margin: -40px auto auto auto;
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+.rpt.Universal .mainColumn#RptSidebar #RptSidebarWrapper .ipNextSteps .sectionHeader {
+  display: table;
+  width: auto;
+  margin: auto;
+  background: #e5f6fe;
+  position: relative;
+  text-align: center;
+  padding: 0 10px;
+  float: none;
+}
+.rpt.Universal .mainColumn#RptSidebar #RptSidebarWrapper .ipNextSteps .sectionHeader .title {
+  margin-left: 0;
+}
+.rpt.Universal .mainColumn#RptSidebar #RptSidebarWrapper .ipNextSteps .sectionHeader svg {
+  height: 1.1em;
+  width: 1.1em;
+}
+.rpt.Universal .mainColumn#RptSidebar #RptSidebarWrapper .ipNextSteps .sectionHeader svg:not(.svgNoFill), .rpt.Universal .mainColumn#RptSidebar #RptSidebarWrapper .ipNextSteps .sectionHeader svg *:not(.svgNoFill) {
+  fill: #056dff !important;
+}
+.rpt.Universal .mainColumn#RptSidebar #RptSidebarWrapper .ipNextSteps .sectionHeader svg:not(.svgNoStroke), .rpt.Universal .mainColumn#RptSidebar #RptSidebarWrapper .ipNextSteps .sectionHeader svg *:not(.svgNoStroke) {
+  stroke: #056dff !important;
+}
+@media screen, -ro-pdfreactor {
+  .rpt.Universal .mainColumn#RptSidebar #RptSidebarWrapper .ipNextSteps .sectionHeaderLine {
+    border-top: 2px solid #bbdefb;
+    position: relative;
+    top: 0.75em;
+    z-index: 0;
+  }
+}
+.rpt.Universal .mainColumn#RptSidebar #RptSidebarWrapper #RptSidebarFooter .pgSection {
+  padding-bottom: 0;
+}
+.rpt.Universal .mainColumn#RptSidebar #RptSidebarWrapper #RptSidebarFooter {
+  margin: 0 16px 8px 0;
+}
+.rpt.Universal .mainColumn.hasRightSidebar .pgSection[data-sectdepth="1"] {
+  margin-right: 16px;
+}
+.rpt.Universal .mainColumn.hasLeftSidebar .pgSection[data-sectdepth="1"] {
+  margin-left: 16px;
+}
+.rpt.Universal .mainColumn .floaterWrapper > * {
+  page-break-before: auto;
+  page-break-inside: auto;
+  page-break-after: auto;
+}
+.rpt.Universal .mainColumn .attachmentOnly {
+  display: none;
+}
+.rpt.Universal .mainColumn [data-plugin-attachment="1"] .attachmentOnly {
+  display: inherit;
+}
+.rpt.Universal .mainColumn .textContainer:not([data-plugin-attachment-moved="1"]) .movedAttachmentOnly {
+  display: none;
+}
+.rpt.Universal .mainColumn [title=redIcon]:not(.svgNoFill), .rpt.Universal .mainColumn [title=redIcon] *:not(.svgNoFill) {
+  fill: #f44336 !important;
+}
+.rpt.Universal .mainColumn [title=redIcon]:not(.svgNoStroke), .rpt.Universal .mainColumn [title=redIcon] *:not(.svgNoStroke) {
+  stroke: #f44336 !important;
+}
+.rpt.Universal .mainColumn .headerAVS {
+  padding-bottom: 24px;
+}
+.rpt.Universal .mainColumn .headerAVS:not(.svgNoFill), .rpt.Universal .mainColumn .headerAVS *:not(.svgNoFill) {
+  fill: #5e717a !important;
+}
+.rpt.Universal .mainColumn .headerAVS:not(.svgNoStroke), .rpt.Universal .mainColumn .headerAVS *:not(.svgNoStroke) {
+  stroke: #5e717a !important;
+}
+.rpt.Universal .mainColumn .headerAVS .hlt-1 {
+  color: #5e717a;
+}
+.rpt.Universal .mainColumn .headerAVS .hlt1 {
+  font-size: 1.3em;
+}
+.rpt.Universal .mainColumn .headerAVS .spacedItem {
+  margin-right: 0.3em;
+}
+.rpt.Universal .mainColumn .headerAVS .docHeader {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  clear: none;
+}
+.rpt.Universal .mainColumn .headerAVS .docHeader .title {
+  color: #056dff !important;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  font-family: "Segoe UI semilight", "Segoe UI", "Arial", sans-serif;
+  font-weight: normal;
+  display: inline;
+}
+.rpt.Universal .mainColumn .headerAVS .docHeader .rightDetail {
+  float: none;
+}
+.rpt.Universal .mainColumn .headerAVS .headerTop:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.rpt.Universal .mainColumn .headerAVS .headerBottom {
+  overflow: hidden;
+}
+.rpt.Universal .mainColumn .headerAVS .headerTopLeft, .rpt.Universal .mainColumn .headerAVS .headerBottomLeft {
+  float: left;
+}
+.rpt.Universal .mainColumn .headerAVS .headerBottomLeft, .rpt.Universal .mainColumn .headerAVS .headerBottomRight {
+  padding-bottom: 2px;
+}
+.rpt.Universal .mainColumn .headerAVS .headerTopRight, .rpt.Universal .mainColumn .headerAVS .headerBottomRight {
+  float: right;
+  margin-right: 2px;
+  text-align: right;
+}
+.rpt.Universal .mainColumn .headerAVS .headerTop {
+  border-bottom: 1px solid #cecece;
+}
+.rpt.Universal .mainColumn .headerAVS .headerTop.accessible .headerTopRight {
+  max-width: 234px;
+}
+.rpt.Universal .mainColumn .headerAVS .headerTop.accessible .headerTopRight img {
+  max-height: 2em;
+}
+.rpt.Universal .mainColumn .headerAVS .headerTop:not(.accessible) {
+  position: relative;
+  min-height: 2.1em;
+}
+@media screen, -ro-pdfreactor {
+  .rpt.Universal .mainColumn .headerAVS .headerTop:not(.accessible) {
+    min-height: 1.8em;
+  }
+}
+.rpt.Universal .mainColumn .headerAVS .headerTop:not(.accessible) .headerTopLeft {
+  position: absolute;
+  bottom: 0;
+}
+.rpt.Universal .mainColumn .headerAVS .headerBottom {
+  padding: 2px 0;
+}
+.rpt.Universal .mainColumn .headerAVS .topRowLineNoPad {
+  border-bottom: 1px solid #cecece;
+}
+.rpt.Universal .mainColumn .headerAVS .headerTopRight img, .rpt.Universal .mainColumn .headerAVS .wholeLineImage img {
+  max-width: 234px;
+  max-height: 52px;
+  margin-bottom: 1px;
+}
+.rpt.Universal .mainColumn .headerAVS svg {
+  height: 1.2em;
+  width: 1.2em;
+  vertical-align: middle;
+}
+.rpt.Universal .mainColumn .headerAVS svg[aria-labelledby] {
+  -ro-alt-text: attr(aria-labelledby);
+}
+.rpt.Universal .mainColumn .footerAVS {
+  font-family: "Segoe UI", "Arial", sans-serif;
+  display: table;
+  width: 100%;
+}
+.rpt.Universal .mainColumn .footerAVS .nextToCopy {
+  width: 60%;
+  padding-right: 5px;
+  vertical-align: top;
+}
+.rpt.Universal .mainColumn .footerAVS .leftInfo, .rpt.Universal .mainColumn .footerAVS .rightInfo {
+  display: table-cell;
+}
+.rpt.Universal .mainColumn .footerAVS .rightInfo {
+  text-align: right;
+}
+.rpt.Universal .mainColumn .footerAVS .rightInfo .pageInfo {
+  vertical-align: top;
+}
+.rpt.Universal .mainColumn .footerAVS .rightInfo .epicLogo svg {
+  height: 1.4em;
+  font-size: 0.8em;
+  position: relative;
+  top: 2px;
+}
+.rpt.Universal .mainColumn .sectInstr {
+  padding-bottom: 0 !important;
+}
+.rpt.Universal .mainColumn .sectInstr .sectionHeader .title {
+  color: #f44336 !important;
+}
+.rpt.Universal .mainColumn .sectInstr .hlt13, .rpt.Universal .mainColumn .sectInstr .hlt14, .rpt.Universal .mainColumn .sectInstr .hlt15, .rpt.Universal .mainColumn .sectInstr .hlt16 {
+  color: #f44336;
+}
+.rpt.Universal .mainColumn .sectInstr .hlt15:not(.svgNoFill), .rpt.Universal .mainColumn .sectInstr .hlt15 *:not(.svgNoFill) {
+  fill: #f44336 !important;
+}
+.rpt.Universal .mainColumn .sectInstr .hlt15:not(.svgNoStroke), .rpt.Universal .mainColumn .sectInstr .hlt15 *:not(.svgNoStroke) {
+  stroke: #f44336 !important;
+}
+.rpt.Universal .mainColumn .sectInstr .spacedTodoItem {
+  padding-bottom: 7px;
+  padding-top: 4px;
+  border-top: 1px solid #cecece;
+}
+.rpt.Universal .mainColumn .sectInstr .spacedTodoItem:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+.rpt.Universal .mainColumn .sectInstr .sectionHeader .subtitle {
+  color: #f44336;
+}
+.rpt.Universal .mainColumn .sectInstr > .pgContent > ul {
+  -ro-pdf-tag-type: "Div";
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem {
+  -ro-pdf-tag-type: "Div";
+  border-top: 1px solid #cecece;
+  margin-top: 0.825em;
+  padding-top: 0.75em;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem:first-child {
+  border: 0;
+  margin-top: 0;
+  padding-top: 0;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem .sectionHeader .title {
+  font-size: 1.231em !important;
+  line-height: 100%;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem .pgContent {
+  padding-top: 2px;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem .iconValueContainer > .svgIcon {
+  vertical-align: top;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem .iconValueContainer > .textContainer {
+  vertical-align: middle;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem .iconValueContainer > .svgIcon {
+  padding-right: 5px;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem .iconValueContainer > .svgIcon svg {
+  height: 3em;
+  width: 3em;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem .iconValueContainer > .textContainer > ul, .rpt.Universal .mainColumn .sectInstr li.todoItem .iconValueContainer > .textContainer .pgContent > ul {
+  padding-left: 0;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem .iconValueContainer > .textContainer > ul.numbered, .rpt.Universal .mainColumn .sectInstr li.todoItem .iconValueContainer > .textContainer .pgContent > ul.numbered {
+  padding-left: 1.5em;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem .iconValueContainer > .textContainer .pgSection {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem .FUDiv .textContainer.FUText {
+  border-bottom: 1px solid #E6E6E6;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem .FUDiv:last-child .textContainer.FUText {
+  border-bottom: none;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem.todoInstr .iconValueContainer > .textContainer {
+  padding-left: 0;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .rptList:not(.inlineList) > li {
+  margin-top: 8px;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .rptList:not(.inlineList) > li:first-child, .rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .rptList:not(.inlineList) > li.childList {
+  margin-top: 0;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .pgContent {
+  padding-top: 8px;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup {
+  padding-bottom: 12px;
+  padding-right: 16px;
+  padding-top: 2px;
+  vertical-align: top;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup .medChangeTitle {
+  font-size: 1.08em;
+  margin-top: 0;
+  padding-bottom: 2px;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup .medName {
+  font-size: 1.05em;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup .medChangesList {
+  padding-left: 1.6em;
+  line-height: 100%;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup .medChangesList.singleDisposition {
+  padding-left: 0;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup svg {
+  height: 1.2em;
+  width: 1.2em;
+  vertical-align: middle;
+  margin-top: -0.225em;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup .instrMedMessage {
+  padding-top: 4px;
+  line-height: 90%;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup .medInstrTopBorder {
+  border-top: 1px solid;
+  border-color: #cecece;
+  padding-top: 3px;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup .medInstrLeftBottomBorder {
+  border-left: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #cecece;
+  padding-left: 5px;
+  margin-left: 5px;
+  padding-bottom: 2px;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medStart .medChangeTitle {
+  color: #00ad6f;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medStart:not(.svgNoFill), .rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medStart *:not(.svgNoFill) {
+  fill: #00c67f !important;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medStart:not(.svgNoStroke), .rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medStart *:not(.svgNoStroke) {
+  stroke: #00c67f !important;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medChange .medChangeTitle {
+  color: #ce7a00;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medChange:not(.svgNoFill), .rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medChange *:not(.svgNoFill) {
+  fill: #e0a30b !important;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medChange:not(.svgNoStroke), .rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medChange *:not(.svgNoStroke) {
+  stroke: #e0a30b !important;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medStop .medChangeTitle {
+  color: #cc0000;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medStop:not(.svgNoFill), .rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medStop *:not(.svgNoFill) {
+  fill: #cc0000 !important;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medStop:not(.svgNoStroke), .rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medStop *:not(.svgNoStroke) {
+  stroke: #cc0000 !important;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medAsk .medChangeTitle {
+  color: #5e717a;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medAsk:not(.svgNoFill), .rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medAsk *:not(.svgNoFill) {
+  fill: #5e717a !important;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medAsk:not(.svgNoStroke), .rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medAsk *:not(.svgNoStroke) {
+  stroke: #5e717a !important;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medContinue .medChangeTitle {
+  color: #0059d3;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medContinue:not(.svgNoFill), .rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medContinue *:not(.svgNoFill) {
+  fill: #0059d3 !important;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medContinue:not(.svgNoStroke), .rpt.Universal .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medContinue *:not(.svgNoStroke) {
+  stroke: #0059d3 !important;
+}
+.rpt.Universal .mainColumn .sectInstr li.todoItem .localPharmInfoSpacer {
+  height: 0.3em;
+}
+.rpt.Universal .mainColumn:not(.runningHeader) .sectInstr::before {
+  display: block;
+  content: "";
+  height: 0;
+  border-top: 4px solid #ffc94a;
+  margin-bottom: 4px;
+}
+.rpt.Universal .mainColumn:not(.runningHeader) .sectInstr::after {
+  display: block;
+  content: "";
+  height: 0;
+  border-top: 4px solid #ffc94a;
+  margin-top: 0.825em;
+  margin-bottom: 24px;
+}
+.rpt.Universal .mainColumn .sectInstr .attachmentInstr .sectionHeader {
+  display: none;
+}
+.rpt.Universal .mainColumn .attachmentInstr .sectionHeader .sectionHeader .title {
+  color: #f44336 !important;
+}
+.rpt.Universal .mainColumn .attachmentInstr .sectionHeader .hlt13, .rpt.Universal .mainColumn .attachmentInstr .sectionHeader .hlt14, .rpt.Universal .mainColumn .attachmentInstr .sectionHeader .hlt15, .rpt.Universal .mainColumn .attachmentInstr .sectionHeader .hlt16 {
+  color: #f44336;
+}
+.rpt.Universal .mainColumn .attachmentInstr .sectionHeader .title {
+  font-size: 1.8em;
+}
+.rpt.Universal .mainColumn .sectVitals {
+  margin: 12px 0 !important;
+  padding: 4px 0 4px 4px !important;
+  border-top: 1px solid #cfdfe7;
+  border-bottom: 1px solid #cfdfe7;
+}
+.rpt.Universal .mainColumn .sectVitals .iconValueContainer {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.rpt.Universal .mainColumn .sectVitals .iconValueContainer > .textContainer, .rpt.Universal .mainColumn .sectVitals .iconValueContainer > .svgIcon {
+  vertical-align: top;
+}
+.rpt.Universal .mainColumn .sectVitals .vitalsItem {
+  vertical-align: top;
+}
+.rpt.Universal .mainColumn .sectVitals .vitalsItem .rptListItemContent {
+  width: 100%;
+}
+.rpt.Universal .mainColumn .sectVitals .vitalsItem, .rpt.Universal .mainColumn .sectVitals .vitalsItem .growthChartUnavail {
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+.rpt.Universal .mainColumn .sectVitals .vitalsItem:not(.goalVital) .iconValueContainer > .svgIcon svg {
+  height: 2.7em;
+  width: 2.7em;
+  position: relative;
+  top: 1px;
+}
+.rpt.Universal .mainColumn .sectVitals .vitalsItem:not(.goalVital) .iconValueContainer > .svgIcon svg * {
+  stroke-width: 2 !important;
+}
+.rpt.Universal .mainColumn .sectVitals .vitalsItem:not(.goalVital) .iconValueContainer > .textContainer .vitalsLabel {
+  display: inline-block;
+  line-height: 100%;
+  width: 100%;
+  hyphens: auto;
+  hyphenate-before: 5;
+  hyphenate-after: 5;
+  word-wrap: break-word;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphenate-limit-zone: 100%;
+}
+.rpt.Universal .mainColumn .sectVitals .vitalsItem:not(.goalVital) .iconValueContainer > .textContainer .vitalsValue {
+  font-size: 1.35em;
+}
+.rpt.Universal .mainColumn .sectVitals .vitalsItem:not(.goalVital) .iconValueContainer > .textContainer .vitalsValueSec {
+  font-size: 1.2em;
+}
+@media not -ro-pdfreactor {
+  .rpt.Universal .mainColumn .sectVitals .vitalsItem .iconValueWrapper {
+    table-layout: fixed;
+    width: 100%;
+  }
+  .rpt.Universal .mainColumn .sectVitals .vitalsItem .iconValueWrapper .iconValueContainer > .svgIcon {
+    width: 2.7em;
+  }
+  .rpt.Universal .mainColumn .sectVitals .vitalsItem .iconValueWrapper .iconValueContainer > .textContainer {
+    width: auto;
+  }
+}
+.rpt.Universal .mainColumn .sectVitals .vitalsTrend {
+  width: auto;
+  display: block;
+}
+.rpt.Universal .mainColumn .sectVitals .vitalsTrend .vitalsLabel {
+  font-size: 1.2em;
+}
+.rpt.Universal .mainColumn .sectVitals .vitalsTrend .iconValueContainer > .textContainer {
+  vertical-align: middle;
+}
+.rpt.Universal .mainColumn .sectVitals .trendLabel {
+  fill: #777777;
+  font-size: 0.8em;
+  alignment-baseline: middle;
+}
+.rpt.Universal .mainColumn .sectVitals .trendValue {
+  font-size: 1.35em;
+  alignment-baseline: middle;
+  text-anchor: middle;
+}
+.rpt.Universal .mainColumn .sectVitals .trendValue.hasDecimal {
+  font-size: 1.25em;
+}
+.rpt.Universal .mainColumn .sectVitals .trendValue.longValue {
+  font-size: 1.1em !important;
+}
+.rpt.Universal .mainColumn .sectVitals .trendValue.longerValue {
+  font-size: 0.9em !important;
+}
+.rpt.Universal .mainColumn .sectVitals .whiteCheck {
+  fill: white;
+}
+.rpt.Universal .mainColumn .sectVitals .greenCheck {
+  fill: #64bd60;
+}
+.rpt.Universal .mainColumn .growthChartReference {
+  font-size: 0.8em;
+  font-style: italic;
+}
+.rpt.Universal .mainColumn.rptSidebar .sectVitals .vitalsItem {
+  width: 48%;
+}
+.rpt.Universal .mainColumn.rptSidebar .sectVitals .vitalsItem.rtlBilingual, .rpt.Universal .mainColumn.rptSidebar .sectVitals .vitalsItem.growthChartTitle, .rpt.Universal .mainColumn.rptSidebar .sectVitals .vitalsItem.fullWidthVital, .rpt.Universal .mainColumn.rptSidebar .sectVitals .vitalsItem.goalVital, .rpt.Universal .mainColumn.rptSidebar .sectVitals .vitalsItem.fullWidthVitalSB {
+  width: 100%;
+}
+.rpt.Universal .mainColumn.rptSidebar .sectVitals .growthChartReference {
+  text-align: center;
+}
+.rpt.Universal .mainColumn:not(.rptSidebar) .sectVitals .vitalsItem {
+  width: 24%;
+}
+.rpt.Universal .mainColumn:not(.rptSidebar) .sectVitals .vitalsItem.nonSidebarOnly {
+  display: inline-block !important;
+}
+.rpt.Universal .mainColumn:not(.rptSidebar) .sectVitals .vitalsItem.growthChartTitle, .rpt.Universal .mainColumn:not(.rptSidebar) .sectVitals .vitalsItem.fullWidthVital, .rpt.Universal .mainColumn:not(.rptSidebar) .sectVitals .vitalsItem.goalVital, .rpt.Universal .mainColumn:not(.rptSidebar) .sectVitals .vitalsItem.vitalsTrend {
+  width: 49%;
+  display: inline-block;
+}
+.rpt.Universal .mainColumn:not(.rptSidebar) .sectVitals .vitalsItem.rtlBilingual {
+  width: 100%;
+  display: block;
+}
+.rpt.Universal .mainColumn .sectReasonForVisit {
+  margin: 4px 0 !important;
+}
+.rpt.Universal .mainColumn .todaysVisitList.iconValueWrapper > .iconValueBody > .iconValueContainer > .svgIcon {
+  vertical-align: top;
+  padding-top: 0.4em;
+}
+.rpt.Universal .mainColumn .todaysVisitList.iconValueWrapper > .iconValueBody > .iconValueContainer > .svgIcon svg {
+  height: 1.2em;
+  width: 1.2em;
+}
+.rpt.Universal .mainColumn .todaysVisitList.iconValueWrapper > .iconValueBody > .iconValueContainer .sectionHeader .title {
+  font-size: 1.1em;
+  font-weight: normal;
+  font-family: "Segoe UI", "Arial", sans-serif;
+}
+.rpt.Universal .mainColumn .todaysVisitList.iconValueWrapper > .iconValueBody > .iconValueContainer .sectImmsDeferred > .sectionHeader .title {
+  color: #777777 !important;
+}
+.rpt.Universal .mainColumn .provPhoto img {
+  max-width: 40px;
+  min-width: 40px;
+  height: auto;
+  border-radius: 40px;
+  border: 3px solid #bbdefb;
+}
+.rpt.Universal .mainColumn .provPhoto {
+  float: left;
+  margin-right: 10px;
+}
+.rpt.Universal .mainColumn .provPhoto.centerPhoto {
+  float: none;
+  text-align: center;
+}
+.rpt.Universal .mainColumn .sectReasonForVisit:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.rpt.Universal .mainColumn .sectMedList .sectionHeader .title {
+  color: #f44336 !important;
+}
+.rpt.Universal .mainColumn .sectMedList .hlt13, .rpt.Universal .mainColumn .sectMedList .hlt14, .rpt.Universal .mainColumn .sectMedList .hlt15, .rpt.Universal .mainColumn .sectMedList .hlt16 {
+  color: #f44336;
+}
+.rpt.Universal .mainColumn .sectMedList.sectHlt2 .sectionHeader .title {
+  color: #00ad6f !important;
+}
+.rpt.Universal .mainColumn .sectMedList.sectHlt2 .hlt13, .rpt.Universal .mainColumn .sectMedList.sectHlt2 .hlt14, .rpt.Universal .mainColumn .sectMedList.sectHlt2 .hlt15, .rpt.Universal .mainColumn .sectMedList.sectHlt2 .hlt16 {
+  color: #00ad6f;
+}
+.rpt.Universal .mainColumn .sectMedList.sectHlt3 .sectionHeader .title {
+  color: #cc0000 !important;
+}
+.rpt.Universal .mainColumn .sectMedList.sectHlt3 .hlt13, .rpt.Universal .mainColumn .sectMedList.sectHlt3 .hlt14, .rpt.Universal .mainColumn .sectMedList.sectHlt3 .hlt15, .rpt.Universal .mainColumn .sectMedList.sectHlt3 .hlt16 {
+  color: #cc0000;
+}
+.rpt.Universal .mainColumn .sectMedList .medListTable > tbody > tr > td {
+  padding: 7px 10px 7px 0;
+}
+.rpt.Universal .mainColumn .sectMedList .medListTable > tbody > tr > td:last-child {
+  padding-right: 0;
+}
+.rpt.Universal .mainColumn .sectMedList .medListTable > tbody > tr > td .hlt-1 {
+  font-family: "Segoe UI light", "Segoe UI", "Arial", sans-serif;
+}
+.rpt.Universal .mainColumn .sectMedList .dispoIconCell svg {
+  height: 2.7em;
+  width: 2.7em;
+}
+.rpt.Universal .mainColumn .sectMedList .dispoIconCell.medStart:not(.svgNoFill), .rpt.Universal .mainColumn .sectMedList .dispoIconCell.medStart *:not(.svgNoFill) {
+  fill: #00c67f !important;
+}
+.rpt.Universal .mainColumn .sectMedList .dispoIconCell.medStart:not(.svgNoStroke), .rpt.Universal .mainColumn .sectMedList .dispoIconCell.medStart *:not(.svgNoStroke) {
+  stroke: #00c67f !important;
+}
+.rpt.Universal .mainColumn .sectMedList .dispoIconCell.medChange:not(.svgNoFill), .rpt.Universal .mainColumn .sectMedList .dispoIconCell.medChange *:not(.svgNoFill) {
+  fill: #e0a30b !important;
+}
+.rpt.Universal .mainColumn .sectMedList .dispoIconCell.medChange:not(.svgNoStroke), .rpt.Universal .mainColumn .sectMedList .dispoIconCell.medChange *:not(.svgNoStroke) {
+  stroke: #e0a30b !important;
+}
+.rpt.Universal .mainColumn .sectMedList .dispoIconCell.medStop:not(.svgNoFill), .rpt.Universal .mainColumn .sectMedList .dispoIconCell.medStop *:not(.svgNoFill) {
+  fill: #cc0000 !important;
+}
+.rpt.Universal .mainColumn .sectMedList .dispoIconCell.medStop:not(.svgNoStroke), .rpt.Universal .mainColumn .sectMedList .dispoIconCell.medStop *:not(.svgNoStroke) {
+  stroke: #cc0000 !important;
+}
+.rpt.Universal .mainColumn .sectMedList .dispoIconCell.medAsk:not(.svgNoFill), .rpt.Universal .mainColumn .sectMedList .dispoIconCell.medAsk *:not(.svgNoFill) {
+  fill: #5e717a !important;
+}
+.rpt.Universal .mainColumn .sectMedList .dispoIconCell.medAsk:not(.svgNoStroke), .rpt.Universal .mainColumn .sectMedList .dispoIconCell.medAsk *:not(.svgNoStroke) {
+  stroke: #5e717a !important;
+}
+.rpt.Universal .mainColumn .sectMedList .dispoIconCell.inEnglish svg {
+  height: 3.544em;
+}
+.rpt.Universal .mainColumn .sectMedList.nextToSidebar .alertBanner.sectHlt7 {
+  background-color: transparent;
+  border-left: 4px solid #ffc94a !important;
+  border-radius: 0;
+}
+@media -ro-pdfreactor {
+  .rpt.Universal .mainColumn .sectMedList.nextToSidebar .alertBanner.sectHlt7 {
+    background-color: transparent !important;
+    border: none;
+  }
+}
+.rpt.Universal .mainColumn .sectMedList.nextToSidebar .alertBanner.sectHlt7:before {
+  display: none;
+}
+.rpt.Universal .mainColumn .sectMedList.nextToSidebar .alertBanner.sectHlt7 .alertContent {
+  padding: 0;
+  padding-left: 4px;
+}
+.rpt.Universal .mainColumn .sectMedList.nextToSidebar .rightDetail {
+  display: inline-block;
+  float: none;
+  padding-left: 0;
+}
+.rpt.Universal .mainColumn .medAlertBannerSect {
+  padding-bottom: 0;
+}
+.rpt.Universal .mainColumn .sectAppts .collapsedAppts {
+  padding-bottom: 12px;
+  padding-top: 4px;
+}
+.rpt.Universal .mainColumn .sectAppts .collapsedAppts svg {
+  height: 1.2em;
+  width: 1.2em;
+}
+.rpt.Universal .mainColumn .sectAppts .collapsedAppts svg:not(.svgNoFill), .rpt.Universal .mainColumn .sectAppts .collapsedAppts svg *:not(.svgNoFill) {
+  fill: #056dff !important;
+}
+.rpt.Universal .mainColumn .sectAppts .collapsedAppts svg:not(.svgNoStroke), .rpt.Universal .mainColumn .sectAppts .collapsedAppts svg *:not(.svgNoStroke) {
+  stroke: #056dff !important;
+}
+.rpt.Universal .mainColumn .sectAppts:not(.mirroredSection) table {
+  width: auto;
+  -ro-pdf-tag-type: "Div";
+}
+.rpt.Universal .mainColumn .sectAppts tr {
+  -ro-pdf-tag-type: "Div";
+}
+.rpt.Universal .mainColumn .sectAppts td {
+  -ro-pdf-tag-type: "P";
+}
+.rpt.Universal .mainColumn .sectAppts td.calendarBox {
+  /*Same width and padding as instructions SVG icons*/
+  padding-right: 10px;
+  width: 2.5em;
+}
+.rpt.Universal .mainColumn .sectAppts td.calendarBox .calendarDay, .rpt.Universal .mainColumn .sectAppts td.calendarBox .calendarMonth, .rpt.Universal .mainColumn .sectAppts td.calendarBox .calendarYear {
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 100%;
+  line-height: 95%;
+  -ro-pdf-tag-type: "Span";
+}
+.rpt.Universal .mainColumn .sectAppts td.calendarBox .calendarMonth, .rpt.Universal .mainColumn .sectAppts td.calendarBox .calendarYear {
+  text-transform: uppercase;
+  color: #056dff;
+  font-size: 0.8em;
+}
+.rpt.Universal .mainColumn .sectAppts td.calendarBox .calendarDay {
+  color: #056dff;
+  font-size: 1.35em;
+}
+.rpt.Universal .mainColumn .sectAppts td.calendarBox .calendarYear {
+  line-height: 110%;
+}
+.rpt.Universal .mainColumn .sectAppts td.calendarBox .calendarMonth {
+  padding-top: 0.3em;
+}
+.rpt.Universal .mainColumn .sectAppts td.apptInfo {
+  padding-right: 16px;
+  width: auto;
+}
+.rpt.Universal .mainColumn .sectAppts td.depInfo {
+  width: 34%;
+}
+.rpt.Universal .mainColumn .sectInfoOnFile .spacedItem:not(:first-child) {
+  padding-top: 0.45em;
+}
+.rpt.Universal .mainColumn .sectInfoOnFile.nextToSidebar .iconValueWrapper > .iconValueBody > .iconValueContainer > .svgIcon {
+  display: none;
+}
+.rpt.Universal .mainColumn .sectInfoOnFile .iconValueWrapper > .iconValueBody > .iconValueContainer > .svgIcon {
+  vertical-align: middle;
+}
+.rpt.Universal .mainColumn .sectInfoOnFile .iconValueWrapper > .iconValueBody > .iconValueContainer > .svgIcon svg {
+  height: 1.2em;
+  width: 1.2em;
+}
+.rpt.Universal .mainColumn .sectInfoOnFile .iconValueWrapper > .iconValueBody > .iconValueContainer > .textContainer {
+  vertical-align: middle;
+}
+.rpt.Universal .mainColumn .sectResult svg {
+  width: 1.2em;
+  height: 1.2em;
+  display: inline;
+  clear: right;
+}
+.rpt.Universal .mainColumn .sectBanner .spacer {
+  height: 0.6em;
+}
+.rpt.Universal .mainColumn.rptSidebar .sectBanner img {
+  width: 60%;
+  margin-bottom: 0.3em;
+}
+.rpt.Universal .mainColumn.rptSidebar .sectBanner .bannerImage {
+  text-align: left;
+}
+.rpt.Universal .mainColumn:not(.rptSidebar) .sectBanner[data-sectdepth="1"] {
+  background-color: #e5f6fe;
+  border-bottom: 4px solid #bbdefb;
+  padding: 8px 12px;
+  margin-bottom: 24px;
+}
+.rpt.Universal .mainColumn:not(.rptSidebar) .sectBanner[data-sectdepth="1"].imageBanner .bannerWrapper {
+  display: table-row;
+  width: 100%;
+}
+.rpt.Universal .mainColumn:not(.rptSidebar) .sectBanner[data-sectdepth="1"].imageBanner .bannerImage, .rpt.Universal .mainColumn:not(.rptSidebar) .sectBanner[data-sectdepth="1"].imageBanner .bannerText {
+  display: table-cell;
+  vertical-align: top;
+}
+.rpt.Universal .mainColumn:not(.rptSidebar) .sectBanner[data-sectdepth="1"].imageBanner .bannerImage {
+  width: 30%;
+}
+.rpt.Universal .mainColumn:not(.rptSidebar) .sectBanner[data-sectdepth="1"].imageBanner .bannerImage img {
+  width: 100%;
+}
+.rpt.Universal .mainColumn:not(.rptSidebar) .sectBanner[data-sectdepth="1"].imageBanner .bannerText {
+  padding-left: 12px;
+  width: 70%;
+}
+.rpt.Universal .mainColumn .bannerHlt2 .sectionTitle {
+  color: #386a4d !important;
+}
+.rpt.Universal .mainColumn .bannerHlt3 .sectionTitle {
+  color: #C70000 !important;
+}
+.rpt.Universal .mainColumn .bannerHlt4 .sectionTitle {
+  color: #b13b05 !important;
+}
+.rpt.Universal .mainColumn .bannerHlt5 .sectionTitle {
+  color: #a04900 !important;
+}
+.rpt.Universal .mainColumn .bannerHlt6 .sectionTitle {
+  color: #43628c !important;
+}
+.rpt.Universal .mainColumn .bannerHlt7 .sectionTitle {
+  color: #43628c !important;
+}
+.rpt.Universal .mainColumn .bannerHlt9 .sectionTitle {
+  color: #000000 !important;
+}
+.rpt.Universal .mainColumn .bannerHlt10 .sectionTitle {
+  color: #a23030 !important;
+}
+.rpt.Universal .mainColumn .bannerHlt13 .sectionTitle {
+  color: #ba0000 !important;
+}
+.rpt.Universal .mainColumn .bannerHlt14 .sectionTitle {
+  color: #C70000 !important;
+}
+.rpt.Universal .mainColumn .bannerHlt15 .sectionTitle {
+  color: #ba0000 !important;
+}
+.rpt.Universal .mainColumn .bannerHlt20 .sectionTitle {
+  color: #a3292b !important;
+}
+.rpt.Universal .mainColumn .bannerHlt21 .sectionTitle {
+  color: #a3292b !important;
+}
+.rpt.Universal .mainColumn .bannerHlt30 .sectionTitle {
+  color: #666114 !important;
+}
+.rpt.Universal .mainColumn .bannerHlt31 .sectionTitle {
+  color: #666114 !important;
+}
+.rpt.Universal .mainColumn .bannerHlt35 .sectionTitle {
+  color: #476306 !important;
+}
+.rpt.Universal .mainColumn .bannerHlt36 .sectionTitle {
+  color: #476306 !important;
+}
+.rpt.Universal .mainColumn .bannerHlt40 .sectionTitle {
+  color: #386a4d !important;
+}
+.rpt.Universal .mainColumn .bannerHlt41 .sectionTitle {
+  color: #386a4d !important;
+}
+.rpt.Universal .mainColumn .bannerHlt45 .sectionTitle {
+  color: #006860 !important;
+}
+.rpt.Universal .mainColumn .bannerHlt46 .sectionTitle {
+  color: #006860 !important;
+}
+.rpt.Universal .mainColumn .bannerHlt50 .sectionTitle {
+  color: #0046e7 !important;
+}
+.rpt.Universal .mainColumn .bannerHlt51 .sectionTitle {
+  color: #0059d3 !important;
+}
+.rpt.Universal .mainColumn .bannerHlt60 .sectionTitle {
+  color: #a30660 !important;
+}
+.rpt.Universal .mainColumn .bannerHlt61 .sectionTitle {
+  color: #a30660 !important;
+}
+.rpt.Universal .mainColumn .bannerHlt70 .sectionTitle {
+  color: #43628c !important;
+}
+.rpt.Universal .mainColumn .bannerHlt75 .sectionTitle {
+  color: #262e34 !important;
+}
+.rpt.Universal .mainColumn .bannerHlt80 .sectionTitle {
+  color: #5042e0 !important;
+}
+.rpt.Universal .mainColumn .bannerHlt81 .sectionTitle {
+  color: #7d14b6 !important;
+}
+.rpt.Universal .mainColumn .bannerHlt82 .sectionTitle {
+  color: #4f53cc !important;
+}
+.rpt.Universal .mainColumn .bannerHlt83 .sectionTitle {
+  color: #7d14b6 !important;
+}
+.rpt.Universal .mainColumn .bannerHlt90 .sectionTitle {
+  color: #0046e7 !important;
+}
+.rpt.Universal .mainColumn .bannerHlt91 .sectionTitle {
+  color: #8f197b !important;
+}
+.rpt.Universal .mainColumn .bannerHlt92 .sectionTitle {
+  color: #8f197b !important;
+}
+.rpt.Universal .mainColumn .bannerHltAVS {
+  -ro-pdf-tag-type: "Div";
+}
+.rpt.Universal .mainColumn .sectReferences .sectionHeader svg {
+  width: 1.6em;
+  height: 1.6em;
+  vertical-align: middle;
+  margin-top: -0.4em;
+  margin-right: -0.3em;
+  margin-left: -0.3em;
+}
+.rpt.Universal .mainColumn .sectReferences > .sectionHeader {
+  border-bottom: 3px solid #056dff;
+}
+.rpt.Universal .mainColumn .newBubble {
+  border-radius: 5px;
+  border-width: 2px;
+  background: #e5f6fe;
+  border-color: #177cba;
+  border-style: solid;
+  padding: 0px 5px 1px 5px;
+  display: inline-block;
+}
+.rpt.Universal .mainColumn .noteText, .rpt.Universal .mainColumn .noteBox {
+  display: none;
+}
+.rpt.Universal .mainColumn .label {
+  fill: #777777;
+  font-size: 0.7em;
+  alignment-baseline: middle;
+  text-anchor: middle;
+}
+.rpt.Universal .mainColumn .goalBox {
+  display: inline-block;
+  vertical-align: top;
+}
+.rpt.Universal .mainColumn .goalBox .sectionHeader .title {
+  font-size: 1em;
+  font-weight: 100;
+}
+.rpt.Universal .mainColumn .sectGoals .pgSection.goalBox .sectionHeader .title, .rpt.Universal .mainColumn .sectVitals .pgSection.goalBox .sectionHeader .title {
+  font-weight: 400;
+  font-size: 1em !important;
+  line-height: 100% !important;
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+.rpt.Universal .mainColumn .goalBox .sectionHeader {
+  margin-bottom: 12pt;
+  display: table-row;
+}
+.rpt.Universal .mainColumn .goalBox.badge {
+  min-height: 100px;
+  width: 110px;
+  margin-right: 20px;
+  padding-right: 20px;
+  border-right: 1px solid #cecece;
+  display: inline-table;
+  vertical-align: middle;
+}
+.rpt.Universal .mainColumn .goalBox:not(.graph) .sectionHeader {
+  margin-bottom: 12px;
+  text-align: left;
+}
+.rpt.Universal .mainColumn .goalBox.graph {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 45%;
+  border-radius: 2px;
+  padding: 10px 14px;
+  margin-right: 4px;
+  border: 1px solid #cecece;
+}
+.rpt.Universal .mainColumn .goalBox.graph svg, .rpt.Universal .mainColumn .rpt .goalBox.badge span.mostRecent {
+  display: table-cell;
+  vertical-align: middle;
+}
+.rpt.Universal .mainColumn .goalBox.graph.good {
+  border: 4px solid rgba(144, 218, 139, 0.3);
+}
+.rpt.Universal .mainColumn .goalBox.graph.bad {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+}
+.rpt.Universal .mainColumn .goalBox .placeholder {
+  fill: #ccc;
+}
+.rpt.Universal .mainColumn .goalBox.graph svg {
+  margin-right: 16pt;
+}
+.rpt.Universal .mainColumn .goalBox .mostRecent.numeric {
+  font-size: 1.6em;
+  line-height: 1em;
+}
+.rpt.Universal .mainColumn .goalBox .mostRecent.textOnly, .rpt.Universal .mainColumn .sectTodaysGoals .mostRecent.textOnly {
+  font-size: 1em;
+  color: white !important;
+  border-radius: 4px;
+  padding: 2px 4px;
+  background-color: #64bd60;
+}
+.rpt.Universal .mainColumn .goalBox.bad .mostRecent.textOnly, .rpt.Universal .mainColumn .sectTodaysGoals .mostRecent.textOnly.bad {
+  background-color: #5f7c8a;
+}
+.rpt.Universal .mainColumn .sectTodaysGoals .goalBubblePadding {
+  padding: 5px 0 2px;
+}
+.rpt.Universal .mainColumn .sectTodaysGoals .rptList li .mostRecent.textOnly {
+  display: inline-block;
+  vertical-align: top;
+  padding: 4px;
+  padding-top: 2px;
+}
+.rpt.Universal .mainColumn .sectTodaysGoals .rptList li .mostRecent.textOnly svg {
+  height: 0.75em;
+  width: 0.75em;
+  top: 1.5px;
+  right: 2px;
+}
+.rpt.Universal .mainColumn .sectTodaysGoals .rptList li .mostRecent.textOnly .avsCheckMark {
+  fill: white;
+}
+.rpt.Universal .mainColumn .goalBox.good .mostRecent {
+  color: #64bd60;
+}
+.rpt.Universal .mainColumn .goalBox.bad .mostRecent {
+  color: #5f7c8a;
+}
+.rpt.Universal .mainColumn .good {
+  fill: #64bd60;
+}
+.rpt.Universal .mainColumn .avsCheckMark {
+  fill: #37835B;
+}
+.rpt.Universal .mainColumn.rptSidebar .avsCheckMark {
+  fill: #337A55;
+}
+.rpt.Universal .mainColumn .goodStroke {
+  stroke: #64bd60;
+}
+.rpt.Universal .mainColumn .bad {
+  fill: #5f7c8a;
+}
+.rpt.Universal .mainColumn .pastVal, .rpt.Universal .mainColumn .good .pastVal, .rpt.Universal .mainColumn .bad .pastVal {
+  fill: #e6e7e8;
+}
+.rpt.Universal .mainColumn .pgSection:not([class*=" sectHlt"]) .vitalsTrend .hlt15, .rpt.Universal .mainColumn#RptSidebar #RptSidebarWrapper .pgSection:not([class*=" sectHlt"]) .vitalsTrend .hlt15 {
+  stroke: none;
+}
+.rpt.Universal .mainColumn .pgSection:not([class*=" sectHlt"]) .vitalsTrend .hlt15.good, .rpt.Universal .mainColumn .pgSection:not([class*=" sectHlt"]) .vitalsTrend .hlt15.good *:not(.svgNoFill), .rpt.Universal .mainColumn#RptSidebar #RptSidebarWrapper .pgSection:not([class*=" sectHlt"]) .vitalsTrend .hlt15.good, .rpt.Universal .mainColumn#RptSidebar #RptSidebarWrapper .pgSection:not([class*=" sectHlt"]) .vitalsTrend .hlt15.good *:not(.svgNoFill) {
+  color: #64bd60 !important;
+  fill: #64bd60 !important;
+}
+.rpt.Universal .mainColumn .pgSection:not([class*=" sectHlt"]) .vitalsTrend .bulletDot, .rpt.Universal .mainColumn .pgSection:not([class*=" sectHlt"]) .vitalsTrend .bulletDot *:not(.svgNoFill), .rpt.Universal .mainColumn#RptSidebar #RptSidebarWrapper .pgSection:not([class*=" sectHlt"]) .vitalsTrend .bulletDot, .rpt.Universal .mainColumn#RptSidebar #RptSidebarWrapper .pgSection:not([class*=" sectHlt"]) .vitalsTrend .bulletDot *:not(.svgNoFill) {
+  stroke: white !important;
+}
+.rpt.Universal .mainColumn.rptSidebar .pastVal, .rpt.Universal .mainColumn.rptSidebar .good .pastVal, .rpt.Universal .mainColumn.rptSidebar .bad .pastVal {
+  fill: #cfdfe7;
+}
+.rpt.Universal .mainColumn .ipDischargeInstr {
+  line-height: 110%;
+}
+.rpt.Universal .mainColumn .ipDischargeInstr > .pgContent .pgContent {
+  margin-left: 1em;
+}
+.rpt.Universal .mainColumn .ipDischargeInstr svg {
+  position: relative;
+  top: 6px;
+  height: 2.5em;
+  width: 2.5em;
+}
+.rpt.Universal .mainColumn .ipHorizontalRule {
+  border-top: 1px solid #cecece;
+  padding-top: 3px;
+  margin-top: 5px;
+}
+.rpt.Universal .mainColumn .ipNoBottomBorder {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+  border-bottom: 0 !important;
+}
+.rpt.Universal .mainColumn .ipNoBottomBorder li.todoItem {
+  border-top: 0 !important;
+}
+.rpt.Universal .mainColumn .ipNoBorderAfter::after {
+  border-top: 0px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+.rpt.Universal .mainColumn .ipAddInstrHeader {
+  margin-left: 1px !important;
+}
+.rpt.Universal .mainColumn .ipDischargeInstrList {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.rpt.Universal .mainColumn .ipDischargeInstrList.sectInstr::before, .rpt.Universal .mainColumn .ipDischargeInstrList.sectInstr::after {
+  display: none;
+}
+.rpt.Universal .mainColumn .ipDischargeInstrList.sectInstr .sectionHeader .title {
+  color: #056dff !important;
+}
+.rpt.Universal .mainColumn .ipDischargeInstrList.sectInstr .hlt13, .rpt.Universal .mainColumn .ipDischargeInstrList.sectInstr .hlt14, .rpt.Universal .mainColumn .ipDischargeInstrList.sectInstr .hlt15, .rpt.Universal .mainColumn .ipDischargeInstrList.sectInstr .hlt16 {
+  color: #056dff;
+}
+.rpt.Universal .mainColumn .ipDischargeInstrList.sectInstr .sectionHeader .subtitle {
+  color: #056dff !important;
+}
+.rpt.Universal .mainColumn .ipDischargeInstrList.sectInstr .hlt15:not(.svgNoFill), .rpt.Universal .mainColumn .ipDischargeInstrList.sectInstr .hlt15 *:not(.svgNoFill) {
+  fill: #056dff !important;
+}
+.rpt.Universal .mainColumn .ipDischargeInstrList.sectInstr .hlt15:not(.svgNoStroke), .rpt.Universal .mainColumn .ipDischargeInstrList.sectInstr .hlt15 *:not(.svgNoStroke) {
+  stroke: #056dff !important;
+}
+.rpt.Universal .mainColumn:not(#RptSidebar) .ipSidebarHeader svg {
+  display: none;
+}
+.rpt.Universal .mainColumn:not(#RptSidebar) .ipNextSteps .sectionHeader {
+  padding-left: 0.25em;
+  box-sizing: border-box;
+  line-height: 110%;
+  padding-top: 0.5em;
+  padding-bottom: 0.2em;
+}
+.rpt.Universal .mainColumn:not(#RptSidebar) .ipNextSteps .sectionHeader svg {
+  position: relative;
+  bottom: -0.25em;
+  height: 1.425em;
+  width: 1.425em;
+}
+.rpt.Universal .mainColumn:not(#RptSidebar) .ipNextSteps .sectionHeader svg:not(.svgNoFill), .rpt.Universal .mainColumn:not(#RptSidebar) .ipNextSteps .sectionHeader svg *:not(.svgNoFill) {
+  fill: #056dff !important;
+}
+.rpt.Universal .mainColumn:not(#RptSidebar) .ipNextSteps .sectionHeader svg:not(.svgNoStroke), .rpt.Universal .mainColumn:not(#RptSidebar) .ipNextSteps .sectionHeader svg *:not(.svgNoStroke) {
+  stroke: #056dff !important;
+}
+.rpt.Universal .mainColumn:not(#RptSidebar) .ipNextSteps .pgContent {
+  margin-left: 2.25em;
+}
+.rpt.Universal .mainColumn .sectInsulin tr.columnHeader {
+  border: none;
+}
+.rpt.Universal .mainColumn .sectInsulin .layoutTable {
+  -ro-pdf-tag-type: "Div";
+}
+.rpt.Universal .mainColumn .sectInsulin .layoutTable > tbody > tr {
+  -ro-pdf-tag-type: "Div";
+}
+.rpt.Universal .mainColumn .sectInsulin .layoutTable > tbody > tr > td {
+  -ro-pdf-tag-type: "Div";
+}
+.rpt.Universal .mainColumn .sectInsulin .instructionSection .sectionHeader {
+  margin-bottom: 0;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.rpt.Universal .mainColumn .sectInsulin .instructionSection .sectionTitle {
+  font-size: 1.2em !important;
+  line-height: 100%;
+  font-family: "Segoe UI Semibold", "Segoe UI", "Arial", sans-serif;
+  font-weight: 600;
+}
+.rpt.Universal .mainColumn .sectInsulin .headerContainer {
+  margin-bottom: 1.2em;
+}
+.rpt.Universal .mainColumn .sectInsulin .mealTable {
+  margin-bottom: 1.2em;
+}
+.rpt.Universal .mainColumn .sectInsulin .mealTable .mealValue {
+  margin-bottom: 1em;
+}
+.rpt.Universal .mainColumn .sectInsulin .pumpTable {
+  margin-bottom: 1.2em;
+}
+.rpt.Universal .mainColumn .sectInsulin .valueTable td:last-child:not(.columnHeader), .rpt.Universal .mainColumn .sectInsulin .valueTable th:last-child {
+  padding-left: 0.5em;
+}
+.rpt.Universal .mainColumn .sectInsulin .valueTable .columnHeader th > table td {
+  padding: 0 !important;
+}
+.rpt.Universal .mainColumn .sectInsulin .valueTable .columnHeader th:last-child > table td {
+  text-align: left;
+}
+.rpt.Universal .mainColumn .sectInsulin .iconValueWrapper > .iconValueBody > .iconValueContainer > .svgIcon {
+  vertical-align: top;
+  padding-top: 0.4em;
+}
+.rpt.Universal .mainColumn .sectInsulin .iconValueWrapper > .iconValueBody > .iconValueContainer > .svgIcon svg {
+  height: 40px;
+  width: 40px;
+}
+.rpt.Universal .mainColumn .sectInsulin .iconValueWrapper > .iconValueBody > .iconValueContainer > .textContainer {
+  padding-left: 10px;
+}
+
+.rpt.Universal .bothColumns .mainColumn .pgSection[data-sectdepth="1"] > .sectionHeader .title {
+  font-size: 1.8em;
+}
+
+.rpt.Universal .fs10 .pillIcon {
+  top: -4px;
+}
+.rpt.Universal .fs10 .runningHeader .pillIcon {
+  top: -2px;
+}
+.rpt.Universal .fs12 .mainColumn .sectVitals .vitalsItem, .rpt.Universal .fs14 .mainColumn .sectVitals .vitalsItem {
+  width: 32%;
+}
+.rpt.Universal .fs18 .mainColumn .sectVitals .vitalsItem {
+  width: 48%;
+}
+.rpt.Universal .fs12 .mainColumn.rptSidebar .sectVitals .vitalsItem, .rpt.Universal .fs14 .mainColumn.rptSidebar .sectVitals .vitalsItem, .rpt.Universal .fs18 .mainColumn.rptSidebar .sectVitals .vitalsItem {
+  width: 100%;
+}
+.rpt.Universal .fs14 .mainColumn .headerAVS .docHeader .title, .rpt.Universal .fs18 .mainColumn .headerAVS .docHeader .title {
+  color: #177cba !important;
+}
+.rpt.Universal .fs14 .mainColumn .headerAVS .hlt-1, .rpt.Universal .fs18 .mainColumn .headerAVS .hlt-1 {
+  color: #4f6773;
+}
+.rpt.Universal .fs14 .mainColumn .sectAppts td.calendarBox .calendarMonth, .rpt.Universal .fs14 .mainColumn .sectAppts td.calendarBox .calendarYear, .rpt.Universal .fs14 .mainColumn .sectAppts td.calendarBox .calendarDay, .rpt.Universal .fs18 .mainColumn .sectAppts td.calendarBox .calendarMonth, .rpt.Universal .fs18 .mainColumn .sectAppts td.calendarBox .calendarYear, .rpt.Universal .fs18 .mainColumn .sectAppts td.calendarBox .calendarDay {
+  color: #177cba;
+}
+.rpt.Universal .fs14 .mainColumn .ipDischargeInstrList .sectionHeader .title, .rpt.Universal .fs18 .mainColumn .ipDischargeInstrList .sectionHeader .title {
+  color: #177cba !important;
+}
+.rpt.Universal .fs14 .mainColumn .ipDischargeInstrList .sectionHeader .subtitle, .rpt.Universal .fs18 .mainColumn .ipDischargeInstrList .sectionHeader .subtitle {
+  color: #177cba !important;
+}
+.rpt.Universal .fs14 .mainColumn .ipDischargeInstrList .hlt13, .rpt.Universal .fs14 .mainColumn .ipDischargeInstrList .hlt14, .rpt.Universal .fs14 .mainColumn .ipDischargeInstrList .hlt15, .rpt.Universal .fs14 .mainColumn .ipDischargeInstrList .hlt16, .rpt.Universal .fs18 .mainColumn .ipDischargeInstrList .hlt13, .rpt.Universal .fs18 .mainColumn .ipDischargeInstrList .hlt14, .rpt.Universal .fs18 .mainColumn .ipDischargeInstrList .hlt15, .rpt.Universal .fs18 .mainColumn .ipDischargeInstrList .hlt16 {
+  color: #177cba !important;
+}
+.rpt.Universal .fs14 .mainColumn .ipDischargeInstrList.sectInstr .sectionHeader .title, .rpt.Universal .fs18 .mainColumn .ipDischargeInstrList.sectInstr .sectionHeader .title {
+  color: #177cba !important;
+}
+.rpt.Universal .fs14 .mainColumn .ipDischargeInstrList.sectInstr .hlt13, .rpt.Universal .fs14 .mainColumn .ipDischargeInstrList.sectInstr .hlt14, .rpt.Universal .fs14 .mainColumn .ipDischargeInstrList.sectInstr .hlt15, .rpt.Universal .fs14 .mainColumn .ipDischargeInstrList.sectInstr .hlt16, .rpt.Universal .fs18 .mainColumn .ipDischargeInstrList.sectInstr .hlt13, .rpt.Universal .fs18 .mainColumn .ipDischargeInstrList.sectInstr .hlt14, .rpt.Universal .fs18 .mainColumn .ipDischargeInstrList.sectInstr .hlt15, .rpt.Universal .fs18 .mainColumn .ipDischargeInstrList.sectInstr .hlt16 {
+  color: #177cba;
+}
+.rpt.Universal .fs14 .mainColumn .ipDischargeInstrList.sectInstr .sectionHeader .subtitle, .rpt.Universal .fs18 .mainColumn .ipDischargeInstrList.sectInstr .sectionHeader .subtitle {
+  color: #177cba !important;
+}
+.rpt.Universal .fs14 .mainColumn .sectInstr .sectionHeader .title, .rpt.Universal .fs18 .mainColumn .sectInstr .sectionHeader .title {
+  color: #d43a2f !important;
+}
+.rpt.Universal .fs14 .mainColumn .sectInstr .hlt13, .rpt.Universal .fs14 .mainColumn .sectInstr .hlt14, .rpt.Universal .fs14 .mainColumn .sectInstr .hlt15, .rpt.Universal .fs14 .mainColumn .sectInstr .hlt16, .rpt.Universal .fs18 .mainColumn .sectInstr .hlt13, .rpt.Universal .fs18 .mainColumn .sectInstr .hlt14, .rpt.Universal .fs18 .mainColumn .sectInstr .hlt15, .rpt.Universal .fs18 .mainColumn .sectInstr .hlt16 {
+  color: #d43a2f;
+}
+.rpt.Universal .fs14 .mainColumn .sectInstr .sectionHeader .subtitle, .rpt.Universal .fs18 .mainColumn .sectInstr .sectionHeader .subtitle {
+  color: #d43a2f;
+}
+.rpt.Universal .fs14 .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medStart .medChangeTitle, .rpt.Universal .fs18 .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medStart .medChangeTitle {
+  color: #008757;
+}
+.rpt.Universal .fs14 .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medChange .medChangeTitle, .rpt.Universal .fs18 .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medChange .medChangeTitle {
+  color: #996f08;
+}
+.rpt.Universal .fs14 .mainColumn .attachmentInstr .sectionHeader .sectionHeader .title, .rpt.Universal .fs18 .mainColumn .attachmentInstr .sectionHeader .sectionHeader .title {
+  color: #d43a2f !important;
+}
+.rpt.Universal .fs14 .mainColumn .attachmentInstr .sectionHeader .hlt13, .rpt.Universal .fs14 .mainColumn .attachmentInstr .sectionHeader .hlt14, .rpt.Universal .fs14 .mainColumn .attachmentInstr .sectionHeader .hlt15, .rpt.Universal .fs14 .mainColumn .attachmentInstr .sectionHeader .hlt16, .rpt.Universal .fs18 .mainColumn .attachmentInstr .sectionHeader .hlt13, .rpt.Universal .fs18 .mainColumn .attachmentInstr .sectionHeader .hlt14, .rpt.Universal .fs18 .mainColumn .attachmentInstr .sectionHeader .hlt15, .rpt.Universal .fs18 .mainColumn .attachmentInstr .sectionHeader .hlt16 {
+  color: #d43a2f;
+}
+.rpt.Universal .fs14 .mainColumn .sectReferences > .sectionHeader, .rpt.Universal .fs18 .mainColumn .sectReferences > .sectionHeader {
+  border-color: #177cba;
+}
+.rpt.Universal .fs14 .mainColumn .alertBanner.sectHlt7 .sectionHeader .title, .rpt.Universal .fs18 .mainColumn .alertBanner.sectHlt7 .sectionHeader .title {
+  color: black !important;
+}
+.rpt.Universal .fs14 .mainColumn .alertBanner.sectHlt7 .hlt13, .rpt.Universal .fs14 .mainColumn .alertBanner.sectHlt7 .hlt14, .rpt.Universal .fs14 .mainColumn .alertBanner.sectHlt7 .hlt15, .rpt.Universal .fs14 .mainColumn .alertBanner.sectHlt7 .hlt16, .rpt.Universal .fs18 .mainColumn .alertBanner.sectHlt7 .hlt13, .rpt.Universal .fs18 .mainColumn .alertBanner.sectHlt7 .hlt14, .rpt.Universal .fs18 .mainColumn .alertBanner.sectHlt7 .hlt15, .rpt.Universal .fs18 .mainColumn .alertBanner.sectHlt7 .hlt16 {
+  color: black;
+}
+.rpt.Universal .fs14 .mainColumn .sectMedList .sectionHeader .title, .rpt.Universal .fs18 .mainColumn .sectMedList .sectionHeader .title {
+  color: #d43a2f !important;
+}
+.rpt.Universal .fs14 .mainColumn .sectMedList .hlt13, .rpt.Universal .fs14 .mainColumn .sectMedList .hlt14, .rpt.Universal .fs14 .mainColumn .sectMedList .hlt15, .rpt.Universal .fs14 .mainColumn .sectMedList .hlt16, .rpt.Universal .fs18 .mainColumn .sectMedList .hlt13, .rpt.Universal .fs18 .mainColumn .sectMedList .hlt14, .rpt.Universal .fs18 .mainColumn .sectMedList .hlt15, .rpt.Universal .fs18 .mainColumn .sectMedList .hlt16 {
+  color: #d43a2f;
+}
+.rpt.Universal .fs14 .mainColumn .sectMedList.sectHlt2 .sectionHeader .title, .rpt.Universal .fs18 .mainColumn .sectMedList.sectHlt2 .sectionHeader .title {
+  color: #008757 !important;
+}
+.rpt.Universal .fs14 .mainColumn .sectMedList.sectHlt2 .hlt13, .rpt.Universal .fs14 .mainColumn .sectMedList.sectHlt2 .hlt14, .rpt.Universal .fs14 .mainColumn .sectMedList.sectHlt2 .hlt15, .rpt.Universal .fs14 .mainColumn .sectMedList.sectHlt2 .hlt16, .rpt.Universal .fs18 .mainColumn .sectMedList.sectHlt2 .hlt13, .rpt.Universal .fs18 .mainColumn .sectMedList.sectHlt2 .hlt14, .rpt.Universal .fs18 .mainColumn .sectMedList.sectHlt2 .hlt15, .rpt.Universal .fs18 .mainColumn .sectMedList.sectHlt2 .hlt16 {
+  color: #008757;
+}
+.rpt.Universal .fs14 .mainColumn .hlt-1, .rpt.Universal .fs18 .mainColumn .hlt-1 {
+  color: #666666;
+}
+.rpt.Universal .fs14 .mainColumn .todaysVisitList.iconValueWrapper > .iconValueBody > .iconValueContainer .sectImmsDeferred > .sectionHeader .title, .rpt.Universal .fs18 .mainColumn .todaysVisitList.iconValueWrapper > .iconValueBody > .iconValueContainer .sectImmsDeferred > .sectionHeader .title {
+  color: #666666 !important;
+}
+.rpt.Universal .fs14 .mainColumn .label, .rpt.Universal .fs18 .mainColumn .label {
+  color: #666666;
+}
+.rpt.Universal .fs14 .mainColumn:not(.rptSidebar) .sectBanner[data-sectdepth="1"], .rpt.Universal .fs18 .mainColumn:not(.rptSidebar) .sectBanner[data-sectdepth="1"] {
+  background-color: transparent;
+  border-top: 4px solid #bbdefb;
+}
+.rpt.Universal .fs14 .mainColumn .avsCheckMark, .rpt.Universal .fs18 .mainColumn .avsCheckMark {
+  fill: #055100;
+}
+.rpt.Universal .fs14 .mainColumn .sectTodaysGoals .mostRecent.textOnly, .rpt.Universal .fs18 .mainColumn .sectTodaysGoals .mostRecent.textOnly {
+  background-color: #055100;
+}
+.rpt.Universal .fs14 .mainColumn .sectTodaysGoals .mostRecent.textOnly.bad, .rpt.Universal .fs18 .mainColumn .sectTodaysGoals .mostRecent.textOnly.bad {
+  background-color: #3e505e;
+}
+.rpt.Universal .fs18 {
+  line-height: 150% !important;
+}
+.rpt.Universal .fs18 li {
+  line-height: 200% !important;
+}
+.rpt.Universal .fs18 #PluginDebugDiv {
+  line-height: 100% !important;
+}
+.rpt.Universal .fs18 #PluginDebugDiv li {
+  line-height: 100% !important;
+}
+.rpt.Universal .fs18 .mainColumn {
+  line-height: 150% !important;
+}
+.rpt.Universal .fs18 .mainColumn .hlt13, .rpt.Universal .fs18 .mainColumn .hlt14, .rpt.Universal .fs18 .mainColumn .title, .rpt.Universal .fs18 .mainColumn .groupHeaderTitle {
+  line-height: 150% !important;
+}
+.rpt.Universal .fs18 .mainColumn li, .rpt.Universal .fs18 .mainColumn .rptList:not(.inlineList) > li {
+  line-height: 200% !important;
+}
+.rpt.Universal .fs18 .mainColumn .sectInstr li.todoItem .sectionHeader .title {
+  line-height: 150% !important;
+}
+.rpt.Universal .fs18 .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup .medChangesList {
+  line-height: 150% !important;
+}
+.rpt.Universal .fs18 .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup .instrMedMessage {
+  line-height: 150% !important;
+}
+.rpt.Universal .fs18 .mainColumn .sectVitals .vitalsItem:not(.goalVital) .iconValueContainer > .textContainer .vitalsLabel {
+  line-height: 150% !important;
+}
+.rpt.Universal .fs18 .mainColumn .sectAppts td.calendarBox .calendarDay, .rpt.Universal .fs18 .mainColumn .sectAppts td.calendarBox .calendarMonth, .rpt.Universal .fs18 .mainColumn .sectAppts td.calendarBox .calendarYear {
+  line-height: 150% !important;
+}
+.rpt.Universal .fs18 .mainColumn .sectAppts .collapsedAppts svg {
+  margin-top: 4px;
+}
+.rpt.Universal .fs18 .mainColumn .sectGoals .pgSection.goalBox .sectionHeader .title, .rpt.Universal .fs18 .mainColumn .sectVitals .pgSection.goalBox .sectionHeader .title {
+  line-height: 150% !important;
+}
+.rpt.Universal .fs18 .mainColumn .goalBox .mostRecent.numeric {
+  line-height: 150% !important;
+}
+.rpt.Universal .fs18 .mainColumn .ipDischargeInstr {
+  line-height: 150% !important;
+}
+.rpt.Universal .fs18 .mainColumn:not(#RptSidebar) .ipNextSteps .sectionHeader {
+  line-height: 150% !important;
+}
+.rpt.Universal .fs18 .mainColumn .sectInsulin .instructionSection .sectionTitle {
+  line-height: 150% !important;
+}
+.rpt.Universal .fs18 .sectTodaysGoals .rptList li .mostRecent.textOnly {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media print {
+  .rpt.Universal.Greyscale .mainColumn#RptSidebar #RptSidebarWrapper, .rpt.Universal.Greyscale .mainColumn#RptSidebar #RptSidebarWrapper .ipNextSteps .sectionHeader {
+    background-color: #F2F2F2;
+  }
+  .rpt.Universal.Greyscale .mainColumn .pgSection .pgSection > .sectionHeader .title, .rpt.Universal.Greyscale .mainColumn .hlt13, .rpt.Universal.Greyscale .mainColumn .ipAddInstrHeader .subtitle,
+.rpt.Universal.Greyscale .mainColumn .iconValueWrapper.todaysVisitList > .iconValueBody > .iconValueContainer .sectionHeader .title {
+    font-family: "Segoe UI", "Arial", sans-serif;
+    font-weight: 700;
+  }
+  .rpt.Universal.Greyscale .mainColumn .sectionHeader .title {
+    color: black !important;
+  }
+  .rpt.Universal.Greyscale .mainColumn .hlt13, .rpt.Universal.Greyscale .mainColumn .hlt14, .rpt.Universal.Greyscale .mainColumn .hlt15, .rpt.Universal.Greyscale .mainColumn .hlt16 {
+    color: black;
+  }
+  .rpt.Universal.Greyscale .mainColumn .sectInstr .sectionHeader .title, .rpt.Universal.Greyscale .mainColumn .ipDischargeInstrList.sectInstr .sectionHeader .title, .rpt.Universal.Greyscale .mainColumn .attachmentInstr .sectionHeader .sectionHeader .title, .rpt.Universal.Greyscale .mainColumn .alertBanner.sectHlt7 .sectionHeader .title,
+.rpt.Universal.Greyscale .mainColumn .sectMedList .sectionHeader .title, .rpt.Universal.Greyscale .mainColumn .sectMedList.sectHlt2 .sectionHeader .title, .rpt.Universal.Greyscale .mainColumn .sectMedList.sectHlt3 .sectionHeader .title, .rpt.Universal.Greyscale .mainColumn#RptSidebar #RptSidebarWrapper .pgSection:not([class*=" sectHlt"]) .sectionHeader .title {
+    color: black !important;
+  }
+  .rpt.Universal.Greyscale .mainColumn .sectInstr .hlt13, .rpt.Universal.Greyscale .mainColumn .sectInstr .hlt14, .rpt.Universal.Greyscale .mainColumn .sectInstr .hlt15, .rpt.Universal.Greyscale .mainColumn .sectInstr .hlt16, .rpt.Universal.Greyscale .mainColumn .ipDischargeInstrList.sectInstr .hlt13, .rpt.Universal.Greyscale .mainColumn .ipDischargeInstrList.sectInstr .hlt14, .rpt.Universal.Greyscale .mainColumn .ipDischargeInstrList.sectInstr .hlt15, .rpt.Universal.Greyscale .mainColumn .ipDischargeInstrList.sectInstr .hlt16, .rpt.Universal.Greyscale .mainColumn .attachmentInstr .sectionHeader .hlt13, .rpt.Universal.Greyscale .mainColumn .attachmentInstr .sectionHeader .hlt14, .rpt.Universal.Greyscale .mainColumn .attachmentInstr .sectionHeader .hlt15, .rpt.Universal.Greyscale .mainColumn .attachmentInstr .sectionHeader .hlt16, .rpt.Universal.Greyscale .mainColumn .alertBanner.sectHlt7 .hlt13, .rpt.Universal.Greyscale .mainColumn .alertBanner.sectHlt7 .hlt14, .rpt.Universal.Greyscale .mainColumn .alertBanner.sectHlt7 .hlt15, .rpt.Universal.Greyscale .mainColumn .alertBanner.sectHlt7 .hlt16,
+.rpt.Universal.Greyscale .mainColumn .sectMedList .hlt13,
+.rpt.Universal.Greyscale .mainColumn .sectMedList .hlt14,
+.rpt.Universal.Greyscale .mainColumn .sectMedList .hlt15,
+.rpt.Universal.Greyscale .mainColumn .sectMedList .hlt16, .rpt.Universal.Greyscale .mainColumn .sectMedList.sectHlt2 .hlt13, .rpt.Universal.Greyscale .mainColumn .sectMedList.sectHlt2 .hlt14, .rpt.Universal.Greyscale .mainColumn .sectMedList.sectHlt2 .hlt15, .rpt.Universal.Greyscale .mainColumn .sectMedList.sectHlt2 .hlt16, .rpt.Universal.Greyscale .mainColumn .sectMedList.sectHlt3 .hlt13, .rpt.Universal.Greyscale .mainColumn .sectMedList.sectHlt3 .hlt14, .rpt.Universal.Greyscale .mainColumn .sectMedList.sectHlt3 .hlt15, .rpt.Universal.Greyscale .mainColumn .sectMedList.sectHlt3 .hlt16, .rpt.Universal.Greyscale .mainColumn#RptSidebar #RptSidebarWrapper .pgSection:not([class*=" sectHlt"]) .hlt13, .rpt.Universal.Greyscale .mainColumn#RptSidebar #RptSidebarWrapper .pgSection:not([class*=" sectHlt"]) .hlt14, .rpt.Universal.Greyscale .mainColumn#RptSidebar #RptSidebarWrapper .pgSection:not([class*=" sectHlt"]) .hlt15, .rpt.Universal.Greyscale .mainColumn#RptSidebar #RptSidebarWrapper .pgSection:not([class*=" sectHlt"]) .hlt16 {
+    color: black;
+  }
+  .rpt.Universal.Greyscale .mainColumn .headerAVS .docHeader .title, .rpt.Universal.Greyscale .mainColumn .ipDischargeInstrList.sectInstr .sectionHeader .subtitle,
+.rpt.Universal.Greyscale .mainColumn .todaysVisitList.iconValueWrapper > .iconValueBody > .iconValueContainer .sectImmsDeferred > .sectionHeader .title,
+.rpt.Universal.Greyscale .mainColumn a, .rpt.Universal.Greyscale .mainColumn .pgSection .toggleLink a {
+    color: black !important;
+  }
+  .rpt.Universal.Greyscale .mainColumn .ipDischargeInstrList .sectionHeader .title, .rpt.Universal.Greyscale .mainColumn .ipDischargeInstrList .sectionHeader .subtitle,
+.rpt.Universal.Greyscale .mainColumn .ipDischargeInstrList .hlt13, .rpt.Universal.Greyscale .mainColumn .ipDischargeInstrList .hlt14, .rpt.Universal.Greyscale .mainColumn .ipDischargeInstrList .hlt15, .rpt.Universal.Greyscale .mainColumn .ipDischargeInstrList .hlt16 {
+    color: black !important;
+  }
+  .rpt.Universal.Greyscale .mainColumn .sectAppts td.calendarBox .calendarMonth, .rpt.Universal.Greyscale .mainColumn .sectAppts td.calendarBox .calendarYear, .rpt.Universal.Greyscale .mainColumn .sectAppts td.calendarBox .calendarDay,
+.rpt.Universal.Greyscale .mainColumn .sectInstr .sectionHeader .subtitle {
+    color: black;
+  }
+  .rpt.Universal.Greyscale .mainColumn .sectAppts .collapsedAppts svg:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn .sectAppts .collapsedAppts svg *:not(.svgNoFill) {
+    fill: black !important;
+  }
+  .rpt.Universal.Greyscale .mainColumn .sectAppts .collapsedAppts svg:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn .sectAppts .collapsedAppts svg *:not(.svgNoStroke) {
+    stroke: black !important;
+  }
+  .rpt.Universal.Greyscale .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medStart .medChangeTitle, .rpt.Universal.Greyscale .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medChange .medChangeTitle, .rpt.Universal.Greyscale .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medStop .medChangeTitle, .rpt.Universal.Greyscale .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medAsk .medChangeTitle, .rpt.Universal.Greyscale .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medContinue .medChangeTitle {
+    color: black;
+  }
+  .rpt.Universal.Greyscale .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup .medInstrTopBorder {
+    border-color: #a4a4a4;
+  }
+  .rpt.Universal.Greyscale .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup .medInstrLeftBottomBorder {
+    border-color: #a4a4a4;
+  }
+  .rpt.Universal.Greyscale .mainColumn .subtitle, .rpt.Universal.Greyscale .mainColumn .titleDetail, .rpt.Universal.Greyscale .mainColumn .rightDetail, .rpt.Universal.Greyscale .mainColumn th, .rpt.Universal.Greyscale .mainColumn .headerAVS .hlt-1, .rpt.Universal.Greyscale .mainColumn .label, .rpt.Universal.Greyscale .mainColumn .hlt-1, .rpt.Universal.Greyscale .mainColumn .hlt9 {
+    color: #404040;
+  }
+  .rpt.Universal.Greyscale .mainColumn .sectMedList .medListTable > tbody > tr > td .hlt-1 {
+    font-family: "Segoe UI", "Arial", sans-serif;
+  }
+  .rpt.Universal.Greyscale .mainColumn tr.spacedRow:not(.noBorder) > td, .rpt.Universal.Greyscale .mainColumn .headerAVS .headerTop, .rpt.Universal.Greyscale .mainColumn .topRowLineNoPad .topRowLineNoPad,
+.rpt.Universal.Greyscale .mainColumn .sectInstr .spacedTodoItem, .rpt.Universal.Greyscale .mainColumn .sectInstr li.todoItem, .rpt.Universal.Greyscale .mainColumn .goalBox.graph, .rpt.Universal.Greyscale .mainColumn .ipHorizontalRule,
+.rpt.Universal.Greyscale .mainColumn .hlt64, .rpt.Universal.Greyscale .mainColumn .hlt128, .rpt.Universal.Greyscale .mainColumn .hlt192, .rpt.Universal.Greyscale .mainColumn .hlt256, .rpt.Universal.Greyscale .mainColumn .hlt4096, .rpt.Universal.Greyscale .mainColumn tr.trRowLines, .rpt.Universal.Greyscale .mainColumn tr.columnHeader {
+    border-color: #a4a4a4;
+  }
+  .rpt.Universal.Greyscale .mainColumn .hlt6144 {
+    border-color: #d4d4d4;
+  }
+  .rpt.Universal.Greyscale .mainColumn#RptSidebar #RptSidebarWrapper, .rpt.Universal.Greyscale .mainColumn .sectVitals, .rpt.Universal.Greyscale .mainColumn .sectReferences > .sectionHeader, .rpt.Universal.Greyscale .mainColumn:not(.runningHeader) .sectInstr::before, .rpt.Universal.Greyscale .mainColumn:not(.runningHeader) .sectInstr::after, .rpt.Universal.Greyscale .mainColumn#RptSidebar #RptSidebarWrapper .ipNextSteps .sectionHeaderLine, .rpt.Universal.Greyscale .mainColumn .divEDProcedures, .rpt.Universal.Greyscale .mainColumn .divEDMedAdmins, .rpt.Universal.Greyscale .mainColumn .divEDImmuns, .rpt.Universal.Greyscale .mainColumn .sectInstr li.todoItem .FUDiv .iconValueWrapper.FUiconValueWrapper .iconValueContainer > .textContainer.FUText {
+    border-color: #a4a4a4;
+  }
+  .rpt.Universal.Greyscale .mainColumn:not(.rptSidebar) .sectBanner[data-sectdepth="1"] {
+    background-color: transparent;
+    border-color: #a4a4a4;
+    border-top: 4px solid #a4a4a4;
+  }
+  .rpt.Universal.Greyscale .mainColumn .provPhoto img {
+    border: 3px solid #a4a4a4;
+  }
+  .rpt.Universal.Greyscale .mainColumn .bannerHltAVS {
+    background-color: #F2F2F2 !important;
+    border-bottom: 4px solid #a4a4a4;
+  }
+  .rpt.Universal.Greyscale .mainColumn .bannerHltAVS .sectionTitle {
+    color: black !important;
+  }
+  .rpt.Universal.Greyscale .mainColumn .alertBanner.sectHlt7 {
+    background-color: #E9E9E9 !important;
+  }
+  .rpt.Universal.Greyscale .mainColumn .alertBanner.sectHlt4 {
+    background-color: #E0E0E0 !important;
+    border: 2px solid black;
+  }
+  .rpt.Universal.Greyscale .mainColumn .hlt15:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn .hlt15 *:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn .headerAVS:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn .headerAVS *:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn .ipDischargeInstrList.sectInstr .hlt15:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn .ipDischargeInstrList.sectInstr .hlt15 *:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn .epicLogo svg:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn .epicLogo svg *:not(.svgNoFill) {
+    fill: black !important;
+  }
+  .rpt.Universal.Greyscale .mainColumn .hlt15:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn .hlt15 *:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn .headerAVS:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn .headerAVS *:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn .ipDischargeInstrList.sectInstr .hlt15:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn .ipDischargeInstrList.sectInstr .hlt15 *:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn .epicLogo svg:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn .epicLogo svg *:not(.svgNoStroke) {
+    stroke: black !important;
+  }
+  .rpt.Universal.Greyscale .mainColumn#RptSidebar #RptSidebarWrapper .pgSection:not([class*=" sectHlt"]) .hlt15:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn#RptSidebar #RptSidebarWrapper .pgSection:not([class*=" sectHlt"]) .hlt15 *:not(.svgNoFill) {
+    fill: black !important;
+  }
+  .rpt.Universal.Greyscale .mainColumn#RptSidebar #RptSidebarWrapper .pgSection:not([class*=" sectHlt"]) .hlt15:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn#RptSidebar #RptSidebarWrapper .pgSection:not([class*=" sectHlt"]) .hlt15 *:not(.svgNoStroke) {
+    stroke: black !important;
+  }
+  .rpt.Universal.Greyscale .mainColumn#RptSidebar #RptSidebarWrapper .ipNextSteps .sectionHeader:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn#RptSidebar #RptSidebarWrapper .ipNextSteps .sectionHeader *:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn#RptSidebar #RptSidebarWrapper .ipSidebarHeader:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn#RptSidebar #RptSidebarWrapper .ipSidebarHeader *:not(.svgNoFill) {
+    fill: black !important;
+  }
+  .rpt.Universal.Greyscale .mainColumn#RptSidebar #RptSidebarWrapper .ipNextSteps .sectionHeader:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn#RptSidebar #RptSidebarWrapper .ipNextSteps .sectionHeader *:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn#RptSidebar #RptSidebarWrapper .ipSidebarHeader:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn#RptSidebar #RptSidebarWrapper .ipSidebarHeader *:not(.svgNoStroke) {
+    stroke: black !important;
+  }
+  .rpt.Universal.Greyscale .mainColumn#RptSidebar #RptSidebarWrapper .ipSidebarHeader .ipHeaderCircleSvg:not(.svgNoStroke) {
+    stroke: #a4a4a4 !important;
+  }
+  .rpt.Universal.Greyscale .mainColumn#RptSidebar .ipSidebarHeader:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn#RptSidebar .ipSidebarHeader *:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn#RptSidebar .ipNextSteps svg:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn#RptSidebar .ipNextSteps svg *:not(.svgNoFill) {
+    fill: black !important;
+  }
+  .rpt.Universal.Greyscale .mainColumn#RptSidebar .ipSidebarHeader:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn#RptSidebar .ipSidebarHeader *:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn#RptSidebar .ipNextSteps svg:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn#RptSidebar .ipNextSteps svg *:not(.svgNoStroke) {
+    stroke: black !important;
+  }
+  .rpt.Universal.Greyscale .mainColumn:not(#RptSidebar) .ipNextSteps .sectionHeader svg:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn:not(#RptSidebar) .ipNextSteps .sectionHeader svg *:not(.svgNoFill) {
+    fill: black !important;
+  }
+  .rpt.Universal.Greyscale .mainColumn:not(#RptSidebar) .ipNextSteps .sectionHeader svg:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn:not(#RptSidebar) .ipNextSteps .sectionHeader svg *:not(.svgNoStroke) {
+    stroke: black !important;
+  }
+  .rpt.Universal.Greyscale .mainColumn .sectInstr .hlt15:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn .sectInstr .hlt15 *:not(.svgNoFill) {
+    fill: black !important;
+  }
+  .rpt.Universal.Greyscale .mainColumn .sectInstr .hlt15:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn .sectInstr .hlt15 *:not(.svgNoStroke) {
+    stroke: black !important;
+  }
+  .rpt.Universal.Greyscale .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medStart:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medStart *:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medChange:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medChange *:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medStop:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medStop *:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medAsk:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medAsk *:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medContinue:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medContinue *:not(.svgNoFill) {
+    fill: black !important;
+  }
+  .rpt.Universal.Greyscale .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medStart:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medStart *:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medChange:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medChange *:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medStop:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medStop *:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medAsk:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medAsk *:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medContinue:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn .sectInstr li.todoItem.todoMeds .medChangeGroup.medContinue *:not(.svgNoStroke) {
+    stroke: black !important;
+  }
+  .rpt.Universal.Greyscale .mainColumn .sectMedList .dispoIconCell.medStart:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn .sectMedList .dispoIconCell.medStart *:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn .sectMedList .dispoIconCell.medChange:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn .sectMedList .dispoIconCell.medChange *:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn .sectMedList .dispoIconCell.medStop:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn .sectMedList .dispoIconCell.medStop *:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn .sectMedList .dispoIconCell.medAsk:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn .sectMedList .dispoIconCell.medAsk *:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn .sectMedList .dispoIconCell.medContinue:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn .sectMedList .dispoIconCell.medContinue *:not(.svgNoFill) {
+    fill: black !important;
+  }
+  .rpt.Universal.Greyscale .mainColumn .sectMedList .dispoIconCell.medStart:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn .sectMedList .dispoIconCell.medStart *:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn .sectMedList .dispoIconCell.medChange:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn .sectMedList .dispoIconCell.medChange *:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn .sectMedList .dispoIconCell.medStop:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn .sectMedList .dispoIconCell.medStop *:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn .sectMedList .dispoIconCell.medAsk:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn .sectMedList .dispoIconCell.medAsk *:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn .sectMedList .dispoIconCell.medContinue:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn .sectMedList .dispoIconCell.medContinue *:not(.svgNoStroke) {
+    stroke: black !important;
+  }
+  .rpt.Universal.Greyscale .mainColumn .newBubble {
+    color: black;
+    background-color: white;
+    border-color: #404040;
+  }
+  .rpt.Universal.Greyscale .mainColumn .goalBox .mostRecent.textOnly, .rpt.Universal.Greyscale .mainColumn .sectTodaysGoals .mostRecent.textOnly {
+    color: black !important;
+    background-color: transparent;
+    border: 1px solid #404040;
+  }
+  .rpt.Universal.Greyscale .mainColumn .goalBox.bad .mostRecent.textOnly, .rpt.Universal.Greyscale .mainColumn .sectTodaysGoals .mostRecent.textOnly.bad {
+    background-color: transparent;
+    border: 1px solid #404040;
+  }
+  .rpt.Universal.Greyscale .mainColumn .goalBox.good .mostRecent, .rpt.Universal.Greyscale .mainColumn .goalBox.bad .mostRecent {
+    color: black;
+  }
+  .rpt.Universal.Greyscale .mainColumn .good, .rpt.Universal.Greyscale .mainColumn .bad, .rpt.Universal.Greyscale .mainColumn .avsCheckMark, .rpt.Universal.Greyscale .mainColumn .sectTodaysGoals .rptList li .mostRecent.textOnly .good, .rpt.Universal.Greyscale .mainColumn .sectVitals .trendLabel, .rpt.Universal.Greyscale .mainColumn .sectVitals .greenCheck,
+.rpt.Universal.Greyscale .mainColumn .sectTodaysGoals .rptList li .mostRecent.textOnly .avsCheckMark {
+    fill: black;
+  }
+  .rpt.Universal.Greyscale .mainColumn .label, .rpt.Universal.Greyscale .mainColumn .goalBox .placeholder {
+    fill: #404040;
+  }
+  .rpt.Universal.Greyscale .mainColumn .goodStroke {
+    stroke: black;
+  }
+  .rpt.Universal.Greyscale .mainColumn .pgSection:not([class*=" sectHlt"]) .vitalsTrend .hlt15.good, .rpt.Universal.Greyscale .mainColumn .pgSection:not([class*=" sectHlt"]) .vitalsTrend .hlt15.good *:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn#RptSidebar #RptSidebarWrapper .pgSection:not([class*=" sectHlt"]) .vitalsTrend .hlt15.good, .rpt.Universal.Greyscale .mainColumn#RptSidebar #RptSidebarWrapper .pgSection:not([class*=" sectHlt"]) .vitalsTrend .hlt15.good *:not(.svgNoFill) {
+    color: black !important;
+    fill: black !important;
+  }
+  .rpt.Universal.Greyscale .mainColumn .pastVal, .rpt.Universal.Greyscale .mainColumn .good .pastVal, .rpt.Universal.Greyscale .mainColumn .bad .pastVal, .rpt.Universal.Greyscale .mainColumn.rptSidebar .pastVal, .rpt.Universal.Greyscale .mainColumn.rptSidebar .good .pastVal, .rpt.Universal.Greyscale .mainColumn.rptSidebar .bad .pastVal {
+    fill: #404040;
+  }
+  .rpt.Universal.Greyscale .mainColumn [title=redIcon]:not(.svgNoFill), .rpt.Universal.Greyscale .mainColumn [title=redIcon] *:not(.svgNoFill) {
+    fill: black !important;
+  }
+  .rpt.Universal.Greyscale .mainColumn [title=redIcon]:not(.svgNoStroke), .rpt.Universal.Greyscale .mainColumn [title=redIcon] *:not(.svgNoStroke) {
+    stroke: black !important;
+  }
+}
+.section .report {
+  max-width: 8.5in;
+  width: auto;
+  padding: 0 0.5in !important;
+  padding-top: 0.5in !important;
+}
+
+.rpt.Universal .mainColumn .hlt14, .rpt.Universal .mainColumn .hlt16, .rpt.Universal .mainColumn .hlt1 {
+  font-weight: 600;
+}
+.rpt.Universal .mainColumn .hlt3, .rpt.Universal .mainColumn .hlt6, .rpt.Universal .mainColumn .hlt7, .rpt.Universal .mainColumn .hlt32, .rpt.Universal .mainColumn .hlt107, .rpt.Universal .mainColumn .hlt512, .rpt.Universal .mainColumn .hlt1024 {
+  margin-bottom: 2px;
+}
+.rpt.Universal .mainColumn .mirroredHeader .title, .rpt.Universal .mainColumn .mirroredSection .title {
+  display: block !important;
+}
+.rpt.Universal .mainColumn .groupHeader .groupHeaderTitle {
+  display: block;
+  width: 100%;
+  background-color: white;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+.rpt.Universal .mainColumn table.fmtConvTable:not(.fmtConvDisableOverrides) td {
+  word-wrap: break-word !important;
+}
+.rpt.Universal .mainColumn .attachmentInstr .userContentUrls {
+  display: none;
+}
+.rpt.Universal .mainColumn .sectVitals .vitalsItem:not(.goalVital) .iconValueContainer > .textContainer .vitalsLabel {
+  line-height: 1.3;
+}
+
+@media only screen and (max-width: 768px) {
+  .section .report {
+    width: 100%;
+    max-width: 8.5in;
+    padding: 8px !important;
+    margin: 0;
+    box-shadow: none;
+    overflow: scroll;
+  }
+  .section .report .rpt .fs12, .section .report .rpt .fs14, .section .report .rpt .fs18 {
+    font-size: 10pt;
+  }
+
+  .rpt.Universal .mainColumn pgSection .sectionHeader .subtitle {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+}
+.rpt.Universal .mainColumn .medListContainer.mobileMedList, .rpt.Universal .mainColumn .mobileContainer.mobileDisplay {
+  display: none;
+}
+.rpt.Universal .mainColumn .sectInsulin .pgSection.notNextToSidebar {
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  #RptSidebar {
+    display: none !important;
+  }
+
+  .rpt.Universal .mainColumn:not(.rptSidebar) .pgSection[data-plugin-sidebar-content="1"] {
+    display: block !important;
+  }
+  .rpt.Universal .mainColumn.hasRightSidebar {
+    width: auto !important;
+  }
+  .rpt.Universal .mainColumn .mirroredSection .iconValueWrapper > .iconValueBody > .iconValueContainer > .textContainer {
+    padding-left: 0px;
+  }
+  .rpt.Universal .mainColumn .mirroredSection .title > table {
+    table-layout: fixed;
+    word-wrap: break-word;
+  }
+  .rpt.Universal .mainColumn .pgSection:not(.mirroredSection) > .sectionHeader .subtitle {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  .rpt.Universal .mainColumn .pgSection:not(.mirroredSection) .rightDetail {
+    display: block;
+    float: none;
+    text-align: left;
+    padding-left: 0;
+    margin-top: 0 !important;
+    padding-bottom: 4px;
+  }
+
+  .rpt.Universal .mainColumn .headerAVS .docHeader {
+    text-align: center;
+    padding-bottom: 6px;
+  }
+  .rpt.Universal .mainColumn .headerAVS .docHeader .title {
+    text-transform: none;
+    font-size: 1.6em;
+  }
+  .rpt.Universal .mainColumn .headerAVS .headerTopRight {
+    display: block;
+    float: none;
+    text-align: center;
+  }
+  .rpt.Universal .mainColumn .headerAVS .headerTop:not(.accessible) .headerTopLeft {
+    position: static;
+  }
+  .rpt.Universal .mainColumn .headerAVS .headerBottomLeft, .rpt.Universal .mainColumn .headerAVS .headerBottomRight {
+    float: none;
+    text-align: initial;
+  }
+  .rpt.Universal .mainColumn .headerAVS .headerBottom .avoidWrap {
+    display: inline-block;
+    word-break: break-word;
+  }
+  .rpt.Universal .mainColumn .todoMeds .textContainer {
+    max-width: 200px;
+    word-wrap: break-word;
+  }
+  .rpt.Universal .mainColumn .todoMeds .medChangeGroup li div span {
+    display: inline-block;
+  }
+  .rpt.Universal .mainColumn .todoItem .mirroredSection .pgContent > table > tbody > tr > td {
+    display: block !important;
+    width: auto;
+  }
+  .rpt.Universal .mainColumn:not(.rptSidebar) .sectVitals .vitalsItem {
+    width: 48%;
+  }
+  .rpt.Universal .mainColumn:not(.rptSidebar) .sectVitals .vitalsItem.growthChartTitle, .rpt.Universal .mainColumn:not(.rptSidebar) .sectVitals .vitalsItem.goalVital, .rpt.Universal .mainColumn:not(.rptSidebar) .sectVitals .vitalsItem.vitalsTrend {
+    width: 100%;
+    display: block;
+  }
+  .rpt.Universal .mainColumn:not(.rptSidebar) .sectVitals .vitalsItem.nonSidebarOnly {
+    display: none !important;
+  }
+  .rpt.Universal .mainColumn:not(.rptSidebar) .sectVitals .fullWidthVital {
+    width: 100% !important;
+    display: block !important;
+  }
+  .rpt.Universal .mainColumn .medListContainer:not(.mobileMedList), .rpt.Universal .mainColumn .mobileContainer:not(.mobileDisplay) {
+    display: none !important;
+  }
+  .rpt.Universal .mainColumn .medListContainer.mobileMedList, .rpt.Universal .mainColumn .mobileContainer.mobileDisplay {
+    display: block !important;
+  }
+  .rpt.Universal .mainColumn .sectMedList .todHeader {
+    padding-top: 3px;
+    font-weight: 600;
+    font-size: 1.05em;
+  }
+  .rpt.Universal .mainColumn .sectMedList .todList {
+    margin-left: 30px;
+    width: calc(100% - 30px);
+  }
+  .rpt.Universal .mainColumn .sectMedList .todListIcon {
+    position: relative;
+    top: 4px;
+  }
+  .rpt.Universal .mainColumn .sectMedList .todIcon > svg {
+    margin-bottom: -2px;
+  }
+  .rpt.Universal .mainColumn .sectMedList .dispoIconCell {
+    padding-right: 5px !important;
+  }
+  .rpt.Universal .mainColumn .sectMedList .dispoIconCell svg {
+    width: 3em;
+  }
+  .rpt.Universal .mainColumn .sectMedList .medColumnName {
+    font-weight: 600;
+    font-size: 1.05em;
+    padding-top: 6px;
+  }
+  .rpt.Universal .mainColumn .sectMedList .medColDataWrapper {
+    margin-left: 30px;
+  }
+  .rpt.Universal .mainColumn .sectResult .tableResult {
+    table-layout: auto !important;
+  }
+  .rpt.Universal .mainColumn .sectResult .tableResult .cellComponentResult, .rpt.Universal .mainColumn .sectResult .tableResult .tdIndentedCell, .rpt.Universal .mainColumn .sectResult .tableResult .contentCell {
+    display: table-row !important;
+    width: auto !important;
+  }
+  .rpt.Universal .mainColumn .sectResult .tableResult .cellComponentResult {
+    border-top: 1px solid #cecece;
+  }
+  .rpt.Universal .mainColumn .sectResult .tableResult tr:not(.trRowLines) .cellComponentResult:nth-child(1) {
+    border-top: 0;
+  }
+  .rpt.Universal .mainColumn .sectResult .tableResult > tbody > tr {
+    border-top: 0 !important;
+  }
+  .rpt.Universal .mainColumn .sectResult > .sectionHeader {
+    padding-right: 6px;
+  }
+  .rpt.Universal .mainColumn .sectInsulin .mobilePump {
+    display: inline-block;
+    white-space: nowrap;
+    margin: 0.5em;
+    width: auto;
+  }
+  .rpt.Universal .mainColumn .sectInsulin .mobileMeal {
+    display: block;
+    white-space: normal;
+    width: auto;
+  }
+  .rpt.Universal .mainColumn .sectInsulin .mobileMeal .correctionTable td:last-child, .rpt.Universal .mainColumn .sectInsulin .mobileMeal .correctionTable th:last-child {
+    padding-right: 10px;
+  }
+  .rpt.Universal .mainColumn .sectInsulin .mobileMeal .carbTable td:last-child:not(.columnHeader), .rpt.Universal .mainColumn .sectInsulin .mobileMeal .carbTable th:last-child {
+    padding-right: 10px;
+  }
+  .rpt.Universal .mainColumn .sectInsulin .mobileMeal + td:not(.mobileMeal) {
+    width: 0px;
+  }
+  .rpt.Universal .mainColumn .sectInfoOnFile.mirroredSection .pgContent > table > tbody > tr > td {
+    display: block !important;
+    width: auto;
+  }
+  .rpt.Universal .mainColumn .ipWhatsNextTable {
+    table-layout: auto !important;
+  }
+  .rpt.Universal .mainColumn .ipWhatsNextTable .ipWhatsNextCell {
+    display: table-row !important;
+    width: auto !important;
+  }
+  .rpt.Universal .mainColumn .sectInstr.mirroredSection .iconValueWrapper > .iconValueBody > .iconValueContainer > .svgIcon, .rpt.Universal .mainColumn .sectVitals.mirroredSection .iconValueWrapper > .iconValueBody > .iconValueContainer > .svgIcon {
+    text-align: center;
+    display: block;
+  }
+  .rpt.Universal .mainColumn .sectInstr.mirroredSection .iconValueWrapper > .iconValueBody > .iconValueContainer > .textContainer, .rpt.Universal .mainColumn .sectVitals.mirroredSection .iconValueWrapper > .iconValueBody > .iconValueContainer > .textContainer {
+    display: block;
+  }
+  .rpt.Universal .mainColumn .sectVitals.mirroredSection .vitalsItem .iconValueWrapper .iconValueContainer > .svgIcon {
+    width: 100%;
+  }
+  .rpt.Universal .mainColumn .mirroredSection .todoMeds .iconValueWrapper .textContainer {
+    max-width: none;
+  }
+  .rpt.Universal .mainColumn .headerAVS.rtlBilingual table, .rpt.Universal .mainColumn .mirroredSection .sectReasonForVisit table, .rpt.Universal .mainColumn .sectAppts.mirroredSection table {
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+  .rpt.Universal .mainColumn .sectInstr.mirroredSection .todoItem:not(.todoMeds) table, .rpt.Universal .mainColumn .medListContainer .mirroredSection .medListTable table {
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  .rpt.Universal .mainColumn .sectMedList .dispoIconCell.miniDispoIcon svg {
+    height: 1.3em;
+    width: 1.3em;
+    margin-top: 4px;
+  }
+  .rpt.Universal .mainColumn .sectMedList .dispoCommentRTL {
+    margin-left: 23px;
+    margin-right: 23px;
+    margin-top: 0px;
+  }
+}
+/* ======================== 
+   MyChart overrides
+  ======================== */
+#RptSidebar.right {
+  text-align: left;
+}
+
+.report * {
+  box-sizing: content-box;
+}
+
+#printbar ~ #main > .title,
+#printbar ~ #main > #visittabs {
+  display: none !important;
+}
+
+.section .report img {
+  margin: auto;
+}
+
+.section .report .fmtConv ul ul {
+  margin: 0 !important;
+}

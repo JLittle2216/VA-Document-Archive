@@ -1,0 +1,80 @@
+﻿/* Copyright 2018 Epic Systems Corporation */
+div.sidetab {
+  background-color: #ffffff;
+  border-color: #eaeaea;
+  border-style: solid;
+  border-width: 1px;
+  margin: 0 0 0 13rem;
+  min-height: 13rem;
+  padding: 0.5rem 0.5rem 1.5rem;
+  width: auto;
+}
+div.sidetab ul.sectiontabs {
+  margin: calc(-0.5rem - 1px) 0 0 -13rem;
+  width: 12.5rem;
+}
+div.sidetab ul.sectiontabs:after {
+  content: "";
+  display: block;
+  height: 1px;
+  margin: -100% 0 0;
+}
+div.sidetab ul.sectiontabs li {
+  background-color: #eaeaea;
+  background-image: linear-gradient(to bottom, #f8f8f8 0%, #eaeaea 100%);
+  border-color: #eaeaea #dbdbdb #eaeaea #eaeaea;
+  border-style: solid none solid solid;
+  border-width: 1px 0 2px 1px;
+  height: 3.5rem;
+}
+div.sidetab ul.sectiontabs li.selected {
+  background-color: #ffffff;
+  background-image: none;
+}
+div.sidetab ul.sectiontabs li + li {
+  border-top: 0 none;
+}
+div.sidetab ul li a {
+  display: block;
+  height: 100%;
+  padding: 0;
+}
+div.sidetab ul.sectiontabs li a .tabname {
+  display: inline-block;
+  font-weight: bold;
+  height: 100%;
+  padding: 0.5rem 0.25rem;
+  vertical-align: middle;
+}
+div.sidetab ul.sectiontabs li a .subtitle {
+  display: block;
+  font-size: 0.8em;
+  width: 100%;
+}
+div.sidetab ul li img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+}
+div.sidetab div.tabcontent {
+  padding-top: 20px;
+}
+div.sidetab div.tabcontent div.content {
+  padding: 0 20px;
+}
+div.sidetab div.tabcontent > div > p {
+  margin: 0 20px 20px 20px;
+  clear: none;
+}
+
+.section .content .intab span.alert {
+  display: block;
+}
+.section .content .intab p.helptext,
+.section .content .intab span.alert {
+  width: auto;
+}
+
+.section .sidetab a.button {
+  font-size: 0.9em;
+}

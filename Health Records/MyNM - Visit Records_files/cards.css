@@ -1,0 +1,577 @@
+﻿/* Copyright 2018-2022 Epic Systems Corporation */
+.cardlist {
+  margin: 0.5rem 0;
+  width: 100%;
+}
+.header + .cardlist {
+  margin-top: 0;
+}
+
+.card {
+  border-radius: 6px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  display: inline-block;
+  margin: 0.25rem 0.5%;
+  min-height: 6rem;
+  padding: 0.5rem;
+  position: relative;
+  vertical-align: top;
+  width: 99%;
+  line-height: 1.25rem;
+}
+.card ._Choice ._DataEntryLabel {
+  border: 1px solid #dbdbdb;
+}
+.card.withButton {
+  padding-bottom: 3rem;
+}
+.mobile .card.withButton {
+  padding-bottom: 4rem;
+}
+.card.withSubtleActions, .mobile .card.withSubtleActions {
+  padding-bottom: 0;
+}
+.cardlist.shortcards > .card, .cardlist.shortcards > .row > .card {
+  min-height: 5rem;
+}
+.cardlist.tinycards > .card, .cardlist.tinycards > .row > .card {
+  min-height: 4rem;
+}
+.cardlist.column_1 > .card {
+  margin: 0.25rem 0;
+  width: 100%;
+}
+.cardlist.column_2 > .card {
+  width: 49.5%;
+}
+.cardlist.column_2 > .card:nth-of-type(odd) {
+  margin-left: 0;
+}
+.cardlist.column_2 > .card:nth-of-type(even) {
+  margin-right: 0;
+}
+.cardlist.column_3 > .card {
+  width: 32.66%;
+}
+.cardlist.column_3 > .card:nth-of-type(3n + 1) {
+  margin-left: 0;
+}
+.cardlist.column_3 > .card:nth-of-type(3n) {
+  margin-right: 0;
+}
+.cardlist.column_4 > .card {
+  width: 24.25%;
+}
+.cardlist.column_4 > .card:nth-of-type(4n + 1) {
+  margin-left: 0;
+}
+.cardlist.column_4 > .card:nth-of-type(4n) {
+  margin-right: 0;
+}
+.card .arrow {
+  position: absolute;
+  width: 20px;
+  right: 0px;
+  top: calc(50% - 12px);
+}
+.card .arrow svg {
+  height: 20px;
+  width: 20px;
+}
+@media print {
+  .card {
+    margin-left: 0;
+    -webkit-region-break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+  .card:not(.noprint):not(.hidden) {
+    display: block;
+  }
+}
+
+.innercard {
+  border-color: transparent #eaeaea;
+  border-style: none solid;
+  border-width: 0 1px;
+  display: inline-block;
+  margin-right: -1px;
+  padding: 0.25rem 0.5rem;
+  position: relative;
+  vertical-align: top;
+  width: 100%;
+}
+.innercard:first-of-type {
+  left: 0;
+}
+.cardlist.noBorder > .innercard {
+  border-color: transparent;
+}
+.cardlist.column_1 > .innercard {
+  border: none;
+  width: 100%;
+}
+.cardlist.column_2 > .innercard {
+  width: calc(50% + 1px);
+}
+.cardlist.column_2 > .innercard:nth-of-type(odd) {
+  border-left: none;
+}
+.cardlist.column_2 > .innercard:nth-of-type(even) {
+  border-right: none;
+}
+.cardlist.column_2 > .innercard.double {
+  border: none;
+  width: 100%;
+}
+.cardlist.column_3 > .innercard {
+  width: calc(33.33% + 1px);
+}
+.cardlist.column_3 > .innercard:nth-of-type(3n + 1) {
+  border-left: none;
+}
+.cardlist.column_3 > .innercard:nth-of-type(3n), .cardlist.column_3 > .innercard.double:nth-of-type(3n + 2) {
+  border-right: none;
+}
+.cardlist.column_3 > .innercard.double {
+  width: calc(66.67% + 1px);
+}
+.cardlist.column_3 > .innercard.triple {
+  border: none;
+  width: 100%;
+}
+.cardlist.column_4 > .innercard {
+  width: calc(25% + 1px);
+}
+.cardlist.column_4 > .innercard:nth-of-type(4n + 1) {
+  border-left: none;
+}
+.cardlist.column_4 > .innercard:nth-of-type(4n), .cardlist.column_4 > .innercard.double:nth-of-type(4n + 3), .cardlist.column_4 > .innercard.triple:nth-of-type(4n + 2) {
+  border-right: none;
+}
+.cardlist.column_4 > .innercard.double {
+  width: calc(50% + 1px);
+}
+.cardlist.column_4 > .innercard.triple {
+  width: calc(75% + 1px);
+}
+
+.card .buttonList {
+  bottom: 0;
+  min-height: 3rem;
+  padding: 0.5rem;
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.card .buttonList .button {
+  margin-right: 0.5rem;
+  margin-bottom: 0;
+  width: auto;
+}
+.card .buttonList .button:last-child {
+  margin-right: 0;
+}
+.card .buttonList.subtle {
+  border-radius: 0 0 6px 6px;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  margin-top: 0.5rem;
+  min-height: 0;
+  padding: 0;
+  position: static;
+}
+.card .buttonList.subtle .button {
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  align-items: center;
+  border-top: 1px solid #dbdbdb;
+  color: #7571B0;
+  cursor: pointer;
+  display: flex;
+  margin: 0;
+  min-height: 38px;
+  padding: 0.2025rem 0.5rem;
+  text-align: left;
+  width: 100%;
+}
+.card .buttonList.subtle .button:last-child {
+  border-radius: 0 0 6px 6px;
+}
+@media screen and (max-width: 768px) {
+  .card .buttonList.subtle .button {
+    padding: 0.5rem;
+  }
+}
+.mobile .card .buttonList.subtle .button {
+  padding: 0.5rem;
+}
+.card .buttonList.subtle .button.positive {
+  color: #00778a;
+}
+.card .buttonList.subtle .button.negative {
+  color: #d94f57;
+}
+.card .buttonList.subtle .button:focus, .card .buttonList.subtle .button:hover, .card .buttonList.subtle .button:active {
+  background-color: #f4f4f9;
+  text-decoration: none;
+}
+.card .buttonList.subtle .button > * {
+  vertical-align: middle;
+}
+.card .buttonList.subtle .button svg,
+.card .buttonList.subtle .button img {
+  height: 30px;
+  width: auto;
+  max-width: 30px;
+  margin-right: 0.5rem;
+  fill: currentColor;
+  flex: 1 0 auto;
+}
+.card .buttonList.subtle .button {
+  background-color: transparent;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.card .buttonList .button:first-child,
+.card .buttonList.subtle .button:first-child {
+  margin-left: 0;
+}
+.card .buttonList .button:last-child,
+.card .buttonList.subtle .button:last-child {
+  margin-right: 0;
+}
+
+.card .cardline {
+  display: block;
+  font-size: 0.9rem;
+  line-height: 1.1rem;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+.card .cardline.partial {
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+}
+.card .cardline.halfwidth {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+.card .cardline.partial.right {
+  position: absolute;
+  right: 0.5rem;
+}
+.card .cardline.withPopup {
+  overflow: visible;
+  text-overflow: unset;
+}
+.card .cardline.leaveSpace {
+  margin-bottom: 0.5rem;
+}
+.card .cardline.bottom {
+  position: absolute;
+  bottom: 0.5rem;
+}
+.card .cardline.bottom:not(.partial) {
+  left: 0.5rem;
+  right: 0.5rem;
+  width: auto;
+}
+.card .cardline.address {
+  white-space: pre-wrap;
+}
+.card .cardheader {
+  margin: -0.5rem;
+  padding: 0.5rem 0.5rem;
+  width: calc(100% + 1rem);
+  max-width: calc(100% + 1rem);
+  background: #f4f4f9;
+}
+.card .name {
+  font-size: 1.1rem;
+  line-height: 1.25rem;
+  margin: 0;
+  padding: 0;
+}
+.card .name.large {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+.card .name .coverageName {
+  display: inline-block;
+  font-size: 1.1rem;
+  padding: 0;
+  margin-bottom: 0.4rem;
+  width: auto;
+}
+.card .name.small {
+  font-size: 0.9rem;
+  line-height: 1rem;
+  word-break: break-word;
+}
+.card .name.icon, .card .name.icon + .cardline {
+  width: calc(100% - 3rem);
+}
+.card .name.icon:after, .card .name.icon > div.iconcontainer {
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  display: block;
+  height: 2.5rem;
+  margin: 0.5rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 2.5rem;
+}
+.card .name.partial + .partial.right {
+  line-height: 1.375rem;
+  margin-bottom: -0.125rem;
+}
+.card.addItem {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 2px dashed #cccccc;
+  box-shadow: none;
+  min-height: 6rem;
+  text-align: center;
+}
+.card.addItem:before {
+  display: none;
+}
+.card.addItem:not(.hasAddMessage) {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 0;
+}
+.card.addItem:not(.hasAddMessage) a {
+  display: flex;
+  align-items: center;
+  min-height: 6rem;
+  flex-grow: 1;
+}
+.card.addItem.hasAddMessage .vcenter {
+  line-height: 1.75rem;
+}
+.card.addItem.hover {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  border-color: transparent;
+}
+.card.addItem a {
+  height: 100%;
+  width: 100%;
+}
+.card.addItem .vcenter {
+  width: 100%;
+}
+.card.addItem .vcentertablecell {
+  display: table-cell;
+  vertical-align: middle;
+  padding-top: 0.5rem;
+  width: 100%;
+}
+.card.addItem .vcentertablecell .addMessage {
+  display: block;
+  margin: 0.25rem 1rem;
+  line-height: 1rem;
+  font-size: 0.9rem;
+  color: #767676;
+}
+.card.addItem .addlabel {
+  vertical-align: middle;
+}
+.card.addItem .addlabel:before {
+  content: "+";
+  display: inline-block;
+  font-size: 2.5rem;
+  margin: 0 0.25rem 0 0;
+  vertical-align: top;
+}
+.card.hasBadge div.badge {
+  width: 28%;
+  display: inline-block;
+  text-align: right;
+}
+.card.hasBadge div {
+  width: 70%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.cardlist.selectable .card {
+  cursor: pointer;
+}
+.cardlist.selectable .card.selected:before {
+  border-radius: 6px 0 0 6px;
+  background-color: #7571B0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 0.3rem;
+  z-index: 1;
+}
+.cardlist.selectable.multiselect .card, .cardlist.selectable.autoadvance .card {
+  padding-right: 1.75rem;
+}
+.cardlist.selectable.multiselect .card.selected, .cardlist.selectable.autoadvance .card.selected {
+  border: 2px solid #7571B0;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: none;
+  padding: calc(0.5rem - 2px);
+  padding-right: calc(1.75rem - 2px);
+}
+.cardlist.selectable.multiselect .card:before, .cardlist.selectable.autoadvance .card:before {
+  content: "";
+  left: unset;
+  width: 1.5rem;
+  position: absolute;
+  right: 3px;
+}
+.cardlist.selectable.autoadvance .card.selected:before {
+  display: none;
+  padding-right: 0.5rem;
+}
+.cardlist.selectable.autoadvance .card:before {
+  background: url("../images/arrow.svg") no-repeat center 50%/16px;
+  height: 100%;
+  top: 0;
+}
+.cardlist.selectable.multiselect .card:before {
+  height: 1.5rem;
+  background: url("../images/checkbox_unchecked.svg") no-repeat center 50%/18px;
+  top: 3px;
+}
+.cardlist.selectable.multiselect .card.selected:before {
+  background-image: url("../images/checkbox_checked.svg");
+  top: 1px;
+  right: 1px;
+}
+
+html[dir=rtl] .cardlist.selectable.autoadvance .card:before {
+  transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+}
+
+.cardlist.selectable.selectionMade .card {
+  box-shadow: none;
+  opacity: 0.75;
+}
+.cardlist.selectable.selectionMade .card:hover, .cardlist.selectable.selectionMade .card:focus, .cardlist.selectable.selectionMade .card.selected {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  opacity: 1;
+}
+
+.cardlist.buttonCards .card {
+  font-weight: bold;
+  margin: 0 0.5% 0.5rem;
+  min-height: 2.5rem;
+  min-width: 9rem;
+  text-align: center;
+  width: auto;
+}
+
+.card.tableLayout > div {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.receipt .titlebar {
+  border-radius: 6px 6px 0 0;
+  background: #7571B0 none;
+  color: #ffffff;
+  left: -0.5rem;
+  max-width: none;
+  padding: 0.5rem;
+  position: relative;
+  top: -0.5rem;
+  width: calc(100% + 1rem);
+}
+.receipt .receiptsection {
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2);
+  padding: 0 0 0.5rem;
+  margin: 0 0 0.5rem;
+}
+.receipt .receiptsection:last-child {
+  box-shadow: none;
+  margin: 0;
+}
+.receipt .receiptsection .receiptline {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  margin: 0 0 0.25rem;
+}
+.receipt .receiptsection .receiptline.name {
+  color: #7571B0;
+  font-size: 1rem;
+  margin: 0 0 0.5rem;
+}
+.receipt .receiptsection .receiptline:last-child {
+  margin: 0;
+}
+.receipt .receiptsection .receiptline .item {
+  display: inline-block;
+  vertical-align: top;
+  width: 60%;
+}
+.receipt .receiptsection .receiptline .value {
+  display: inline-block;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+  width: 40%;
+}
+.receipt .receiptsection .receiptline.name .value {
+  color: #363636;
+}
+
+.card.helptip {
+  border-radius: 6px;
+  box-shadow: none;
+  border: 1px solid #dbdbdb;
+  padding: 1rem 1rem 1rem 3.2rem;
+  background: url("../images/info.png") no-repeat scroll left 0.7rem center #ffffd0;
+  background-size: 2rem 2rem;
+  min-height: auto;
+  min-height: initial;
+}
+.card.helptip.success {
+  background-image: url("../images/success.svg");
+  padding-top: 0;
+}
+.card.helptip.noicon {
+  background-image: none;
+  padding-left: 1rem;
+}
+
+a.card.addItem {
+  color: #7571B0;
+}
+a.card.addItem:hover {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  color: #67639b;
+  background-color: #ffffff;
+  border-color: transparent;
+}
+
+@media not print {
+  @media (min-width: 769px) {
+    .cardlist.row.differentHeights .card,
+.cardlist.row .card.differentHeights {
+      height: -moz-fit-content;
+      height: fit-content;
+    }
+  }
+}

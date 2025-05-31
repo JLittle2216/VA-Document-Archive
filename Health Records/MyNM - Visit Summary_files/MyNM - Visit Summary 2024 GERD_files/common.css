@@ -1,0 +1,5498 @@
+﻿/* Copyright 2018-2024 Epic Systems Corporation  */
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../../fonts/sourcesanspro-semibold-webfont.eot");
+  src: url("../../fonts/sourcesanspro-semibold-webfont.woff2") format("woff2"), url("../../fonts/sourcesanspro-semibold-webfont.woff") format("woff"), url("../../fonts/sourcesanspro-semibold-webfont.ttf") format("truetype"), url("../../fonts/sourcesanspro-semibold-webfont.svg#source_sans_prosemibold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../../fonts/sourcesanspro-semiboldit-webfont.eot");
+  src: url("../../fonts/sourcesanspro-semiboldit-webfont.woff2") format("woff2"), url("../../fonts/sourcesanspro-semiboldit-webfont.woff") format("woff"), url("../../fonts/sourcesanspro-semiboldit-webfont.ttf") format("truetype"), url("../../fonts/sourcesanspro-semiboldit-webfont.svg#source_sans_proSBdIt") format("svg");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../../fonts/sourcesanspro-it-webfont.eot");
+  src: url("../../fonts/sourcesanspro-it-webfont.woff2") format("woff2"), url("../../fonts/sourcesanspro-it-webfont.woff") format("woff"), url("../../fonts/sourcesanspro-it-webfont.ttf") format("truetype"), url("../../fonts/sourcesanspro-it-webfont.svg#source_sans_proitalic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../../fonts/sourcesanspro-regular-webfont.eot");
+  src: url("../../fonts/sourcesanspro-regular-webfont.woff2") format("woff2"), url("../../fonts/sourcesanspro-regular-webfont.woff") format("woff"), url("../../fonts/sourcesanspro-regular-webfont.ttf") format("truetype"), url("../../fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+/* #region mark tag*/
+mark {
+  background-color: #ffff00;
+}
+
+/* #endregion */
+html {
+  font-size: 13pt;
+  font-family: Source Sans Pro, Calibri, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  height: 100%;
+}
+
+.SECssSwitcher {
+  position: absolute;
+}
+
+body {
+  min-height: 100%;
+  line-height: 1.25rem;
+  min-width: 1280px;
+  width: 100%;
+  overflow-y: scroll;
+}
+body.tvmode, .mobile body {
+  overflow-y: auto;
+}
+body.PUpage {
+  min-width: 0;
+}
+body.graphicHeader:not(.isPrelogin):before, body.md_selftriage_load:before, body.md_landingpage_loadlandingpagedecisiontrees:before, body.md_selftriage_errorpage:before, body.graphicHeader.md_crossdeploymentscheduling_schedulefromtoken:before, body.graphicHeader.md_openscheduling_index:before, body.graphicHeader.md_openscheduling_standalone:before, body.graphicHeader.md_anonymoustelehealth_index:before, body.md_telemedicinehome_guestvisit:before, body.graphicHeader.md_onmyway_index:before, body.graphicHeader.md_standalone_signup:before, body.graphicHeader.md_anonymousscheduling_generateerrorviewfromtoken:before, body.md_proxyselect_index:before, body.graphicHeader.md_bedlogin_index:before, body.graphicHeader.md_react_index:before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  content: " ";
+  z-index: -2;
+  background-color: #7571B0;
+  background-image: none;
+}
+.darkmode body.graphicHeader:not(.isPrelogin):before, .darkmode body.md_selftriage_load:before, .darkmode body.md_landingpage_loadlandingpagedecisiontrees:before, .darkmode body.md_selftriage_errorpage:before, .darkmode body.graphicHeader.md_crossdeploymentscheduling_schedulefromtoken:before, .darkmode body.graphicHeader.md_openscheduling_index:before, .darkmode body.graphicHeader.md_openscheduling_standalone:before, .darkmode body.graphicHeader.md_anonymoustelehealth_index:before, .darkmode body.md_telemedicinehome_guestvisit:before, .darkmode body.graphicHeader.md_onmyway_index:before, .darkmode body.graphicHeader.md_standalone_signup:before, .darkmode body.graphicHeader.md_anonymousscheduling_generateerrorviewfromtoken:before, .darkmode body.md_proxyselect_index:before, .darkmode body.graphicHeader.md_bedlogin_index:before, .darkmode body.graphicHeader.md_react_index:before {
+  background-color: #454468;
+}
+
+body.graphicHeader:not(.isPrelogin):after, body.md_selftriage_load:after, body.md_landingpage_loadlandingpagedecisiontrees:after, body.md_selftriage_errorpage:after, body.graphicHeader.md_crossdeploymentscheduling_schedulefromtoken:after, body.graphicHeader.md_openscheduling_index:after, body.graphicHeader.md_openscheduling_standalone:after, body.graphicHeader.md_anonymoustelehealth_index:after, body.md_telemedicinehome_guestvisit:after, body.graphicHeader.md_onmyway_index:after, body.graphicHeader.md_standalone_signup:after, body.graphicHeader.md_anonymousscheduling_generateerrorviewfromtoken:after, body.md_proxyselect_index:after, body.graphicHeader.md_bedlogin_index:after, body.graphicHeader.md_react_index:after {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  content: " ";
+  z-index: -1;
+  background: transparent url("../images/background.svg") no-repeat scroll bottom center/cover;
+  will-change: transform;
+}
+body.graphicHeader:not(.isPrelogin) #content:after, body.md_selftriage_load #content:after, body.md_landingpage_loadlandingpagedecisiontrees #content:after, body.md_selftriage_errorpage #content:after, body.graphicHeader.md_crossdeploymentscheduling_schedulefromtoken #content:after, body.graphicHeader.md_openscheduling_index #content:after, body.graphicHeader.md_openscheduling_standalone #content:after, body.graphicHeader.md_anonymoustelehealth_index #content:after, body.md_telemedicinehome_guestvisit #content:after, body.graphicHeader.md_onmyway_index #content:after, body.graphicHeader.md_standalone_signup #content:after, body.graphicHeader.md_anonymousscheduling_generateerrorviewfromtoken #content:after, body.md_proxyselect_index #content:after, body.graphicHeader.md_bedlogin_index #content:after, body.graphicHeader.md_react_index #content:after {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.darkmode body.graphicHeader:not(.isPrelogin) #content:after, .darkmode body.md_selftriage_load #content:after, .darkmode body.md_landingpage_loadlandingpagedecisiontrees #content:after, .darkmode body.md_selftriage_errorpage #content:after, .darkmode body.graphicHeader.md_crossdeploymentscheduling_schedulefromtoken #content:after, .darkmode body.graphicHeader.md_openscheduling_index #content:after, .darkmode body.graphicHeader.md_openscheduling_standalone #content:after, .darkmode body.graphicHeader.md_anonymoustelehealth_index #content:after, .darkmode body.md_telemedicinehome_guestvisit #content:after, .darkmode body.graphicHeader.md_onmyway_index #content:after, .darkmode body.graphicHeader.md_standalone_signup #content:after, .darkmode body.graphicHeader.md_anonymousscheduling_generateerrorviewfromtoken #content:after, .darkmode body.md_proxyselect_index #content:after, .darkmode body.graphicHeader.md_bedlogin_index #content:after, .darkmode body.graphicHeader.md_react_index #content:after {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.tvmode body.graphicHeader:not(.isPrelogin) #content:after, .tvmode body.md_selftriage_load #content:after, .tvmode body.md_landingpage_loadlandingpagedecisiontrees #content:after, .tvmode body.md_selftriage_errorpage #content:after, .tvmode body.graphicHeader.md_crossdeploymentscheduling_schedulefromtoken #content:after, .tvmode body.graphicHeader.md_openscheduling_index #content:after, .tvmode body.graphicHeader.md_openscheduling_standalone #content:after, .tvmode body.graphicHeader.md_anonymoustelehealth_index #content:after, .tvmode body.md_telemedicinehome_guestvisit #content:after, .tvmode body.graphicHeader.md_onmyway_index #content:after, .tvmode body.graphicHeader.md_standalone_signup #content:after, .tvmode body.graphicHeader.md_anonymousscheduling_generateerrorviewfromtoken #content:after, .tvmode body.md_proxyselect_index #content:after, .tvmode body.graphicHeader.md_bedlogin_index #content:after, .tvmode body.graphicHeader.md_react_index #content:after {
+  background-color: rgba(255, 255, 255, 0.775);
+}
+.tvmode.darkmode body.graphicHeader:not(.isPrelogin) #content:after, .tvmode.darkmode body.md_selftriage_load #content:after, .tvmode.darkmode body.md_landingpage_loadlandingpagedecisiontrees #content:after, .tvmode.darkmode body.md_selftriage_errorpage #content:after, .tvmode.darkmode body.graphicHeader.md_crossdeploymentscheduling_schedulefromtoken #content:after, .tvmode.darkmode body.graphicHeader.md_openscheduling_index #content:after, .tvmode.darkmode body.graphicHeader.md_openscheduling_standalone #content:after, .tvmode.darkmode body.graphicHeader.md_anonymoustelehealth_index #content:after, .tvmode.darkmode body.md_telemedicinehome_guestvisit #content:after, .tvmode.darkmode body.graphicHeader.md_onmyway_index #content:after, .tvmode.darkmode body.graphicHeader.md_standalone_signup #content:after, .tvmode.darkmode body.graphicHeader.md_anonymousscheduling_generateerrorviewfromtoken #content:after, .tvmode.darkmode body.md_proxyselect_index #content:after, .tvmode.darkmode body.graphicHeader.md_bedlogin_index #content:after, .tvmode.darkmode body.graphicHeader.md_react_index #content:after {
+  background-color: rgba(0, 0, 0, 0.775);
+}
+
+@media screen {
+  body.scrollDisabled, #wrap.scrollDisabled, .mobile #wrap.scrollDisabled {
+    position: fixed;
+    overflow: clip;
+  }
+}
+
+/*#region CSS Grid Layout*/
+#content {
+  z-index: 1;
+  min-height: calc(100vh - var(--wp-header-height)) !important;
+  max-width: 1440px;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "main" "footer";
+  display: -ms-grid;
+  -ms-grid-columns: 100%;
+  -ms-grid-rows: 1fr;
+}
+.tvmode #content {
+  max-width: none;
+}
+#content.iFrameFullWidth {
+  max-width: 100%;
+}
+.mobile.removeMobileMaxWidth #content {
+  max-width: none;
+}
+#content #main {
+  grid-area: main;
+  display: block;
+  position: relative;
+  -ms-grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+}
+#content #footer {
+  grid-area: footer;
+  -ms-grid-column: 1;
+  -ms-grid-row: 2;
+}
+#content #sidebarFooter {
+  grid-area: sidebarFooter;
+}
+#content #mainFooter {
+  grid-area: mainFooter;
+}
+body.isPrelogin #content {
+  grid-template-columns: 100%;
+}
+body.isPrelogin #content #footer {
+  display: grid;
+  grid-template-areas: "mainFooter" "sidebarFooter";
+  grid-template-columns: 100%;
+}
+.mobile body.isPrelogin #content #footer {
+  display: none;
+}
+body.isPrelogin #content #mainFooter, body.isPrelogin #content #sidebarFooter {
+  padding: 0.5rem 1rem;
+}
+body.isPrelogin #content.midlogin {
+  grid-template-areas: "main" "footer";
+}
+body.isPrelogin:not(.fullHeightPrelogin) #content {
+  min-height: 400px !important;
+}
+#content.hasSidebar {
+  grid-template-columns: 75% 25%;
+  -ms-grid-columns: 75% 25%;
+  grid-template-areas: "main sidebar" "footer sidebar";
+}
+#content.hasSidebar #sidebar {
+  grid-area: sidebar;
+  box-shadow: 0.6rem 0 0.6rem -0.6rem rgba(0, 0, 0, 0.1) inset;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+}
+body.isPrelogin #content.hasSidebar {
+  grid-template-columns: 75% 25%;
+  grid-template-areas: "main sidebar" "footer footer";
+}
+body.isPrelogin #content.hasSidebar #sidebar {
+  -ms-grid-row-span: 1;
+}
+body.isPrelogin #content.hasSidebar #footer {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-areas: "mainFooter sidebarFooter";
+  display: -ms-grid;
+  -ms-grid-columns: 75% 25%;
+  -ms-grid-column-span: 2;
+}
+.mobile body.isPrelogin #content.hasSidebar #footer {
+  display: none;
+}
+body.isPrelogin #content.hasSidebar #mainFooter, body.isPrelogin #content.hasSidebar #sidebarFooter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-item-align: flex-end;
+}
+body.isPrelogin #content.hasSidebar #mainFooter {
+  grid-area: mainFooter;
+  -ms-grid-column: 1;
+  -ms-grid-row: 1;
+}
+body.isPrelogin #content.hasSidebar #sidebarFooter {
+  grid-area: sidebarFooter;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+}
+body.isPrelogin #content.hasSidebar #sidebar, body.isPrelogin #content.hasSidebar #sidebarFooter {
+  box-shadow: 0.6rem 0 0.6rem -0.6rem rgba(0, 0, 0, 0.1) inset;
+}
+body.loginPage.liteMode #content.hasSidebar {
+  grid-template-columns: 100%;
+  -ms-grid-columns: 100%;
+  grid-template-areas: "sidebar" "footer";
+}
+body.loginPage.liteMode #content.hasSidebar #sidebar {
+  -ms-grid-column: 1;
+  -ms-grid-row: 1;
+  box-shadow: unset;
+}
+body.loginPage.liteMode #content.hasSidebar #footer {
+  grid-template-columns: 100%;
+  grid-template-areas: "sidebarFooter";
+}
+body.loginPage.liteMode #content.hasSidebar #sidebarFooter {
+  -ms-grid-column: 1;
+  -ms-grid-row: 1;
+}
+#content:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: opacity 0.4s ease-in-out;
+  z-index: -1;
+}
+
+/*#endregion CSS Grid Layout*/
+body.contentOnly,
+body.contentOnly:after {
+  background: none;
+}
+
+body.passthru {
+  background: #ffffff;
+}
+body.passthru #content:after, body.passthru.graphicHeader:before, body.passthru.graphicHeader:after {
+  background: none;
+}
+body.passthru #main {
+  background: #fdfdfd;
+}
+body.passthru #sidebar {
+  background: #f8f8f8;
+  border-left: 1px solid #cccccc;
+}
+body.passthru #sidebar:before {
+  box-shadow: 0 0 0;
+}
+body.passthru #main .back {
+  display: none;
+}
+body.passthru.md_benefitdetail #main .back {
+  display: block;
+}
+body.passthru.md_displayscans #main .back {
+  display: block;
+}
+
+.midLoginHeader {
+  max-width: 99% !important;
+  width: 100% !important;
+}
+
+.fitme {
+  display: block;
+  position: relative;
+}
+.fitme.width {
+  margin: 0 auto;
+  min-width: 1280px;
+  width: 75%;
+}
+.fitme.height {
+  height: 100%;
+}
+.passthru .fitme.width, .datatile .fitme.width, .contentOnly .fitme.width {
+  width: 100%;
+}
+.PUpage .fitme.width {
+  min-width: 1022px;
+}
+
+.extraWide {
+  max-width: none !important;
+}
+
+.forceAutoWidth {
+  width: auto;
+  min-width: 150px !important;
+  max-width: max-content !important;
+}
+
+ul {
+  list-style: outside none none;
+}
+ul.bulleted {
+  list-style-type: disc;
+  padding-left: 1rem;
+}
+ul.bulleted ul {
+  list-style-type: circle;
+}
+ul.bulleted ul ul {
+  list-style-type: square;
+}
+ul.twocolumn li {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+
+div {
+  width: 100%;
+}
+.fmtConv div {
+  width: auto;
+}
+
+@supports (font: -apple-system-body) {
+  .LetterBody > .fmtConv, ._mainContent > .fmtConv {
+    font-size: 13pt;
+    font-family: Source Sans Pro, Calibri, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+}
+@supports (background: -webkit-named-image(i)) {
+  *:focus {
+    will-change: transform;
+  }
+}
+strong {
+  font-weight: bold;
+}
+
+a img {
+  border: 0;
+}
+
+.printheader {
+  display: none;
+}
+
+.printfooter {
+  display: none;
+}
+
+#main {
+  padding: 0.5rem 1.25rem;
+  width: 100%;
+}
+
+#sidebar {
+  font-size: 0.9rem;
+}
+
+#footer,
+#footer a {
+  transition: color 0.3s ease-in-out;
+}
+#footer .mainStyle {
+  padding: 0.5rem 1.25rem;
+}
+#footer .sidebarStyle {
+  padding: 0.5rem 1rem;
+}
+.mobile #footer {
+  display: none;
+}
+
+.isPrelogin .copyright {
+  display: block;
+  font-size: 0.55rem;
+  text-align: center;
+  width: 100%;
+}
+.isPrelogin .copyyear {
+  white-space: nowrap;
+}
+
+.ce-info {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.5rem;
+}
+.ce-info .ce-mark {
+  display: block !important;
+  min-width: 149px;
+  width: 149px;
+  min-height: 105px;
+  height: 105px;
+}
+@media only screen and (max-width: 768px) {
+  .ce-info .ce-mark {
+    min-width: 74.5px;
+    width: 74.5px;
+    min-height: 52.5px;
+    height: 52.5px;
+  }
+}
+
+#locale_container {
+  position: relative;
+  text-align: right;
+}
+#locale_container .dropdown {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  z-index: 1;
+}
+#locale_container .dropdown #morelocales {
+  background: #ffffff none repeat scroll 0 0;
+  border: none;
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+  padding: 0.25rem;
+  position: relative;
+  text-align: left;
+  width: 225%;
+  transition: opacity 0.2s ease-in-out;
+}
+#locale_container .dropdown #morelocales.localeHide {
+  display: none;
+}
+#locale_container .dropdown #morelocales.localeShow {
+  display: block;
+}
+#locale_container .dropdown #morelocales li {
+  padding: 0.25rem 0.5rem;
+}
+#locale_container .localeImg {
+  margin: 0 0.2rem;
+}
+#locale_container .localeImg,
+#locale_container .localename,
+#locale_container .abbreviatedname {
+  display: inline-block;
+  vertical-align: middle;
+}
+#locale_container .abbreviatedname {
+  display: none;
+}
+
+.section {
+  margin: 0;
+  padding: 0;
+}
+.section .content {
+  margin: 0.5rem 0;
+  padding: 0;
+}
+
+.flexParent {
+  display: flex;
+}
+
+h1,
+h2,
+h3,
+h4,
+.header,
+.sectionheader {
+  display: block;
+  font-weight: normal;
+  padding: 0.75rem 0 0.5rem;
+  width: 100%;
+}
+
+h1.header,
+.header.large {
+  font-size: 1.5rem;
+}
+
+h2.header,
+.header.medium {
+  font-size: 1.25rem;
+}
+h2.header.smallBannerFont,
+.header.medium.smallBannerFont {
+  font-size: 1.1rem;
+}
+
+h3.header,
+.header.small {
+  font-size: 1.1rem;
+}
+
+h4.header,
+.header.tiny {
+  font-size: 1rem;
+}
+
+h1.compact,
+h2.compact,
+h3.compact,
+h4.compact,
+.header.compact,
+.sectionheader.compact,
+.formsection > legend.compact {
+  padding: 0;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+p:first-of-type {
+  margin-top: 0;
+}
+p:last-of-type {
+  margin-bottom: 0;
+}
+p:empty {
+  margin: 0;
+}
+
+.partialShow {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+a {
+  text-decoration: none;
+}
+a:focus, a:hover {
+  text-decoration: underline;
+}
+.membertab a:focus, .card.hover a:focus, .list.hoverable a:focus, .membertab a:hover, .card.hover a:hover, .list.hoverable a:hover {
+  text-decoration: none;
+}
+a.subtle.linkcolor {
+  display: block;
+}
+
+dl {
+  margin: 0 0 1rem;
+}
+dl dt {
+  font-weight: bold;
+}
+
+.subtle {
+  color: #767676;
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+
+.slightlySubtle {
+  font-size: 0.9rem;
+  line-height: 1rem;
+}
+
+.header + .helptext.subtle {
+  margin: -0.5rem 0 0.75rem;
+}
+
+.newline:before {
+  content: "";
+  display: block;
+  width: 100%;
+}
+
+input[type=date]:focus,
+input[type=time]:focus,
+.qnr-container .answers input[type=date]:not(.upload-control):focus,
+.qnr-container .answers input[type=time]:not(.upload-control):focus {
+  color: #7571B0;
+  animation: blinkingBorder 1s infinite;
+}
+
+@keyframes blinkingBorder {
+  50% {
+    border-color: black;
+  }
+}
+#main .title {
+  position: relative;
+  vertical-align: bottom;
+  width: 100%;
+  overflow-wrap: break-word;
+  line-height: normal;
+}
+
+#main .maintitle > .title > *,
+#main > .title > * {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+#main .title h1 {
+  padding: 0.7rem 0 0.5rem;
+  width: calc(100% - 5rem);
+  overflow-wrap: break-word;
+}
+#main .title h1.center {
+  padding: 0.7rem 0 0.5rem 0;
+}
+#main .title #assistiveicons {
+  text-align: right;
+  padding: 0.7rem 0.5rem 0;
+  width: 5rem;
+}
+#main .title #assistiveicons:only-child {
+  width: 100%;
+}
+
+#main .title .assistiveicon,
+#sidebar img.assistiveicon {
+  display: inline-block;
+  width: 2rem;
+}
+
+#main .title img.assistiveicon,
+#sidebar .assistiveicon {
+  padding: 0 0 0 0.125rem;
+}
+
+#main .title .headerlink {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.7rem;
+  width: auto;
+}
+#main .title .headerlink .button {
+  margin: 0;
+  width: auto;
+}
+
+#main .title .right {
+  height: 100%;
+  margin: 0 0 0 -10rem;
+  padding: 2.75rem 0 0;
+  width: 10rem;
+}
+
+.annotatedText {
+  margin-right: 0.125rem;
+}
+.annotatedText.cozy {
+  margin-right: 0;
+}
+.annotatedText,
+.annotatedText + a,
+.annotatedText + div,
+.annotatedText + img,
+.annotatedText + span {
+  display: inline;
+  vertical-align: top;
+}
+.annotatedText.middle, .annotatedText.middle + a, .annotatedText.middle + div, .annotatedText.middle + img, .annotatedText.middle + span {
+  vertical-align: middle;
+}
+
+.formsection {
+  margin: 0.75rem 0;
+}
+
+#captchaForm .formsection {
+  margin: 2.5rem 0 0 0;
+}
+
+#captchaForm .formcontents {
+  margin-top: -2.5rem;
+}
+
+@media only screen and (max-width: 540px) {
+  .g-recaptcha-bubble-arrow ~ :last-child {
+    position: fixed !important;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.formsection:first-child {
+  margin: 0 0 0.75rem;
+}
+.formsection:last-child {
+  margin: 0.75rem 0 0;
+}
+.formsection.halfwidth {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+.formsection.halfwidth:first-child + .formsection.halfwidth {
+  margin: 0 0 0.75rem;
+}
+.formsection.halfwidth + .formsection:not(.halfwidth) {
+  margin: 0 0 0.75rem;
+}
+.formsection.withSeparator {
+  border-style: none none solid;
+  border-width: 0 0 1px;
+  padding: 0 0 0.5rem;
+}
+.formsection.withSeparator:last-child {
+  border-style: none;
+  border-width: 0;
+}
+.formsection.formbuttons {
+  padding: 0.5rem 0;
+}
+.formsection .formrow {
+  margin: 0 0 1.125rem;
+}
+.formsection .formrow:last-child {
+  margin: 0;
+}
+.formsection .formcolumn {
+  display: inline-block;
+  margin: 0 0.5%;
+  vertical-align: top;
+}
+.formsection .formcolumn:first-of-type {
+  margin-left: 0;
+}
+.formsection .formcolumn:last-of-type {
+  margin-right: 0;
+}
+.formsection.column_2 .formcolumn {
+  width: 49.5%;
+}
+.formsection.column_2 .formcolumn.double {
+  width: 100%;
+}
+.formsection.column_3 .formcolumn {
+  width: 32.66%;
+}
+.formsection.column_3 .formcolumn.double {
+  width: 66.33%;
+}
+.formsection.column_3 .formcolumn.triple {
+  width: 100%;
+}
+.formsection.column_4 .formcolumn {
+  width: 24.25%;
+}
+.formsection.column_4 .formcolumn.double {
+  width: 49.5%;
+}
+.formsection.column_4 .formcolumn.triple {
+  width: 74.75%;
+}
+.formsection fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+.requiredInstructions::before {
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  background: url("../images/required_asterisk.png") scroll no-repeat transparent 0 0/0.4rem 0.4rem;
+  margin: 0.15rem 0.15rem 0 0;
+  height: 0.4rem;
+  width: 0.4rem;
+}
+.requiredInstructions::before {
+  margin-top: 0.25rem;
+}
+
+.legacyLabelledField {
+  display: block;
+  position: relative;
+  width: fit-content;
+}
+.legacyLabelledField:focus-within {
+  z-index: 1;
+}
+.section .content [class*=col-] .legacyLabelledField {
+  align-self: flex-start;
+  width: 100%;
+}
+.section .content [class*=col-] .legacyLabelledField.legacyDateField {
+  width: fit-content;
+}
+body:is(.md_accesscontrol, .md_adddep, .md_termdep, .md_chgaddr, .md_termcvg) .legacyLabelledField {
+  min-width: 50%;
+}
+
+label,
+.fieldGroupPrompt {
+  color: #767676;
+  display: block;
+  line-height: 1rem;
+  text-align: left;
+}
+label.required::before, .required label::before,
+.fieldGroupPrompt.required::before,
+.required .fieldGroupPrompt::before {
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  background: url("../images/required_asterisk.png") scroll no-repeat transparent 0 0/0.4rem 0.4rem;
+  margin: 0.15rem 0.15rem 0 0;
+  height: 0.4rem;
+  width: 0.4rem;
+}
+input + label::before, input + label::after, input + label.required::before, input + label.required::after, label.widget::before, label.widget::after, label.nonNullFilter::before, label.nonNullFilter::after, .readOnlyAsPlaintext label.readonly::before, .readOnlyAsPlaintext label.readonly::after,
+input + .fieldGroupPrompt::before,
+input + .fieldGroupPrompt::after,
+input + .fieldGroupPrompt.required::before,
+input + .fieldGroupPrompt.required::after,
+.fieldGroupPrompt.widget::before,
+.fieldGroupPrompt.widget::after,
+.fieldGroupPrompt.nonNullFilter::before,
+.fieldGroupPrompt.nonNullFilter::after,
+.readOnlyAsPlaintext .fieldGroupPrompt.readonly::before,
+.readOnlyAsPlaintext .fieldGroupPrompt.readonly::after {
+  content: "";
+  background: none;
+}
+
+label {
+  border-color: transparent;
+  border-style: none solid;
+  border-width: 0 1px;
+  font-size: 0.75rem;
+  margin: 0 0.4rem;
+  padding: 0.2rem 0 0;
+  width: fit-content;
+  position: relative;
+  z-index: 1;
+}
+input + label, label.header {
+  border: none;
+  font-size: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.fieldGroupPrompt {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0 0 0.25rem;
+}
+
+input,
+select,
+textarea {
+  background-color: #ffffff;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  color: #000000;
+  display: block;
+  font-family: Source Sans Pro, Calibri, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: normal;
+  margin: 0 0 0.5rem;
+  padding: 0.25rem 0.4rem;
+  resize: none;
+  width: 100%;
+}
+label + input,
+label + select,
+label + textarea {
+  padding-top: 1.2rem;
+  margin-top: -1.2rem;
+}
+.mobile.androidWebview label + input,
+.mobile.androidWebview label + select,
+.mobile.androidWebview label + textarea {
+  padding-top: 1lh;
+  margin-top: -1lh;
+}
+input:invalid,
+select:invalid,
+textarea:invalid {
+  box-shadow: none;
+}
+input:invalid.touched:not(:focus),
+select:invalid.touched:not(:focus),
+textarea:invalid.touched:not(:focus) {
+  border-color: #d80000;
+  box-shadow: 0 0 1.5px 1px #d80000;
+}
+input.invalid:not(:focus),
+select.invalid:not(:focus),
+textarea.invalid:not(:focus) {
+  border-color: #d80000;
+  box-shadow: 0 0 1.5px 1px #d80000;
+}
+input::placeholder,
+select::placeholder,
+textarea::placeholder {
+  color: #565656;
+}
+input[disabled][disabled], input[aria-disabled=true][aria-disabled=true],
+select[disabled][disabled],
+select[aria-disabled=true][aria-disabled=true],
+textarea[disabled][disabled],
+textarea[aria-disabled=true][aria-disabled=true] {
+  background-color: #f2f2f2;
+  color: #565656;
+}
+input.readonly, input.disabled,
+select.readonly,
+select.disabled,
+textarea.readonly,
+textarea.disabled {
+  background-color: #f2f2f2;
+  color: #565656;
+}
+form[action] .clearlabel + input,
+form[action] .clearlabel + select,
+form[action] .clearlabel + textarea {
+  margin-top: 0;
+  padding-top: 0.25rem;
+}
+
+.readOnlyAsPlaintext input:not([type=button], [type=submit]):read-only,
+.readOnlyAsPlaintext textarea:read-only {
+  cursor: default;
+  background: none;
+  border-color: transparent;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.readOnlyAsPlaintext input:not([type=button], [type=submit]):read-only:focus, .readOnlyAsPlaintext input:not([type=button], [type=submit]):read-only:focus-visible,
+.readOnlyAsPlaintext textarea:read-only:focus,
+.readOnlyAsPlaintext textarea:read-only:focus-visible {
+  border-color: transparent;
+  outline: none;
+}
+
+label + select[multiple][class][class],
+label + textarea[class][class] {
+  border: none;
+  box-shadow: 0 -1px 0 0 #dbdbdb, 1px 0 0 0 #dbdbdb, 0 1px 0 0 #dbdbdb, -1px 0 0 0 #dbdbdb;
+  margin-left: 1px;
+  border-top: 1.2rem solid transparent;
+  padding-top: 0;
+}
+.mobile.androidWebview label + select[multiple][class][class],
+.mobile.androidWebview label + textarea[class][class] {
+  border-top-width: 1lh;
+}
+.mobile.androidWebview label + select[multiple][class][class],
+.mobile.androidWebview label + textarea[class][class] {
+  padding-top: 0;
+}
+label + select[multiple][class][class].touched:invalid,
+label + textarea[class][class].touched:invalid {
+  border: none;
+  box-shadow: 0 -1px 1.5px 1px #d80000, 1px 0 1.5px 1px #d80000, 0 1px 1.5px 1px #d80000, -1px 0 1.5px 1px #d80000;
+  margin-left: 1px;
+  border-top: 1.2rem solid transparent;
+}
+.mobile.androidWebview label + select[multiple][class][class].touched:invalid,
+.mobile.androidWebview label + textarea[class][class].touched:invalid {
+  border-top-width: 1lh;
+}
+label + select[multiple][class][class].invalid:not(:focus),
+label + textarea[class][class].invalid:not(:focus) {
+  border: none;
+  box-shadow: 0 -1px 1.5px 1px #d80000, 1px 0 1.5px 1px #d80000, 0 1px 1.5px 1px #d80000, -1px 0 1.5px 1px #d80000;
+  margin-left: 1px;
+  border-top: 1.2rem solid transparent;
+}
+.mobile.androidWebview label + select[multiple][class][class].invalid:not(:focus),
+.mobile.androidWebview label + textarea[class][class].invalid:not(:focus) {
+  border-top-width: 1lh;
+}
+
+select:focus:not(:focus-visible) {
+  border-color: transparent;
+  outline-style: auto;
+  outline-offset: 0;
+  box-shadow: none;
+}
+@supports (not ((-moz-appearance: none) or (background: -webkit-named-image(i)))) {
+  select:not([multiple]) {
+    padding-left: calc(0.4rem - 4px);
+  }
+  select:focus {
+    outline: 2px solid -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
+}
+@supports (background: -webkit-named-image(i)) {
+  select {
+    -webkit-appearance: none;
+  }
+  select:not([multiple]) {
+    background-image: url("../images/down_chevron.png");
+    background-repeat: no-repeat;
+    background-position: center right 0.4rem;
+    background-size: 0.5rem 0.33rem;
+    padding-right: calc(0.4rem + 0.5rem + (2 * 0.25rem));
+  }
+}
+select[disabled] {
+  opacity: 1;
+}
+.readOnlyAsPlaintext select[disabled] {
+  cursor: default;
+  background: none;
+  border-color: transparent;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  color: #000000;
+}
+.readOnlyAsPlaintext select[disabled]:focus, .readOnlyAsPlaintext select[disabled]:focus-visible {
+  border-color: transparent;
+  outline: none;
+}
+
+textarea {
+  overflow-x: hidden;
+  scrollbar-width: thin;
+}
+textarea.readonly {
+  cursor: default;
+  font-size: 0.9em;
+}
+
+::-ms-reveal {
+  max-width: 1rem;
+}
+
+span.readOnlyInput {
+  display: block;
+  font-family: Source Sans Pro, Calibri, Arial, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  margin: 0 0 0.5rem;
+  padding: 0.25rem;
+  color: #000000;
+}
+
+input[type=button],
+input[type=submit],
+input[type=text],
+textarea {
+  -webkit-appearance: none;
+}
+
+.fmtConv span input[type=checkbox] {
+  max-width: none;
+  min-width: 16px;
+  min-height: 16px;
+  width: auto;
+  vertical-align: middle;
+  left: 0 !important;
+  top: 0 !important;
+  position: relative !important;
+  transform: none !important;
+  padding: 0 2px 0 2px !important;
+  display: inline-block;
+}
+
+optgroup {
+  font-family: Source Sans Pro, Calibri, Arial, sans-serif;
+}
+
+.inlinelabel + input,
+.inlinelabel + select {
+  display: inline-block;
+  margin: 0 0.25rem 0 0;
+  width: auto;
+}
+
+ul.inlineradiolist li {
+  margin: 0.5rem 0;
+}
+
+input.inlineradiobutton,
+input.inlineradiobutton + label {
+  display: inline-block;
+  margin: 0 0.25rem 0 0;
+  width: auto;
+}
+
+input.date, .formcontents input.date {
+  min-width: initial;
+  width: 8.25rem;
+}
+.mobile input.date, .mobile .formcontents input.date {
+  width: 8.25rem;
+}
+
+select.date, .formcontents select.date {
+  min-width: 8rem;
+  width: 8rem;
+}
+
+input.time, .formcontents input.time {
+  min-width: 6rem;
+  width: 6rem;
+}
+input.time.withUnitButtons {
+  display: inline-block;
+  margin: 0 0.25rem 0 0;
+}
+input.time.min, .formcontents input.time.min, input.time.hour, .formcontents input.time.hour {
+  display: inline-block;
+  min-width: 2rem;
+  vertical-align: middle;
+  width: 2rem;
+}
+input.time.min {
+  margin-left: 0.25em;
+}
+
+input.tiny, .formcontents input.tiny {
+  min-width: 3rem;
+  width: 3rem;
+}
+
+.refineSearchSection #refine-search-header {
+  padding-bottom: 0px;
+}
+.refineSearchSection .refineSearchHeaderContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+input.filter-option {
+  display: inline-block;
+}
+
+label.filter-option-label {
+  display: inline-block;
+  padding-left: 3px;
+}
+
+li.filterOption {
+  position: relative;
+}
+li.filterOption + li.filterOption {
+  margin-top: 0.5rem;
+}
+
+.filtercontainer {
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 1rem;
+}
+
+button.filter-group-action {
+  color: #7571B0;
+}
+button.filter-group-action:hover {
+  color: #67639b;
+}
+
+.filter-group-expand-collapse {
+  display: flex;
+  justify-content: center;
+  padding-top: 0.25em;
+}
+
+.filter-group-container {
+  outline: none;
+}
+
+input.withPopup,
+select.withPopup {
+  display: inline-block;
+  margin-right: 0.25rem;
+}
+
+fieldset {
+  border: none;
+  margin: 0.25rem 0;
+  padding: 0.25rem 0;
+  min-width: 0;
+  box-shadow: 0 0 transparent;
+}
+fieldset.clearfieldset {
+  margin: 0;
+  padding: 0;
+}
+fieldset.halfwidth {
+  width: 50%;
+}
+fieldset.inlinefieldset {
+  display: inline-block;
+  vertical-align: top;
+}
+fieldset [class^=segment] {
+  display: inline-block;
+}
+
+.segment2 {
+  width: 2.5rem;
+}
+@supports selector(::-ms-reveal) {
+  .segment2:has([type=password]) {
+    width: 4rem;
+  }
+}
+
+.segment3 {
+  width: 3.25rem;
+}
+@supports selector(::-ms-reveal) {
+  .segment3:has([type=password]) {
+    width: 4.75rem;
+  }
+}
+
+.segment4 {
+  width: 4rem;
+}
+@supports selector(::-ms-reveal) {
+  .segment4:has([type=password]) {
+    width: 5.5rem;
+  }
+}
+
+.segment5 {
+  width: 4.75rem;
+}
+@supports selector(::-ms-reveal) {
+  .segment5:has([type=password]) {
+    width: 6.25rem;
+  }
+}
+
+[class^=segment] input {
+  text-align: center;
+  width: 100%;
+}
+[class^=segment] .accessibleLabel {
+  text-align: center;
+}
+
+.slider {
+  max-width: none;
+  position: relative;
+  width: 1000%;
+}
+.slider.cardlist {
+  width: 1000%;
+}
+.slider .stepContainer {
+  display: inline-block;
+  vertical-align: top;
+  width: 10%;
+}
+
+button {
+  -webkit-appearance: none;
+  font-size: 100%;
+  background: none;
+  border: 0;
+  padding: 0;
+  font-family: inherit;
+  cursor: pointer;
+}
+@media (min--moz-device-pixel-ratio: 0) {
+  button::-moz-focus-inner {
+    border: none;
+  }
+  button:focus {
+    outline: 1px dotted black;
+    outline-offset: 3px;
+  }
+}
+button[disabled], button.disabled {
+  cursor: default;
+}
+
+.button {
+  box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  background-color: #B8B7DA;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  fill: currentColor;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: normal;
+  margin: 0.5rem 0;
+  padding: 0.375rem 0.75rem;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+@media print {
+  .button {
+    border: 1px solid #767676;
+    padding-top: calc(0.375rem - 1px);
+    padding-bottom: calc(0.375rem - 1px);
+  }
+  .mobile .button {
+    padding-top: calc(0.75rem - 1px);
+    padding-bottom: calc(0.75rem - 1px);
+  }
+}
+.darkmode .button {
+  border: 2px solid;
+}
+
+.button:focus, .button:hover, .button:active {
+  color: #ffffff;
+}
+.button:active {
+  box-shadow: none;
+  transform: translateY(1px);
+}
+.darkmode .button {
+  border-color: #dcdbed;
+  color: white;
+  background-color: #373741;
+  box-shadow: none;
+}
+
+.button:hover, .button:active {
+  background-color: #9c9cb9;
+}
+.darkmode .button:hover, .darkmode .button:active {
+  background-color: #908faa;
+  border-color: transparent;
+}
+
+.tvmode .button:hover, .tvmode .button:active, .tvmode .button:focus {
+  background-color: #9c9cb9;
+}
+.tvmode.darkmode .button:hover, .tvmode.darkmode .button:active, .tvmode.darkmode .button:focus {
+  background-color: #908faa;
+  border-color: transparent;
+}
+
+.button.subtle {
+  background-color: #ffffff;
+  border: 1px solid currentColor;
+  box-shadow: none;
+  padding-top: calc(0.375rem - 1px);
+  padding-bottom: calc(0.375rem - 1px);
+  color: #7875c5;
+}
+.mobile .button.subtle {
+  padding-top: calc(0.75rem - 1px);
+  padding-bottom: calc(0.75rem - 1px);
+}
+.button.subtle:active {
+  border-color: transparent;
+  box-shadow: inset 0 0 0 2px currentColor;
+  transform: none;
+}
+.darkmode .button.subtle {
+  border-color: #dcdbed;
+  color: #dcdbed;
+  background-color: rgba(0, 0, 0, 0.3);/* #FF000000 */;
+  box-shadow: none;
+}
+
+.button.subtle:hover, .button.subtle:active {
+  background-color: #f8f8fb;
+  color: #6663a7;
+}
+.darkmode .button.subtle:hover, .darkmode .button.subtle:active {
+  background-color: #373741;
+  color: #dcdbed;
+  border-color: transparent;
+}
+
+.tvmode .button.subtle:hover, .tvmode .button.subtle:active, .tvmode .button.subtle:focus {
+  background-color: #f8f8fb;
+  color: #6663a7;
+}
+.tvmode.darkmode .button.subtle:hover, .tvmode.darkmode .button.subtle:active, .tvmode.darkmode .button.subtle:focus {
+  background-color: #373741;
+  color: #dcdbed;
+  border-color: transparent;
+}
+
+.button.nextstep, .button.completeworkflow, .button.inlinesave {
+  box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  background-color: #00778a;
+}
+@media print {
+  .button.nextstep, .button.completeworkflow, .button.inlinesave {
+    border: 1px solid #767676;
+    padding-top: calc(0.375rem - 1px);
+    padding-bottom: calc(0.375rem - 1px);
+  }
+  .mobile .button.nextstep, .mobile .button.completeworkflow, .mobile .button.inlinesave {
+    padding-top: calc(0.75rem - 1px);
+    padding-bottom: calc(0.75rem - 1px);
+  }
+}
+.darkmode .button.nextstep, .darkmode .button.completeworkflow, .darkmode .button.inlinesave {
+  border: 2px solid;
+}
+
+.button.nextstep:focus, .button.nextstep:hover, .button.nextstep:active, .button.completeworkflow:focus, .button.completeworkflow:hover, .button.completeworkflow:active, .button.inlinesave:focus, .button.inlinesave:hover, .button.inlinesave:active {
+  color: #ffffff;
+}
+.button.nextstep:active, .button.completeworkflow:active, .button.inlinesave:active {
+  box-shadow: none;
+  transform: translateY(1px);
+}
+.darkmode .button.nextstep, .darkmode .button.completeworkflow, .darkmode .button.inlinesave {
+  border-color: #80bbc5;
+  color: white;
+  background-color: #002429;
+  box-shadow: none;
+}
+
+.button.nextstep:hover, .button.nextstep:active, .button.completeworkflow:hover, .button.completeworkflow:active, .button.inlinesave:hover, .button.inlinesave:active {
+  background-color: #006575;
+}
+.darkmode .button.nextstep:hover, .darkmode .button.nextstep:active, .darkmode .button.completeworkflow:hover, .darkmode .button.completeworkflow:active, .darkmode .button.inlinesave:hover, .darkmode .button.inlinesave:active {
+  background-color: #005d6c;
+  border-color: transparent;
+}
+
+.tvmode .button.nextstep:hover, .tvmode .button.nextstep:active, .tvmode .button.nextstep:focus, .tvmode .button.completeworkflow:hover, .tvmode .button.completeworkflow:active, .tvmode .button.completeworkflow:focus, .tvmode .button.inlinesave:hover, .tvmode .button.inlinesave:active, .tvmode .button.inlinesave:focus {
+  background-color: #006575;
+}
+.tvmode.darkmode .button.nextstep:hover, .tvmode.darkmode .button.nextstep:active, .tvmode.darkmode .button.nextstep:focus, .tvmode.darkmode .button.completeworkflow:hover, .tvmode.darkmode .button.completeworkflow:active, .tvmode.darkmode .button.completeworkflow:focus, .tvmode.darkmode .button.inlinesave:hover, .tvmode.darkmode .button.inlinesave:active, .tvmode.darkmode .button.inlinesave:focus {
+  background-color: #005d6c;
+  border-color: transparent;
+}
+
+.button.nextstep.subtle, .button.completeworkflow.subtle, .button.inlinesave.subtle {
+  background-color: #ffffff;
+  border: 1px solid currentColor;
+  box-shadow: none;
+  padding-top: calc(0.375rem - 1px);
+  padding-bottom: calc(0.375rem - 1px);
+  color: #00778a;
+}
+.mobile .button.nextstep.subtle, .mobile .button.completeworkflow.subtle, .mobile .button.inlinesave.subtle {
+  padding-top: calc(0.75rem - 1px);
+  padding-bottom: calc(0.75rem - 1px);
+}
+.button.nextstep.subtle:active, .button.completeworkflow.subtle:active, .button.inlinesave.subtle:active {
+  border-color: transparent;
+  box-shadow: inset 0 0 0 2px currentColor;
+  transform: none;
+}
+.darkmode .button.nextstep.subtle, .darkmode .button.completeworkflow.subtle, .darkmode .button.inlinesave.subtle {
+  border-color: #80bbc5;
+  color: #80bbc5;
+  background-color: rgba(0, 0, 0, 0.3);/* #FF000000 */;
+  box-shadow: none;
+}
+
+.button.nextstep.subtle:hover, .button.nextstep.subtle:active, .button.completeworkflow.subtle:hover, .button.completeworkflow.subtle:active, .button.inlinesave.subtle:hover, .button.inlinesave.subtle:active {
+  background-color: #e6f1f3;
+  color: #006575;
+}
+.darkmode .button.nextstep.subtle:hover, .darkmode .button.nextstep.subtle:active, .darkmode .button.completeworkflow.subtle:hover, .darkmode .button.completeworkflow.subtle:active, .darkmode .button.inlinesave.subtle:hover, .darkmode .button.inlinesave.subtle:active {
+  background-color: #002429;
+  color: #80bbc5;
+  border-color: transparent;
+}
+
+.tvmode .button.nextstep.subtle:hover, .tvmode .button.nextstep.subtle:active, .tvmode .button.nextstep.subtle:focus, .tvmode .button.completeworkflow.subtle:hover, .tvmode .button.completeworkflow.subtle:active, .tvmode .button.completeworkflow.subtle:focus, .tvmode .button.inlinesave.subtle:hover, .tvmode .button.inlinesave.subtle:active, .tvmode .button.inlinesave.subtle:focus {
+  background-color: #e6f1f3;
+  color: #006575;
+}
+.tvmode.darkmode .button.nextstep.subtle:hover, .tvmode.darkmode .button.nextstep.subtle:active, .tvmode.darkmode .button.nextstep.subtle:focus, .tvmode.darkmode .button.completeworkflow.subtle:hover, .tvmode.darkmode .button.completeworkflow.subtle:active, .tvmode.darkmode .button.completeworkflow.subtle:focus, .tvmode.darkmode .button.inlinesave.subtle:hover, .tvmode.darkmode .button.inlinesave.subtle:active, .tvmode.darkmode .button.inlinesave.subtle:focus {
+  background-color: #002429;
+  color: #80bbc5;
+  border-color: transparent;
+}
+
+.button.cancelworkflow, .button.inlinedelete {
+  box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  background-color: #d9545b;
+}
+@media print {
+  .button.cancelworkflow, .button.inlinedelete {
+    border: 1px solid #767676;
+    padding-top: calc(0.375rem - 1px);
+    padding-bottom: calc(0.375rem - 1px);
+  }
+  .mobile .button.cancelworkflow, .mobile .button.inlinedelete {
+    padding-top: calc(0.75rem - 1px);
+    padding-bottom: calc(0.75rem - 1px);
+  }
+}
+.darkmode .button.cancelworkflow, .darkmode .button.inlinedelete {
+  border: 2px solid;
+}
+
+.button.cancelworkflow:focus, .button.cancelworkflow:hover, .button.cancelworkflow:active, .button.inlinedelete:focus, .button.inlinedelete:hover, .button.inlinedelete:active {
+  color: #ffffff;
+}
+.button.cancelworkflow:active, .button.inlinedelete:active {
+  box-shadow: none;
+  transform: translateY(1px);
+}
+.darkmode .button.cancelworkflow, .darkmode .button.inlinedelete {
+  border-color: #ecaaad;
+  color: white;
+  background-color: #41191b;
+  box-shadow: none;
+}
+
+.button.cancelworkflow:hover, .button.cancelworkflow:active, .button.inlinedelete:hover, .button.inlinedelete:active {
+  background-color: #b8474d;
+}
+.darkmode .button.cancelworkflow:hover, .darkmode .button.cancelworkflow:active, .darkmode .button.inlinedelete:hover, .darkmode .button.inlinedelete:active {
+  background-color: #a94247;
+  border-color: transparent;
+}
+
+.tvmode .button.cancelworkflow:hover, .tvmode .button.cancelworkflow:active, .tvmode .button.cancelworkflow:focus, .tvmode .button.inlinedelete:hover, .tvmode .button.inlinedelete:active, .tvmode .button.inlinedelete:focus {
+  background-color: #b8474d;
+}
+.tvmode.darkmode .button.cancelworkflow:hover, .tvmode.darkmode .button.cancelworkflow:active, .tvmode.darkmode .button.cancelworkflow:focus, .tvmode.darkmode .button.inlinedelete:hover, .tvmode.darkmode .button.inlinedelete:active, .tvmode.darkmode .button.inlinedelete:focus {
+  background-color: #a94247;
+  border-color: transparent;
+}
+
+.button.cancelworkflow.subtle, .button.inlinedelete.subtle {
+  background-color: #ffffff;
+  border: 1px solid currentColor;
+  box-shadow: none;
+  padding-top: calc(0.375rem - 1px);
+  padding-bottom: calc(0.375rem - 1px);
+  color: #d94f57;
+}
+.mobile .button.cancelworkflow.subtle, .mobile .button.inlinedelete.subtle {
+  padding-top: calc(0.75rem - 1px);
+  padding-bottom: calc(0.75rem - 1px);
+}
+.button.cancelworkflow.subtle:active, .button.inlinedelete.subtle:active {
+  border-color: transparent;
+  box-shadow: inset 0 0 0 2px currentColor;
+  transform: none;
+}
+.darkmode .button.cancelworkflow.subtle, .darkmode .button.inlinedelete.subtle {
+  border-color: #ecaaad;
+  color: #ecaaad;
+  background-color: rgba(0, 0, 0, 0.3);/* #FF000000 */;
+  box-shadow: none;
+}
+
+.button.cancelworkflow.subtle:hover, .button.cancelworkflow.subtle:active, .button.inlinedelete.subtle:hover, .button.inlinedelete.subtle:active {
+  background-color: #fbedee;
+  color: #b8434a;
+}
+.darkmode .button.cancelworkflow.subtle:hover, .darkmode .button.cancelworkflow.subtle:active, .darkmode .button.inlinedelete.subtle:hover, .darkmode .button.inlinedelete.subtle:active {
+  background-color: #41191b;
+  color: #ecaaad;
+  border-color: transparent;
+}
+
+.tvmode .button.cancelworkflow.subtle:hover, .tvmode .button.cancelworkflow.subtle:active, .tvmode .button.cancelworkflow.subtle:focus, .tvmode .button.inlinedelete.subtle:hover, .tvmode .button.inlinedelete.subtle:active, .tvmode .button.inlinedelete.subtle:focus {
+  background-color: #fbedee;
+  color: #b8434a;
+}
+.tvmode.darkmode .button.cancelworkflow.subtle:hover, .tvmode.darkmode .button.cancelworkflow.subtle:active, .tvmode.darkmode .button.cancelworkflow.subtle:focus, .tvmode.darkmode .button.inlinedelete.subtle:hover, .tvmode.darkmode .button.inlinedelete.subtle:active, .tvmode.darkmode .button.inlinedelete.subtle:focus {
+  background-color: #41191b;
+  color: #ecaaad;
+  border-color: transparent;
+}
+
+.tvmode:not(.hideFocus) .button:focus {
+  outline: #7571B0 solid 4px;
+  transform: scale(1.05);
+  outline-color: #363636;
+}
+@media (max-width: 970px) {
+  .tvmode:not(.hideFocus) .button:focus {
+    outline: #7571B0 solid 3px;
+  }
+}
+.tvmode.darkmode:not(.hideFocus) .button:focus {
+  outline-color: #ffffff;
+}
+
+.button:focus, .button:hover {
+  text-decoration: none;
+}
+.button[disabled][class][class], .button[aria-disabled=true][class][class], .button.disabled[class][class] {
+  cursor: default;
+}
+.button[disabled][class][class], .button[disabled][class][class]:focus, .button[disabled][class][class]:hover, .button[disabled][class][class]:active, .button[aria-disabled=true][class][class], .button[aria-disabled=true][class][class]:focus, .button[aria-disabled=true][class][class]:hover, .button[aria-disabled=true][class][class]:active, .button.disabled[class][class], .button.disabled[class][class]:focus, .button.disabled[class][class]:hover, .button.disabled[class][class]:active {
+  background-color: #dbdbdb;
+  border: none;
+  box-shadow: none;
+  color: #565656;
+  text-decoration: none;
+  transform: none;
+}
+.darkmode .button[disabled][class][class], .darkmode .button[disabled][class][class]:focus, .darkmode .button[disabled][class][class]:hover, .darkmode .button[disabled][class][class]:active, .darkmode .button[aria-disabled=true][class][class], .darkmode .button[aria-disabled=true][class][class]:focus, .darkmode .button[aria-disabled=true][class][class]:hover, .darkmode .button[aria-disabled=true][class][class]:active, .darkmode .button.disabled[class][class], .darkmode .button.disabled[class][class]:focus, .darkmode .button.disabled[class][class]:hover, .darkmode .button.disabled[class][class]:active {
+  background-color: rgba(255, 255, 255, 0.2);/* #FFFFFFFF */;
+  color: rgba(255, 255, 255, 0.6);/* #FFFFFFFF */;
+}
+
+.tvmode:not(.hideFocus) .button[disabled][class][class][class]:focus, .tvmode:not(.hideFocus) .button[aria-disabled=true][class][class][class]:focus, .tvmode:not(.hideFocus) .button.disabled[class][class][class]:focus {
+  outline: #ffffff solid 4px;
+  transform: scale(1.05);
+}
+@media (max-width: 970px) {
+  .tvmode:not(.hideFocus) .button[disabled][class][class][class]:focus, .tvmode:not(.hideFocus) .button[aria-disabled=true][class][class][class]:focus, .tvmode:not(.hideFocus) .button.disabled[class][class][class]:focus {
+    outline: #ffffff solid 3px;
+  }
+}
+
+.button:active:hover {
+  outline: 0;
+}
+.mobile .button[class] {
+  -webkit-appearance: none;
+  line-height: normal;
+  padding: 0.75rem;
+  vertical-align: top;
+  word-wrap: break-word;
+}
+.mobile:not([data-ua=nonmobile]) .button[class] {
+  outline: 0;
+}
+.mobile:not([data-ua=nonmobile]) .button[class]:focus {
+  outline: 0;
+}
+.tvmode .button[class] {
+  font-size: 1.1rem;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+}
+
+.tvmode:not(.hideFocus) .button[class]:focus {
+  outline: #7571B0 solid 4px;
+  transform: scale(1.05);
+  outline-color: #363636;
+}
+@media (max-width: 970px) {
+  .tvmode:not(.hideFocus) .button[class]:focus {
+    outline: #7571B0 solid 3px;
+  }
+}
+.tvmode.darkmode:not(.hideFocus) .button[class]:focus {
+  outline-color: #ffffff;
+}
+
+@media (min--moz-device-pixel-ratio: 0) {
+  .button::-moz-focus-inner {
+    border: none;
+  }
+  .button:focus {
+    outline: 1px dotted black;
+    outline-offset: 3px;
+  }
+}
+.button.primary.negative {
+  box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  background-color: #d9545b;
+}
+@media print {
+  .button.primary.negative {
+    border: 1px solid #767676;
+    padding-top: calc(0.375rem - 1px);
+    padding-bottom: calc(0.375rem - 1px);
+  }
+  .mobile .button.primary.negative {
+    padding-top: calc(0.75rem - 1px);
+    padding-bottom: calc(0.75rem - 1px);
+  }
+}
+.darkmode .button.primary.negative {
+  border: 2px solid;
+}
+
+.button.primary.negative:focus, .button.primary.negative:hover, .button.primary.negative:active {
+  color: #ffffff;
+}
+.button.primary.negative:active {
+  box-shadow: none;
+  transform: translateY(1px);
+}
+.darkmode .button.primary.negative {
+  border-color: #ecaaad;
+  color: white;
+  background-color: #41191b;
+  box-shadow: none;
+}
+
+.button.primary.negative:hover, .button.primary.negative:active {
+  background-color: #b8474d;
+}
+.darkmode .button.primary.negative:hover, .darkmode .button.primary.negative:active {
+  background-color: #a94247;
+  border-color: transparent;
+}
+
+.tvmode .button.primary.negative:hover, .tvmode .button.primary.negative:active, .tvmode .button.primary.negative:focus {
+  background-color: #b8474d;
+}
+.tvmode.darkmode .button.primary.negative:hover, .tvmode.darkmode .button.primary.negative:active, .tvmode.darkmode .button.primary.negative:focus {
+  background-color: #a94247;
+  border-color: transparent;
+}
+
+.button.primary.neutral {
+  box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  background-color: #B8B7DA;
+}
+@media print {
+  .button.primary.neutral {
+    border: 1px solid #767676;
+    padding-top: calc(0.375rem - 1px);
+    padding-bottom: calc(0.375rem - 1px);
+  }
+  .mobile .button.primary.neutral {
+    padding-top: calc(0.75rem - 1px);
+    padding-bottom: calc(0.75rem - 1px);
+  }
+}
+.darkmode .button.primary.neutral {
+  border: 2px solid;
+}
+
+.button.primary.neutral:focus, .button.primary.neutral:hover, .button.primary.neutral:active {
+  color: #ffffff;
+}
+.button.primary.neutral:active {
+  box-shadow: none;
+  transform: translateY(1px);
+}
+.darkmode .button.primary.neutral {
+  border-color: #dcdbed;
+  color: white;
+  background-color: #373741;
+  box-shadow: none;
+}
+
+.button.primary.neutral:hover, .button.primary.neutral:active {
+  background-color: #9c9cb9;
+}
+.darkmode .button.primary.neutral:hover, .darkmode .button.primary.neutral:active {
+  background-color: #908faa;
+  border-color: transparent;
+}
+
+.tvmode .button.primary.neutral:hover, .tvmode .button.primary.neutral:active, .tvmode .button.primary.neutral:focus {
+  background-color: #9c9cb9;
+}
+.tvmode.darkmode .button.primary.neutral:hover, .tvmode.darkmode .button.primary.neutral:active, .tvmode.darkmode .button.primary.neutral:focus {
+  background-color: #908faa;
+  border-color: transparent;
+}
+
+.button.primary.positive {
+  box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  background-color: #00778a;
+}
+@media print {
+  .button.primary.positive {
+    border: 1px solid #767676;
+    padding-top: calc(0.375rem - 1px);
+    padding-bottom: calc(0.375rem - 1px);
+  }
+  .mobile .button.primary.positive {
+    padding-top: calc(0.75rem - 1px);
+    padding-bottom: calc(0.75rem - 1px);
+  }
+}
+.darkmode .button.primary.positive {
+  border: 2px solid;
+}
+
+.button.primary.positive:focus, .button.primary.positive:hover, .button.primary.positive:active {
+  color: #ffffff;
+}
+.button.primary.positive:active {
+  box-shadow: none;
+  transform: translateY(1px);
+}
+.darkmode .button.primary.positive {
+  border-color: #80bbc5;
+  color: white;
+  background-color: #002429;
+  box-shadow: none;
+}
+
+.button.primary.positive:hover, .button.primary.positive:active {
+  background-color: #006575;
+}
+.darkmode .button.primary.positive:hover, .darkmode .button.primary.positive:active {
+  background-color: #005d6c;
+  border-color: transparent;
+}
+
+.tvmode .button.primary.positive:hover, .tvmode .button.primary.positive:active, .tvmode .button.primary.positive:focus {
+  background-color: #006575;
+}
+.tvmode.darkmode .button.primary.positive:hover, .tvmode.darkmode .button.primary.positive:active, .tvmode.darkmode .button.primary.positive:focus {
+  background-color: #005d6c;
+  border-color: transparent;
+}
+
+.button.secondary.negative {
+  background-color: #ffffff;
+  border: 1px solid currentColor;
+  box-shadow: none;
+  padding-top: calc(0.375rem - 1px);
+  padding-bottom: calc(0.375rem - 1px);
+  color: #d94f57;
+}
+.mobile .button.secondary.negative {
+  padding-top: calc(0.75rem - 1px);
+  padding-bottom: calc(0.75rem - 1px);
+}
+.button.secondary.negative:active {
+  border-color: transparent;
+  box-shadow: inset 0 0 0 2px currentColor;
+  transform: none;
+}
+.darkmode .button.secondary.negative {
+  border-color: #ecaaad;
+  color: #ecaaad;
+  background-color: rgba(0, 0, 0, 0.3);/* #FF000000 */;
+  box-shadow: none;
+}
+
+.button.secondary.negative:hover, .button.secondary.negative:active {
+  background-color: #fbedee;
+  color: #b8434a;
+}
+.darkmode .button.secondary.negative:hover, .darkmode .button.secondary.negative:active {
+  background-color: #41191b;
+  color: #ecaaad;
+  border-color: transparent;
+}
+
+.tvmode .button.secondary.negative:hover, .tvmode .button.secondary.negative:active, .tvmode .button.secondary.negative:focus {
+  background-color: #fbedee;
+  color: #b8434a;
+}
+.tvmode.darkmode .button.secondary.negative:hover, .tvmode.darkmode .button.secondary.negative:active, .tvmode.darkmode .button.secondary.negative:focus {
+  background-color: #41191b;
+  color: #ecaaad;
+  border-color: transparent;
+}
+
+.button.secondary.neutral {
+  background-color: #ffffff;
+  border: 1px solid currentColor;
+  box-shadow: none;
+  padding-top: calc(0.375rem - 1px);
+  padding-bottom: calc(0.375rem - 1px);
+  color: #7875c5;
+}
+.mobile .button.secondary.neutral {
+  padding-top: calc(0.75rem - 1px);
+  padding-bottom: calc(0.75rem - 1px);
+}
+.button.secondary.neutral:active {
+  border-color: transparent;
+  box-shadow: inset 0 0 0 2px currentColor;
+  transform: none;
+}
+.darkmode .button.secondary.neutral {
+  border-color: #dcdbed;
+  color: #dcdbed;
+  background-color: rgba(0, 0, 0, 0.3);/* #FF000000 */;
+  box-shadow: none;
+}
+
+.button.secondary.neutral:hover, .button.secondary.neutral:active {
+  background-color: #f8f8fb;
+  color: #6663a7;
+}
+.darkmode .button.secondary.neutral:hover, .darkmode .button.secondary.neutral:active {
+  background-color: #373741;
+  color: #dcdbed;
+  border-color: transparent;
+}
+
+.tvmode .button.secondary.neutral:hover, .tvmode .button.secondary.neutral:active, .tvmode .button.secondary.neutral:focus {
+  background-color: #f8f8fb;
+  color: #6663a7;
+}
+.tvmode.darkmode .button.secondary.neutral:hover, .tvmode.darkmode .button.secondary.neutral:active, .tvmode.darkmode .button.secondary.neutral:focus {
+  background-color: #373741;
+  color: #dcdbed;
+  border-color: transparent;
+}
+
+.button.secondary.positive {
+  background-color: #ffffff;
+  border: 1px solid currentColor;
+  box-shadow: none;
+  padding-top: calc(0.375rem - 1px);
+  padding-bottom: calc(0.375rem - 1px);
+  color: #00778a;
+}
+.mobile .button.secondary.positive {
+  padding-top: calc(0.75rem - 1px);
+  padding-bottom: calc(0.75rem - 1px);
+}
+.button.secondary.positive:active {
+  border-color: transparent;
+  box-shadow: inset 0 0 0 2px currentColor;
+  transform: none;
+}
+.darkmode .button.secondary.positive {
+  border-color: #80bbc5;
+  color: #80bbc5;
+  background-color: rgba(0, 0, 0, 0.3);/* #FF000000 */;
+  box-shadow: none;
+}
+
+.button.secondary.positive:hover, .button.secondary.positive:active {
+  background-color: #e6f1f3;
+  color: #006575;
+}
+.darkmode .button.secondary.positive:hover, .darkmode .button.secondary.positive:active {
+  background-color: #002429;
+  color: #80bbc5;
+  border-color: transparent;
+}
+
+.tvmode .button.secondary.positive:hover, .tvmode .button.secondary.positive:active, .tvmode .button.secondary.positive:focus {
+  background-color: #e6f1f3;
+  color: #006575;
+}
+.tvmode.darkmode .button.secondary.positive:hover, .tvmode.darkmode .button.secondary.positive:active, .tvmode.darkmode .button.secondary.positive:focus {
+  background-color: #002429;
+  color: #80bbc5;
+  border-color: transparent;
+}
+
+.button.tertiary.negative {
+  background-color: transparent;
+  box-shadow: none;
+  color: #d94f57;
+}
+.button.tertiary.negative:hover {
+  text-decoration: underline;
+}
+.tvmode .button.tertiary.negative:hover, .tvmode .button.tertiary.negative:focus {
+  text-decoration: underline;
+}
+
+.button.tertiary.negative:active {
+  box-shadow: inset 0 0 0 2px currentColor;
+  transform: none;
+}
+.darkmode .button.tertiary.negative {
+  color: #ecaaad;
+  background-color: rgba(0, 0, 0, 0.3);/* #FF000000 */;
+}
+
+.button.tertiary.negative:active {
+  background-color: rgba(217, 79, 87, 0.1);
+}
+.button.tertiary.neutral {
+  background-color: transparent;
+  box-shadow: none;
+  color: #7875c5;
+}
+.button.tertiary.neutral:hover {
+  text-decoration: underline;
+}
+.tvmode .button.tertiary.neutral:hover, .tvmode .button.tertiary.neutral:focus {
+  text-decoration: underline;
+}
+
+.button.tertiary.neutral:active {
+  box-shadow: inset 0 0 0 2px currentColor;
+  transform: none;
+}
+.darkmode .button.tertiary.neutral {
+  color: #dcdbed;
+  background-color: rgba(0, 0, 0, 0.3);/* #FF000000 */;
+}
+
+.button.tertiary.neutral:active {
+  background-color: rgba(120, 117, 197, 0.1);
+}
+.button.tertiary.positive {
+  background-color: transparent;
+  box-shadow: none;
+  color: #00778a;
+}
+.button.tertiary.positive:hover {
+  text-decoration: underline;
+}
+.tvmode .button.tertiary.positive:hover, .tvmode .button.tertiary.positive:focus {
+  text-decoration: underline;
+}
+
+.button.tertiary.positive:active {
+  box-shadow: inset 0 0 0 2px currentColor;
+  transform: none;
+}
+.darkmode .button.tertiary.positive {
+  color: #80bbc5;
+  background-color: rgba(0, 0, 0, 0.3);/* #FF000000 */;
+}
+
+.button.tertiary.positive:active {
+  background-color: rgba(0, 119, 138, 0.1);
+}
+.button .btnImg {
+  height: 1.5rem;
+  width: 1.5rem;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 0.25rem;
+}
+.mobile .button .btnImg {
+  vertical-align: inherit;
+  margin-top: -0.15rem;
+  margin-bottom: -0.15rem;
+}
+.button.smallBannerFont {
+  font-size: 0.85rem;
+}
+
+.button.autowidth {
+  display: inline-block;
+  width: auto;
+}
+
+.button.tall {
+  padding: 0.615rem 0.75rem;
+}
+
+.button.clearfilters {
+  color: #7875c5;
+  background-color: #ffffff;
+  border: 1px solid;
+  box-shadow: none;
+}
+
+.button.withInstructions,
+.button.withInstructions + p,
+.button.withInstructions + span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 768px) {
+  .button.sm-fullWidth {
+    width: 100%;
+  }
+  .button.sm-fullWidth.multi {
+    width: 100%;
+    margin: 0.5rem 0 0 0;
+  }
+  .button.sm-fullWidth.multi:first-child {
+    width: 100%;
+    margin: 0.5rem 0 0 0;
+  }
+}
+@media not all and (pointer: fine) {
+  label.webSpecificText,
+.label.webSpecificText {
+    display: none !important;
+  }
+}
+input.multi,
+.button.multi,
+.formbuttons .button,
+input[type=submit],
+input[type=cancel],
+.section .button:only-child {
+  display: inline-block;
+  margin: 0 0.5rem 0 0;
+  vertical-align: top;
+  width: auto;
+}
+
+input.multi:first-child,
+.button.multi:first-child {
+  margin: 0 0.5rem 0 0;
+}
+input.multi.hidden:first-child ~ input.multi,
+input.multi.hidden:first-child ~ .button.multi,
+.button.multi.hidden:first-child ~ input.multi,
+.button.multi.hidden:first-child ~ .button.multi {
+  margin-left: 0;
+}
+
+input[type=submit] {
+  margin: 0 0.5rem 0 0;
+}
+input[type=submit]#NOTIFY {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
+input[type=cancel] {
+  margin: 0 0 0 0.5rem;
+}
+
+.section .button:only-child {
+  margin: 0;
+}
+
+.formbuttons {
+  margin: 0.5rem 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.tvmode .formbuttons {
+  column-gap: 0.5em;
+}
+
+.formbuttons .button {
+  margin-right: 0.5rem;
+}
+.formbuttons .button:last-child {
+  margin-right: 0;
+}
+.formbuttons.multiStep {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.tvmode .formbuttons.multiStep {
+  column-gap: 0.5em;
+}
+
+.formbuttons.multiStep .button {
+  margin-right: 0.5rem;
+}
+.formbuttons.multiStep .button:last-child {
+  margin-right: 0;
+}
+.formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child {
+  box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  background-color: #B8B7DA;
+}
+@media print {
+  .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child {
+    border: 1px solid #767676;
+    padding-top: calc(0.375rem - 1px);
+    padding-bottom: calc(0.375rem - 1px);
+  }
+  .mobile .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child {
+    padding-top: calc(0.75rem - 1px);
+    padding-bottom: calc(0.75rem - 1px);
+  }
+}
+.darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child {
+  border: 2px solid;
+}
+
+.formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child:focus, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child:hover, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child:active {
+  color: #ffffff;
+}
+.formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child:active {
+  box-shadow: none;
+  transform: translateY(1px);
+}
+.darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child {
+  border-color: #dcdbed;
+  color: white;
+  background-color: #373741;
+  box-shadow: none;
+}
+
+.formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child:hover, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child:active {
+  background-color: #9c9cb9;
+}
+.darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child:hover, .darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child:active {
+  background-color: #908faa;
+  border-color: transparent;
+}
+
+.tvmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child:hover, .tvmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child:active, .tvmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child:focus {
+  background-color: #9c9cb9;
+}
+.tvmode.darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child:hover, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child:active, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child:focus {
+  background-color: #908faa;
+  border-color: transparent;
+}
+
+.formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.nextstep, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.completeworkflow, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinesave, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.positive {
+  box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  background-color: #00778a;
+}
+@media print {
+  .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.nextstep, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.completeworkflow, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinesave, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.positive {
+    border: 1px solid #767676;
+    padding-top: calc(0.375rem - 1px);
+    padding-bottom: calc(0.375rem - 1px);
+  }
+  .mobile .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.nextstep, .mobile .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.completeworkflow, .mobile .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinesave, .mobile .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.positive {
+    padding-top: calc(0.75rem - 1px);
+    padding-bottom: calc(0.75rem - 1px);
+  }
+}
+.darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.nextstep, .darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.completeworkflow, .darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinesave, .darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.positive {
+  border: 2px solid;
+}
+
+.formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.nextstep:focus, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.nextstep:hover, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.nextstep:active, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.completeworkflow:focus, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.completeworkflow:hover, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.completeworkflow:active, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinesave:focus, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinesave:hover, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinesave:active, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.positive:focus, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.positive:hover, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.positive:active {
+  color: #ffffff;
+}
+.formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.nextstep:active, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.completeworkflow:active, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinesave:active, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.positive:active {
+  box-shadow: none;
+  transform: translateY(1px);
+}
+.darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.nextstep, .darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.completeworkflow, .darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinesave, .darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.positive {
+  border-color: #80bbc5;
+  color: white;
+  background-color: #002429;
+  box-shadow: none;
+}
+
+.formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.nextstep:hover, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.nextstep:active, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.completeworkflow:hover, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.completeworkflow:active, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinesave:hover, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinesave:active, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.positive:hover, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.positive:active {
+  background-color: #006575;
+}
+.darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.nextstep:hover, .darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.nextstep:active, .darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.completeworkflow:hover, .darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.completeworkflow:active, .darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinesave:hover, .darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinesave:active, .darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.positive:hover, .darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.positive:active {
+  background-color: #005d6c;
+  border-color: transparent;
+}
+
+.tvmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.nextstep:hover, .tvmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.nextstep:active, .tvmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.nextstep:focus, .tvmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.completeworkflow:hover, .tvmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.completeworkflow:active, .tvmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.completeworkflow:focus, .tvmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinesave:hover, .tvmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinesave:active, .tvmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinesave:focus, .tvmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.positive:hover, .tvmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.positive:active, .tvmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.positive:focus {
+  background-color: #006575;
+}
+.tvmode.darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.nextstep:hover, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.nextstep:active, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.nextstep:focus, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.completeworkflow:hover, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.completeworkflow:active, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.completeworkflow:focus, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinesave:hover, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinesave:active, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinesave:focus, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.positive:hover, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.positive:active, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.positive:focus {
+  background-color: #005d6c;
+  border-color: transparent;
+}
+
+.formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.cancelworkflow, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinedelete, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.negative {
+  box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  background-color: #d9545b;
+}
+@media print {
+  .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.cancelworkflow, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinedelete, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.negative {
+    border: 1px solid #767676;
+    padding-top: calc(0.375rem - 1px);
+    padding-bottom: calc(0.375rem - 1px);
+  }
+  .mobile .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.cancelworkflow, .mobile .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinedelete, .mobile .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.negative {
+    padding-top: calc(0.75rem - 1px);
+    padding-bottom: calc(0.75rem - 1px);
+  }
+}
+.darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.cancelworkflow, .darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinedelete, .darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.negative {
+  border: 2px solid;
+}
+
+.formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.cancelworkflow:focus, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.cancelworkflow:hover, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.cancelworkflow:active, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinedelete:focus, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinedelete:hover, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinedelete:active, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.negative:focus, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.negative:hover, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.negative:active {
+  color: #ffffff;
+}
+.formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.cancelworkflow:active, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinedelete:active, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.negative:active {
+  box-shadow: none;
+  transform: translateY(1px);
+}
+.darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.cancelworkflow, .darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinedelete, .darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.negative {
+  border-color: #ecaaad;
+  color: white;
+  background-color: #41191b;
+  box-shadow: none;
+}
+
+.formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.cancelworkflow:hover, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.cancelworkflow:active, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinedelete:hover, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinedelete:active, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.negative:hover, .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.negative:active {
+  background-color: #b8474d;
+}
+.darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.cancelworkflow:hover, .darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.cancelworkflow:active, .darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinedelete:hover, .darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinedelete:active, .darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.negative:hover, .darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.negative:active {
+  background-color: #a94247;
+  border-color: transparent;
+}
+
+.tvmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.cancelworkflow:hover, .tvmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.cancelworkflow:active, .tvmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.cancelworkflow:focus, .tvmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinedelete:hover, .tvmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinedelete:active, .tvmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinedelete:focus, .tvmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.negative:hover, .tvmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.negative:active, .tvmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.negative:focus {
+  background-color: #b8474d;
+}
+.tvmode.darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.cancelworkflow:hover, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.cancelworkflow:active, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.cancelworkflow:focus, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinedelete:hover, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinedelete:active, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.inlinedelete:focus, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.negative:hover, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.negative:active, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child.negative:focus {
+  background-color: #a94247;
+  border-color: transparent;
+}
+
+.tvmode:not(.hideFocus) .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child:focus {
+  outline: #7571B0 solid 4px;
+  transform: scale(1.05);
+  outline-color: #363636;
+}
+@media (max-width: 970px) {
+  .tvmode:not(.hideFocus) .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child:focus {
+    outline: #7571B0 solid 3px;
+  }
+}
+.tvmode.darkmode:not(.hideFocus) .formbuttons.multiStep .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):first-child:focus {
+  outline-color: #ffffff;
+}
+
+.formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled) {
+  background-color: #ffffff;
+  border: 1px solid currentColor;
+  box-shadow: none;
+  padding-top: calc(0.375rem - 1px);
+  padding-bottom: calc(0.375rem - 1px);
+  color: #7875c5;
+}
+.mobile .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled) {
+  padding-top: calc(0.75rem - 1px);
+  padding-bottom: calc(0.75rem - 1px);
+}
+.formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):active {
+  border-color: transparent;
+  box-shadow: inset 0 0 0 2px currentColor;
+  transform: none;
+}
+.darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled) {
+  border-color: #dcdbed;
+  color: #dcdbed;
+  background-color: rgba(0, 0, 0, 0.3);/* #FF000000 */;
+  box-shadow: none;
+}
+
+.formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):hover, .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):active {
+  background-color: #f8f8fb;
+  color: #6663a7;
+}
+.darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):hover, .darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):active {
+  background-color: #373741;
+  color: #dcdbed;
+  border-color: transparent;
+}
+
+.tvmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):hover, .tvmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):active, .tvmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):focus {
+  background-color: #f8f8fb;
+  color: #6663a7;
+}
+.tvmode.darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):hover, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):active, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):focus {
+  background-color: #373741;
+  color: #dcdbed;
+  border-color: transparent;
+}
+
+.formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).nextstep, .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).completeworkflow, .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).inlinesave, .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).positive {
+  background-color: #ffffff;
+  border: 1px solid currentColor;
+  box-shadow: none;
+  padding-top: calc(0.375rem - 1px);
+  padding-bottom: calc(0.375rem - 1px);
+  color: #00778a;
+}
+.mobile .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).nextstep, .mobile .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).completeworkflow, .mobile .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).inlinesave, .mobile .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).positive {
+  padding-top: calc(0.75rem - 1px);
+  padding-bottom: calc(0.75rem - 1px);
+}
+.formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).nextstep:active, .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).completeworkflow:active, .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).inlinesave:active, .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).positive:active {
+  border-color: transparent;
+  box-shadow: inset 0 0 0 2px currentColor;
+  transform: none;
+}
+.darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).nextstep, .darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).completeworkflow, .darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).inlinesave, .darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).positive {
+  border-color: #80bbc5;
+  color: #80bbc5;
+  background-color: rgba(0, 0, 0, 0.3);/* #FF000000 */;
+  box-shadow: none;
+}
+
+.formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).nextstep:hover, .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).nextstep:active, .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).completeworkflow:hover, .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).completeworkflow:active, .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).inlinesave:hover, .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).inlinesave:active, .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).positive:hover, .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).positive:active {
+  background-color: #e6f1f3;
+  color: #006575;
+}
+.darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).nextstep:hover, .darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).nextstep:active, .darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).completeworkflow:hover, .darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).completeworkflow:active, .darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).inlinesave:hover, .darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).inlinesave:active, .darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).positive:hover, .darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).positive:active {
+  background-color: #002429;
+  color: #80bbc5;
+  border-color: transparent;
+}
+
+.tvmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).nextstep:hover, .tvmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).nextstep:active, .tvmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).nextstep:focus, .tvmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).completeworkflow:hover, .tvmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).completeworkflow:active, .tvmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).completeworkflow:focus, .tvmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).inlinesave:hover, .tvmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).inlinesave:active, .tvmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).inlinesave:focus, .tvmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).positive:hover, .tvmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).positive:active, .tvmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).positive:focus {
+  background-color: #e6f1f3;
+  color: #006575;
+}
+.tvmode.darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).nextstep:hover, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).nextstep:active, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).nextstep:focus, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).completeworkflow:hover, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).completeworkflow:active, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).completeworkflow:focus, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).inlinesave:hover, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).inlinesave:active, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).inlinesave:focus, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).positive:hover, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).positive:active, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).positive:focus {
+  background-color: #002429;
+  color: #80bbc5;
+  border-color: transparent;
+}
+
+.formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).cancelworkflow, .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).inlinedelete, .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).negative {
+  background-color: #ffffff;
+  border: 1px solid currentColor;
+  box-shadow: none;
+  padding-top: calc(0.375rem - 1px);
+  padding-bottom: calc(0.375rem - 1px);
+  color: #d94f57;
+}
+.mobile .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).cancelworkflow, .mobile .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).inlinedelete, .mobile .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).negative {
+  padding-top: calc(0.75rem - 1px);
+  padding-bottom: calc(0.75rem - 1px);
+}
+.formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).cancelworkflow:active, .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).inlinedelete:active, .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).negative:active {
+  border-color: transparent;
+  box-shadow: inset 0 0 0 2px currentColor;
+  transform: none;
+}
+.darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).cancelworkflow, .darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).inlinedelete, .darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).negative {
+  border-color: #ecaaad;
+  color: #ecaaad;
+  background-color: rgba(0, 0, 0, 0.3);/* #FF000000 */;
+  box-shadow: none;
+}
+
+.formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).cancelworkflow:hover, .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).cancelworkflow:active, .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).inlinedelete:hover, .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).inlinedelete:active, .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).negative:hover, .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).negative:active {
+  background-color: #fbedee;
+  color: #b8434a;
+}
+.darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).cancelworkflow:hover, .darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).cancelworkflow:active, .darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).inlinedelete:hover, .darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).inlinedelete:active, .darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).negative:hover, .darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).negative:active {
+  background-color: #41191b;
+  color: #ecaaad;
+  border-color: transparent;
+}
+
+.tvmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).cancelworkflow:hover, .tvmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).cancelworkflow:active, .tvmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).cancelworkflow:focus, .tvmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).inlinedelete:hover, .tvmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).inlinedelete:active, .tvmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).inlinedelete:focus, .tvmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).negative:hover, .tvmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).negative:active, .tvmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).negative:focus {
+  background-color: #fbedee;
+  color: #b8434a;
+}
+.tvmode.darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).cancelworkflow:hover, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).cancelworkflow:active, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).cancelworkflow:focus, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).inlinedelete:hover, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).inlinedelete:active, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).inlinedelete:focus, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).negative:hover, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).negative:active, .tvmode.darkmode .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled).negative:focus {
+  background-color: #41191b;
+  color: #ecaaad;
+  border-color: transparent;
+}
+
+.tvmode:not(.hideFocus) .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):focus {
+  outline: #7571B0 solid 4px;
+  transform: scale(1.05);
+  outline-color: #363636;
+}
+@media (max-width: 970px) {
+  .tvmode:not(.hideFocus) .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):focus {
+    outline: #7571B0 solid 3px;
+  }
+}
+.tvmode.darkmode:not(.hideFocus) .formbuttons.multiStep .button:not(.hidden):not([style*="display: none"]) ~ .button:not(.hidden, [disabled], [aria-disabled=true], .disabled):focus {
+  outline-color: #ffffff;
+}
+
+.formbuttons.topside {
+  margin: 0.5rem 0;
+}
+
+#captchaForm .formbuttons input:first-of-type {
+  margin-left: 0;
+}
+#captchaForm .formbuttons {
+  margin-top: 0;
+}
+
+.withButtonColumn.withSubtleActions, .withButtonColumn.withButtonColumn, .withButtonColumn.card.withSubtleActions, .withButtonColumn.card.withButtonColumn, .withButtonColumn.row.withSubtleActions, .withButtonColumn.row.withButtonColumn {
+  display: flex;
+  flex-direction: row;
+}
+.withButtonColumn.withSubtleActions, .withButtonColumn.card.withSubtleActions, .withButtonColumn.row.withSubtleActions {
+  flex-direction: column;
+}
+.withButtonColumn .contentColumn + .buttonColumn,
+.withButtonColumn .contentColumn + * .buttonColumn, .withButtonColumn.card .contentColumn + .buttonColumn,
+.withButtonColumn.card .contentColumn + * .buttonColumn, .withButtonColumn.row .contentColumn + .buttonColumn,
+.withButtonColumn.row .contentColumn + * .buttonColumn {
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: stretch;
+  align-self: flex-end;
+}
+.withButtonColumn .contentColumn + .buttonColumn .button,
+.withButtonColumn .contentColumn + * .buttonColumn .button, .withButtonColumn.card .contentColumn + .buttonColumn .button,
+.withButtonColumn.card .contentColumn + * .buttonColumn .button, .withButtonColumn.row .contentColumn + .buttonColumn .button,
+.withButtonColumn.row .contentColumn + * .buttonColumn .button {
+  margin: 0.5rem 0 0;
+  width: 100%;
+}
+.withButtonColumn .contentColumn:not([class*=col-]), .withButtonColumn.card .contentColumn:not([class*=col-]), .withButtonColumn.row .contentColumn:not([class*=col-]) {
+  width: 75%;
+}
+.withButtonColumn .contentColumn:not([class*=col-]) + .buttonColumn,
+.withButtonColumn .contentColumn:not([class*=col-]) + * .buttonColumn, .withButtonColumn.card .contentColumn:not([class*=col-]) + .buttonColumn,
+.withButtonColumn.card .contentColumn:not([class*=col-]) + * .buttonColumn, .withButtonColumn.row .contentColumn:not([class*=col-]) + .buttonColumn,
+.withButtonColumn.row .contentColumn:not([class*=col-]) + * .buttonColumn {
+  width: 25%;
+}
+.grid > .row > .withButtonColumn.card {
+  display: inline-flex;
+}
+.withButtonColumn.withSubtleActions {
+  flex-wrap: wrap;
+}
+
+.multiSelectDropdown {
+  width: 80%;
+  margin-bottom: 0.25rem;
+}
+
+.multiSelectHelpText {
+  display: block;
+  margin-bottom: 0.5rem;
+  margin-top: -0.5rem;
+}
+
+.helptext {
+  color: #565656;
+  font-size: 0.8em;
+  line-height: normal;
+}
+
+.formsection input + .helptext:not(:empty),
+.formsection select + .helptext:not(:empty),
+.formsection textarea + .helptext:not(:empty),
+.formsection fieldset + .helptext:not(:empty),
+.formsection .helptext + .helptext:not(:empty),
+.formsection .popupiconcontainer + script + .helptext:not(:empty) {
+  margin: -0.5rem 0 0.75rem;
+  padding: 0 0.25rem;
+}
+.formsection .helptext.accessibleLabel:not(:empty) {
+  margin-bottom: 0.25rem;
+}
+
+.helptext li {
+  line-height: 1rem;
+}
+
+.uploaderbutton {
+  display: inline-block;
+  line-height: 1rem;
+  position: relative;
+  width: auto;
+}
+.uploaderbutton .button {
+  display: inline-block;
+  margin: 0 0.25rem 0 0;
+  width: auto;
+  z-index: 1;
+}
+.uploaderbutton .fileselector {
+  border: none;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+.uploaderbutton .alert {
+  display: inline-block;
+  margin: 0 0 0 0.25rem;
+  width: auto;
+}
+.uploaderbutton .photoedit,
+.uploaderbutton .photodelete {
+  display: block;
+  position: relative;
+}
+.uploaderbutton .photodelete {
+  z-index: 10;
+}
+.uploaderbutton .photodelete img {
+  background: none;
+}
+
+.alert .yield {
+  display: inline-block;
+  height: 1rem;
+  margin: 0 0.25rem 0 0;
+  vertical-align: middle;
+  width: 1rem;
+}
+.alert .yield + .errHolder {
+  vertical-align: middle;
+}
+
+.alert.card {
+  margin: 0 0 0.5rem;
+  padding: 0.5rem;
+  min-height: 4rem;
+  text-align: center;
+  width: 100%;
+}
+.alert.card img {
+  display: block;
+  height: 2.5rem;
+  margin: 0 auto;
+  width: 2.5rem;
+}
+
+.messageOverlay {
+  padding: 0.5rem 1.7rem 0.5rem 0.5rem;
+  width: auto;
+  transition: all 0.3s ease-in-out;
+}
+.messageOverlay.invisible {
+  opacity: 0;
+}
+.messageOverlay .closeIcon {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 0.4rem;
+  right: 0.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .messageOverlay {
+    width: 100%;
+  }
+  .messageOverlay,
+.messageOverlay .alert {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+}
+
+.section .content .label {
+  display: block;
+  line-height: 1rem;
+  padding: 0;
+  margin: 0.25rem 0 0;
+  text-align: left;
+  width: auto;
+}
+.section .content .inlinelabel {
+  display: inline-block;
+  line-height: 2rem;
+  margin: 0 0.25rem 0 0;
+}
+.section .content .label + p,
+.section .content .label + ul {
+  display: block;
+  margin: 0 0 0.5rem;
+  width: auto;
+}
+
+#main .back {
+  padding: 1.5rem 0 1rem;
+  text-align: center;
+}
+#main .back .button {
+  background-color: #ffffff;
+  border: 1px solid currentColor;
+  box-shadow: none;
+  padding-top: calc(0.375rem - 1px);
+  padding-bottom: calc(0.375rem - 1px);
+  color: #7875c5;
+  display: inline-block;
+  margin: 0;
+}
+.mobile #main .back .button {
+  padding-top: calc(0.75rem - 1px);
+  padding-bottom: calc(0.75rem - 1px);
+}
+#main .back .button:active {
+  border-color: transparent;
+  box-shadow: inset 0 0 0 2px currentColor;
+  transform: none;
+}
+.darkmode #main .back .button {
+  border-color: #dcdbed;
+  color: #dcdbed;
+  background-color: rgba(0, 0, 0, 0.3);/* #FF000000 */;
+  box-shadow: none;
+}
+
+#main .back .button:hover, #main .back .button:active {
+  background-color: #f8f8fb;
+  color: #6663a7;
+}
+.darkmode #main .back .button:hover, .darkmode #main .back .button:active {
+  background-color: #373741;
+  color: #dcdbed;
+  border-color: transparent;
+}
+
+.tvmode #main .back .button:hover, .tvmode #main .back .button:active, .tvmode #main .back .button:focus {
+  background-color: #f8f8fb;
+  color: #6663a7;
+}
+.tvmode.darkmode #main .back .button:hover, .tvmode.darkmode #main .back .button:active, .tvmode.darkmode #main .back .button:focus {
+  background-color: #373741;
+  color: #dcdbed;
+  border-color: transparent;
+}
+
+.jumpArrow {
+  width: 1rem;
+  height: 1rem;
+  vertical-align: middle;
+  fill: #363636;
+  /*rtl:raw: transform: scaleX(-1);*/
+}
+
+.jumpArrow.link {
+  fill: #7571B0;
+}
+
+/* #region Form Validation */
+.messagedisplay .alert.validationmessage, .messagedisplay {
+  line-height: 1em;
+  vertical-align: middle;
+  min-height: 1.5rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.3rem;
+}
+.messagedisplay.zerominheight .alert.validationmessage, .messagedisplay.zerominheight {
+  min-height: 0;
+}
+body:is(.md_adddep, .md_termdep, .md_chgaddr, .md_termcvg, .md_schedotherprefs) .messagedisplay:empty {
+  min-height: 0;
+}
+
+.md_evisit #sendto {
+  margin-bottom: 0;
+}
+
+.md_apptmake p.buttoncheck,
+.md_evisit p.buttoncheck,
+.md_echeckin p.buttoncheck,
+.md_medadvice textarea,
+.md_medadvice select,
+.md_refrequest #referto,
+.md_refrequest #reason,
+.md_refrequest #message,
+.md_custsvc input,
+.md_custsvc textarea {
+  margin-bottom: 0;
+}
+
+.md_demog #zip {
+  margin-bottom: 0.25rem;
+}
+
+.messagedisplay .alert.validationmessage .yield {
+  margin-bottom: 0.25rem;
+}
+
+/* #endregion */
+.clearlabel {
+  color: transparent !important;
+  display: block !important;
+  height: 0 !important;
+  line-height: 0 !important;
+  margin: 0 !important;
+  opacity: 0 !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: relative !important;
+  width: 0 !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+}
+
+.focusanchor {
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  height: 1px;
+  width: 1px;
+  font-size: 1px;
+  overflow: hidden;
+}
+
+.wrapLongWords {
+  word-break: break-all;
+}
+
+#wrap .cssSwitcher[data-csstitle=Default] {
+  display: none;
+}
+
+.alert .clearlabel, .clearlabel.srPause, .clearlabel.inlinelabel, .clearlabel.updatedlabel, [id*=error] .clearlabel, [class*=error] .clearlabel, .messageheader .clearlabel {
+  display: inline-block !important;
+}
+.clearlabel.required {
+  opacity: 1 !important;
+  overflow: inherit !important;
+}
+.mobile .section .clearlabel.srPause {
+  display: none !important;
+}
+
+.assistiveTextWrapper {
+  position: relative;
+}
+.assistiveTextWrapper .assistivetext {
+  position: absolute;
+  opacity: 0;
+  line-height: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.clearradio {
+  left: auto;
+  opacity: 0;
+  position: absolute;
+  top: auto;
+  width: auto;
+  z-index: -1;
+}
+.clearradio.touched:invalid, .clearradio.invalid:not(:focus) {
+  border-color: transparent;
+  box-shadow: none;
+  outline: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.jqHidden {
+  display: none;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.messagedisplay.invisible {
+  color: transparent;
+  display: none;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+}
+
+.left {
+  text-align: left;
+  justify-content: flex-start;
+}
+
+.center {
+  text-align: center;
+  justify-content: center;
+}
+
+.right {
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.top {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.middle {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.bottom {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.alert {
+  font-size: 0.9rem;
+  line-height: 1rem;
+}
+
+:not(tr):not(td).nodata:not(:empty) {
+  display: block;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  padding: 1.5rem 0.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+#sidebar .nodata:not(:empty) {
+  font-size: 1rem;
+}
+#sidebar .externalicon {
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0.25rem 0 0;
+}
+
+.flatradiogrouper {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #dbdbdb;
+}
+.flatradiogrouper .flatradio.container {
+  padding: 0.25rem 0.5rem;
+  margin: 0.5rem 0;
+}
+.flatradiogrouper .flatradio.container:first-child {
+  margin-top: -0.25rem;
+}
+.flatradiogrouper .flatradio.container:last-child {
+  margin-bottom: -0.25rem;
+}
+.flatradiogrouper .flatradio.container:not(:last-child):after {
+  border-bottom: 1px solid #cccccc;
+  content: "";
+  display: block;
+  left: 1.75rem;
+  position: relative;
+  width: calc(100% - 1.75rem);
+  top: 0.5rem;
+}
+
+.flatlistgrouper {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #dbdbdb;
+}
+.flatlistgrouper .flatradio.container, .flatlistgrouper .flatlist.container {
+  padding: 0.5rem 0;
+}
+.flatlistgrouper .flatradio.container:first-child, .flatlistgrouper .flatlist.container:first-child {
+  padding-top: 0;
+}
+.flatlistgrouper .flatradio.container:last-child, .flatlistgrouper .flatlist.container:last-child {
+  padding-bottom: 0;
+}
+.flatlistgrouper .flatradio.container:not(:last-child):after, .flatlistgrouper .flatlist.container:not(:last-child):after {
+  border-bottom: 1px solid #cccccc;
+  content: "";
+  display: block;
+  left: 0.25rem;
+  position: relative;
+  width: calc(100% - 0.25rem);
+  top: 0.5rem;
+}
+
+.prettycheck.container,
+.prettyradio.container {
+  position: relative;
+}
+
+.flatradio.container {
+  margin: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flatradio.container.jqHidden {
+  display: none;
+}
+.flatradio.container input.flatradio {
+  display: inline-block;
+  font-size: 0;
+  margin: 0;
+  opacity: 0;
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.flatradio.container input.flatradio + label {
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1rem;
+  position: static;
+  text-align: left;
+  width: auto;
+}
+.flatradio.container input.flatradio + label.wrap {
+  flex-wrap: wrap;
+}
+.flatradio.container input.flatradio:not(:checked) + label {
+  color: #363636;
+}
+.flatradio.container input.flatradio:disabled + label {
+  color: #999999;
+  cursor: default;
+}
+.flatradio.container input.flatradio:disabled:checked + label {
+  color: #565656;
+}
+
+.flatlist.container {
+  margin: 0;
+  position: relative;
+}
+.flatlist.container label.flatlist {
+  align-items: center;
+  display: inline-flex;
+  font-size: 1rem;
+  position: static;
+  text-align: left;
+  width: auto;
+}
+.flatlist.container label.flatlist.wrap {
+  flex-wrap: wrap;
+}
+
+input.prettycheck,
+input.prettyradio {
+  display: inline-block;
+  font-size: 0;
+  margin: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 0.95rem;
+  height: 0.95rem;
+}
+input.prettycheck + label,
+input.prettyradio + label {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  position: static;
+  text-align: left;
+  vertical-align: top;
+  width: auto;
+  margin: 0 0 0 calc(1.2rem + 2px);
+  padding: 0.25rem 0;
+  text-indent: calc(-1.2rem - 2px);
+}
+
+.section .content input.prettycheck + label {
+  display: inline-block;
+}
+.section .content input.prettycheck + label,
+.section .content input.prettycheck + label + .subtle {
+  margin: 0 0 0 calc(1.2rem + 2px);
+}
+
+input.prettycheck + label:before,
+input.prettyradio + label:before {
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.4);
+  content: "";
+  display: inline-block;
+  height: 0.9rem;
+  line-height: 0.85rem;
+  margin: 0 0.3rem -0.1rem 0;
+  position: relative;
+  text-indent: 0;
+  vertical-align: top;
+  width: 0.9rem;
+}
+
+input.flatradio + label:before {
+  border: 2px solid #cccccc;
+  border-radius: 2px;
+  content: "";
+  display: inline-block;
+  flex: 0 0 auto;
+  height: 1rem;
+  margin-right: 0.5rem;
+  position: relative;
+  text-indent: 0;
+  vertical-align: top;
+  width: 1rem;
+}
+
+input.prettyradio + label:before,
+input.flatradio + label:before {
+  border-radius: 50%;
+}
+
+.prettyradio:checked + label:before {
+  box-shadow: inset 0 0 0 2px #ffffff;
+}
+
+.flatradio:checked + label:before {
+  box-shadow: inset 0 0 0 3px #ffffff;
+}
+
+.prettycheck:checked + label:before {
+  background: url("../images/prettycheck.svg") no-repeat scroll center center/contain;
+}
+
+.prettycheck:disabled + label,
+.prettyradio:disabled + label {
+  cursor: default;
+}
+
+.prettycheck:disabled:checked + label:before {
+  background: url("../images/prettycheck_disabled.svg") no-repeat scroll center center/contain;
+}
+
+input.prettycheck:not(:disabled):focus + label, input.prettycheck:not(:disabled):hover + label,
+input.prettycheck:not(:disabled) + label:hover,
+input.prettyradio:not(:disabled):focus + label,
+input.prettyradio:not(:disabled):hover + label,
+input.prettyradio:not(:disabled) + label:hover {
+  text-decoration: underline;
+}
+
+input.flatradio:not(:disabled):focus + label .label_main, input.flatradio:not(:disabled):hover + label .label_main,
+input.flatradio:not(:disabled) + label:hover .label_main {
+  text-decoration: underline;
+}
+
+.prettycheck.container + .helptext,
+.prettyradio.container + .helptext,
+.flatradio.container + .helptext {
+  padding-left: calc(1.2rem + 2px);
+  margin-top: -0.25rem;
+}
+
+input.prettycheck:focus + label:before,
+input.prettyradio:focus + label:before {
+  outline: 1px dotted #000000;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+input.flatradio:focus + label:before {
+  outline: 1px dotted;
+}
+
+input.flatradio + label:before {
+  background-color: #ffffff;
+}
+
+p.flatradio.container:not(.selected) input.flatradio:checked + label,
+p.flatradio.container:not(.selected) input.flatradio:checked + label .subtle {
+  color: #B8B7DA;
+}
+
+p.flatradio.container.selected {
+  background-color: #f1f1f8;
+  border-radius: 4px;
+}
+
+p.flatradio.container.selected.disabled {
+  background-color: #f2f2f2;
+}
+
+input.flatradio:checked + label:before {
+  background-color: #B8B7DA;
+  border-color: #B8B7DA;
+}
+
+input.flatradio:disabled + label:before {
+  background-color: #eaeaea;
+  border-color: #dbdbdb;
+}
+
+input.flatradio:disabled:checked + label:before {
+  background-color: #565656;
+  border-color: #565656;
+}
+
+.togglelist li {
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+}
+
+.tbContainer {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  width: auto;
+}
+
+label.togglebutton[for],
+input.buttoncheck + label.buttoncheck {
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  line-height: normal;
+  overflow-wrap: break-word;
+  position: relative;
+  padding: 0.3655rem 0.75rem;
+  vertical-align: top;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  transition-duration: 0.1s;
+  transition-property: top, box-shadow;
+}
+.card label.togglebutton[for],
+.card input.buttoncheck + label.buttoncheck {
+  border: 1px solid #dbdbdb;
+}
+
+label.togglebutton[for] {
+  margin: 0 0.25rem 0.5rem 0;
+  min-width: 2.75rem;
+  text-align: center;
+  width: auto;
+}
+
+input:checked + label.togglebutton[for],
+input.buttoncheck:checked + label.buttoncheck {
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 2px 1px rgba(0, 0, 0, 0.1);
+  top: 1px;
+}
+
+label.togglebutton[for]:hover,
+input:focus + label.togglebutton[for] {
+  box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+input:focus + label.togglebutton[for],
+input + label.togglebutton[for]:hover {
+  text-decoration: underline;
+}
+
+input:checked + label.togglebutton[for]:hover,
+input:checked:focus + label.togglebutton[for] {
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+input.togglebutton.clearradio {
+  display: inline-block;
+  margin: 0;
+}
+
+.bcList .bcItem {
+  display: inline-block;
+  margin: 0 0.25rem 0 0;
+  vertical-align: top;
+  width: auto;
+}
+
+p.buttoncheck {
+  box-shadow: none;
+  color: inherit;
+  display: inline-block;
+  margin: 0 0.25rem 0.5rem 0;
+  padding: 0;
+  position: relative;
+  white-space: normal;
+  width: auto;
+}
+
+.section .content p.buttoncheck {
+  display: inline-block;
+  width: auto;
+}
+.section .content .forlist p.buttoncheck {
+  margin: 0 0 0.2rem;
+}
+
+p.buttoncheck.alertborder {
+  border: none;
+}
+
+input.buttoncheck {
+  display: inline-block;
+  font-size: 0;
+  height: 100%;
+  margin: 0 0 0 0;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+input.buttoncheck + label.buttoncheck {
+  font-size: 1rem;
+  margin: 0;
+  text-align: left;
+  width: 100%;
+}
+
+input.buttoncheck + label.buttoncheck:before {
+  background-attachment: scroll;
+  background-image: none;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.4);
+  content: "";
+  display: inline-block;
+  height: 0.9rem;
+  line-height: 0.85rem;
+  margin: 0.25rem 0.3rem -0.1rem 0;
+  position: relative;
+  text-indent: 0;
+  vertical-align: top;
+  width: 0.9rem;
+}
+input.buttoncheck:focus + label.buttoncheck:before {
+  outline: 1px dotted #000000;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+input.buttoncheck:checked + label.buttoncheck:before {
+  background-image: url("../images/prettycheck.svg");
+}
+
+input.buttoncheck:disabled + label.buttoncheck {
+  cursor: default;
+  font-weight: normal;
+}
+
+input.buttoncheck:disabled:checked + label.buttoncheck:before {
+  background-image: url("../images/prettycheck_disabled.svg");
+}
+
+.buttoncheck:hover input.buttoncheck:not(:disabled) + label.buttoncheck, .buttoncheck:hover input.buttoncheck:not(:disabled) + label.buttoncheck > *, .buttoncheck:hover input.buttoncheck:not(:disabled) + label.buttoncheck > * > *,
+.buttoncheck input.buttoncheck:not(:disabled):focus + label.buttoncheck,
+.buttoncheck input.buttoncheck:not(:disabled):focus + label.buttoncheck > *,
+.buttoncheck input.buttoncheck:not(:disabled):focus + label.buttoncheck > * > * {
+  text-decoration: underline;
+}
+
+.popupiconcontainer {
+  cursor: auto;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  width: auto;
+}
+@media print {
+  .popupiconcontainer {
+    display: none;
+  }
+}
+table .popupiconcontainer, div .popupiconcontainer {
+  margin: 0 0 0 0.25rem;
+}
+.grid .row [class*=col-] input + .popupiconcontainer, .grid .row [class*=col-] select + .popupiconcontainer, .grid .row [class*=col-] .legacyLabelledField + .popupiconcontainer {
+  display: block;
+  margin: -2rem 0 0.75rem calc(100% - 1.75rem);
+}
+
+.popupinstructionsicon {
+  cursor: default;
+  display: block;
+}
+.popupinstructionsicon:hover {
+  text-decoration: none;
+}
+.popupinstructionsicon:after {
+  border-color: transparent transparent transparent #ffffff;
+  border-style: solid;
+  border-width: 1rem 0 0 1rem;
+  box-shadow: -1px 1px 1px 0 rgba(0, 0, 0, 0.4);
+  content: "";
+  display: none;
+  height: 0;
+  position: absolute;
+  width: 0;
+  z-index: 1000;
+}
+.popupinstructionsicon.onRight.showPopup:after {
+  display: block;
+  left: calc(100% + 2px);
+  top: calc((100% - 1rem) / 2);
+  transform: rotate(45deg);
+}
+.popupinstructionsicon.onBottom.showPopup:after {
+  display: block;
+  left: calc(50% - 0.5rem);
+  top: calc(100% + 2px);
+  transform: rotate(135deg);
+}
+.popupinstructionsicon.onLeft.showPopup:after {
+  display: block;
+  left: calc(-0.5rem - 3px);
+  top: calc((100% - 1rem) / 2);
+  transform: rotate(225deg);
+}
+.popupinstructionsicon.onTop.showPopup:after {
+  display: block;
+  left: calc(50% - 0.5rem);
+  top: calc(-0.25rem - 10px);
+  transform: rotate(315deg);
+}
+.popupiconcontainer .popupinstructionsicon {
+  line-height: 0;
+}
+.popupiconcontainer .popupinstructionsicon > * {
+  line-height: normal;
+}
+.popupiconcontainer .popupinstructionsicon > img {
+  height: 1.2rem;
+  margin: 0;
+  width: 1.2rem;
+}
+
+.popupiconcontainer .popupInstructions {
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.6);
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0;
+  min-height: 2.25rem;
+  padding: 0.4rem;
+  position: absolute;
+  text-align: left;
+  word-wrap: break-word;
+  width: 400px;
+  z-index: 1020;
+  border-radius: 2px;
+}
+#sidebar .popupiconcontainer .popupInstructions {
+  width: 250px;
+}
+.popupinstructionsicon.onRight + .popupInstructions {
+  margin-left: 9px;
+}
+.popupinstructionsicon.onLeft + .popupInstructions {
+  margin-left: -1px;
+}
+.popupinstructionsicon.onBottom + .popupInstructions {
+  margin-top: 9px;
+}
+.popupinstructionsicon.onTop + .popupInstructions {
+  margin-top: -4px;
+}
+
+.popupiconcontainer .popupInstructions .header {
+  padding-top: 0;
+}
+.popupiconcontainer .popupInstructions .header:empty {
+  padding: 0;
+}
+
+.infoBubbleWrapper {
+  cursor: auto;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0.125rem 0 -0.25rem 0.25rem;
+  position: relative;
+  width: auto;
+}
+.infoBubbleWrapper .infoBubbleTarget {
+  cursor: pointer;
+  display: inline-flex;
+  position: relative;
+  text-decoration: none;
+  border: none;
+  font: inherit;
+  background: transparent;
+  color: inherit;
+  overflow: visible;
+}
+.infoBubbleWrapper .infoBubbleTarget.asIcon {
+  background: transparent none no-repeat center center/1.2rem 1.2rem;
+  height: 1.2rem;
+  width: 1.2rem;
+  vertical-align: text-top;
+}
+.infoBubbleWrapper .infoBubbleTarget.asIcon img {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  opacity: 1;
+}
+.infoBubbleWrapper .infoBubbleTarget.withIcon {
+  height: 2rem;
+  width: 2rem;
+}
+.infoBubbleWrapper .infoBubbleTarget.withIcon .infoBubbleSvg {
+  fill: #7571B0;
+  height: 2rem;
+  width: 2rem;
+}
+.infoBubbleWrapper .infoBubbleTarget:after {
+  border-color: transparent transparent transparent #ffffff;
+  border-style: solid;
+  border-width: 1rem 0 0 1rem;
+  box-shadow: -1px 1px 1px 0 rgba(0, 0, 0, 0.4);
+  content: "";
+  display: none;
+  height: 0;
+  position: absolute;
+  width: 0;
+  z-index: 1000;
+}
+.infoBubbleWrapper .infoBubbleTarget.onLeft:after, .infoBubbleWrapper .infoBubbleTarget.onRight:after {
+  top: calc((100% - 0.8485rem) / 2);
+}
+.infoBubbleWrapper .infoBubbleTarget.onTop:after, .infoBubbleWrapper .infoBubbleTarget.onBottom:after {
+  /*rtl:ignore*/
+  left: calc((100% - 0.8485rem) / 2);
+}
+.infoBubbleWrapper .infoBubbleTarget.onRight:after {
+  /*rtl:ignore*/
+  left: 100%;
+  transform: rotate(45deg) /*rtl:rotate(135deg)*/;
+}
+.infoBubbleWrapper .infoBubbleTarget.onBottom:after {
+  top: 100%;
+  transform: rotate(135deg);
+}
+.infoBubbleWrapper .infoBubbleTarget.onLeft:after {
+  /*rtl:ignore*/
+  left: -1rem;
+  transform: rotate(225deg) /*rtl:rotate(315deg)*/;
+}
+.infoBubbleWrapper .infoBubbleTarget.onTop:after {
+  top: -1rem;
+  transform: rotate(315deg);
+}
+.infoBubbleWrapper .infoBubbleTarget.asIcon.onLeft:after, .infoBubbleWrapper .infoBubbleTarget.asIcon.onRight:after {
+  top: 0.1rem;
+}
+.infoBubbleWrapper .infoBubbleTarget.asIcon.onTop:after, .infoBubbleWrapper .infoBubbleTarget.asIcon.onBottom:after {
+  left: 0.1rem;
+}
+.infoBubbleWrapper .infoBubbleTarget.onLeft + .infoBubblePopup, .infoBubbleWrapper .infoBubbleTarget.onRight + .infoBubblePopup {
+  margin-top: calc(0.8485rem / 2);
+}
+.infoBubbleWrapper .infoBubbleTarget.onLeft + .infoBubblePopup.infoPopupAlignTop, .infoBubbleWrapper .infoBubbleTarget.onRight + .infoBubblePopup.infoPopupAlignTop {
+  margin-top: calc(-0.8485rem / 2);
+}
+.infoBubbleWrapper .infoBubbleTarget.onRight + .infoBubblePopup {
+  /*rtl:ignore*/
+  margin-left: calc(0.8485rem / 2);
+}
+.infoBubbleWrapper .infoBubbleTarget.onBottom + .infoBubblePopup {
+  margin-top: calc(0.8485rem / 2);
+}
+.infoBubbleWrapper .infoBubbleTarget.onLeft + .infoBubblePopup {
+  /*rtl:ignore*/
+  margin-left: calc(-0.8485rem / 2);
+}
+.infoBubbleWrapper .infoBubbleTarget.onTop + .infoBubblePopup {
+  margin-top: calc(-0.8485rem / 2);
+}
+.infoBubbleWrapper .infoBubblePopup {
+  border-radius: 2px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.6);
+  display: none;
+  margin: 0;
+  min-height: 2.25rem;
+  padding: 0.33rem;
+  position: absolute;
+  text-align: left;
+  white-space: normal;
+  width: 400px;
+  z-index: 999;
+}
+.infoBubbleWrapper.hover .infoBubblePopup, .infoBubbleWrapper.hover .infoBubbleTarget:after {
+  display: block;
+}
+@media print {
+  .infoBubbleWrapper.hover .infoBubblePopup, .infoBubbleWrapper.hover .infoBubbleTarget:after {
+    display: none;
+  }
+}
+.infoBubbleWrapper .infoBubblePopup .header {
+  padding-top: 0;
+}
+.infoBubbleWrapper .infoBubbleBody a {
+  color: #7571B0 !important;
+}
+.infoBubbleWrapper .infoBubbleBody p {
+  margin-top: 0;
+}
+
+.lb_content {
+  background: #f8f8f8;
+  box-shadow: 0 0.5rem 5rem 0 rgba(0, 0, 0, 0.75);
+  display: none;
+  left: 50%;
+  margin: 0 -50% 0 0;
+  transform: translate(-50%);
+  padding: 0.75rem 1.25rem;
+  outline: none;
+  position: absolute;
+  top: 0;
+  width: 60%;
+  z-index: 3001;
+}
+.lb_content .back {
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.externalorgnotice,
+.externalorgnotice:before {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.externalorgnotice {
+  padding: 0 0 0 1.25rem;
+  margin: 0 auto;
+  display: block;
+}
+.externalorgnotice:before {
+  background: transparent url("../images/my1chartlogo.png") no-repeat 0 0/1rem 1rem;
+  content: "";
+  height: 1.2rem;
+  margin: 0 0 0 -1.25rem;
+  padding: 0 0.25rem 0 0;
+  width: 1rem;
+}
+
+.incompleteh2gnotice {
+  margin-top: 0.5rem;
+}
+.incompleteh2gnotice.externalorgnotice:before {
+  background: transparent url("../images/CareEverywhere-With-Arrow.png") no-repeat 0 0/1rem 1rem;
+}
+
+.terms {
+  background: #ffffff none no-repeat scroll 0 0;
+  margin: 1rem 0;
+  max-height: 75vh;
+  padding: 0.5rem;
+  overflow-y: scroll;
+  border: 1px solid rgba(118, 118, 118, 0.45);
+}
+.md_termsconditions_index .terms {
+  max-height: 55vh;
+}
+
+.termsscroll {
+  overflow-y: scroll;
+}
+
+.hilite {
+  background-color: #ffff00;
+}
+
+.ajaxspinnergif, .jsdisabled {
+  background-color: #767676;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #cccccc;
+  left: 50%;
+  margin: -37px 0 0 -75px;
+  padding: 30px 10px;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  width: 150px;
+  z-index: 1010;
+}
+
+.ajaxspinnergif a {
+  color: #cccccc;
+}
+
+/* #region Loading overlay styles */
+.defaultajaxoverlay, .defaultajaxinline {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+}
+.defaultajaxoverlay .loadingspinner, .defaultajaxinline .loadingspinner {
+  width: 8rem;
+  display: block;
+  margin: 0 auto;
+}
+.defaultajaxoverlay .loadingmessage, .defaultajaxinline .loadingmessage {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  left: 50%;
+  margin: -1.2rem 0 0 -4.5rem;
+  text-align: center;
+  top: 50%;
+  width: 9rem;
+  z-index: 1010;
+}
+
+.defaultajaxoverlay {
+  position: fixed;
+}
+.defaultajaxoverlay .loadingmessage {
+  position: fixed;
+  padding: 1.8rem 0.6rem;
+}
+
+.defaultajaxinline {
+  position: relative;
+}
+.defaultajaxinline .loadingmessage {
+  background-color: transparent;
+  position: relative;
+}
+
+.nojs #wrap {
+  opacity: 1;
+}
+.nojs #content {
+  opacity: 1;
+  top: 200px;
+  z-index: 0;
+}
+.nojs #main {
+  min-height: 400px;
+}
+
+body.nojshelp {
+  display: block !important;
+}
+
+.nojshelp #wrap {
+  opacity: 1;
+}
+
+.userPhoto {
+  background: transparent url("../images/ProxySilhouette.png") no-repeat scroll center center/cover;
+  border-radius: 100%;
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  height: 2.5em;
+  overflow: hidden;
+  width: 2.5em;
+}
+
+.accountBadges {
+  margin: 0.5rem 0 0;
+}
+.accountBadges .accountBadge {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  background: #ffffff none;
+  border-radius: 1.75em 0 0 1.75em;
+  display: inline-block;
+  height: 3rem;
+  margin: 0 1rem 1rem 0;
+  max-width: 14rem;
+  min-width: 12rem;
+  padding: 0.25rem 0.5rem 0.25rem 3.25em;
+  vertical-align: top;
+  width: auto;
+}
+.accountBadges .accountBadge.flat {
+  border: 1px solid #eaeaea;
+  box-shadow: none;
+}
+.accountBadges.selectable .accountBadge {
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition-duration: 0.1s;
+  transition-property: top, box-shadow;
+}
+.accountBadges.selectable .accountBadge.selected {
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 2px 1px rgba(0, 0, 0, 0.1);
+  top: 1px;
+}
+.accountBadges.selectable .accountBadge:focus, .accountBadges.selectable .accountBadge:hover {
+  box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2);
+}
+.accountBadges.selectable .accountBadge:focus .accountName, .accountBadges.selectable .accountBadge:hover .accountName {
+  text-decoration: underline;
+}
+.accountBadges.selectable .accountBadge.selected:hover, .accountBadges.selectable .accountBadge.selected:focus {
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+.accountBadges.selectable .accountBadge.selected {
+  background-color: #bfe1ff;
+}
+.accountBadges .accountBadge .userPhoto {
+  display: inline-block;
+  margin: 0 0.5em -2.5em -3em;
+  vertical-align: top;
+}
+.accountBadges .accountBadge .accountName {
+  display: inline-block;
+  margin: 0 0 0.125rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.showIfSelected {
+  visibility: hidden;
+}
+.selected .showIfSelected {
+  visibility: visible;
+}
+
+.preCheckmark:before {
+  background: transparent url("../images/checkmark_large.svg") no-repeat scroll center center/cover;
+  content: "";
+  display: inline-block;
+  height: 1em;
+  margin: 0 0.25rem 0 0;
+  vertical-align: top;
+  width: 1.25em;
+}
+
+.list.collapsible {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+.list.collapsible > * {
+  box-shadow: 0 4px 4px -5px rgba(0, 0, 0, 0.4);
+  padding: 0.5rem 0.75rem;
+}
+.list.collapsible > *:first-child {
+  padding-top: 0.75rem;
+}
+.list.collapsible > *:last-child {
+  box-shadow: none;
+  padding-bottom: 0.75rem;
+}
+.list.collapsible .collapsed {
+  cursor: pointer;
+}
+.list.collapsible .addRow {
+  background-color: #f2f2f2;
+}
+
+html[lang=ar],
+html[lang=ar] body {
+  line-height: 1.75rem;
+}
+html[lang=ar] .helptext,
+html[lang=ar] .subtle,
+html[lang=ar] .alert {
+  line-height: 1.25rem;
+}
+
+html[lang=ar] {
+  font-size: 15pt;
+}
+html[lang=ar],
+html[lang=ar] input,
+html[lang=ar] select,
+html[lang=ar] textarea,
+html[lang=ar] optgroup {
+  font-family: "Geeza Pro", Arial, sans-serif;
+}
+
+.omitdisablestyling[class][class][class] {
+  box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  background-color: #B8B7DA;
+}
+@media print {
+  .omitdisablestyling[class][class][class] {
+    border: 1px solid #767676;
+    padding-top: calc(0.375rem - 1px);
+    padding-bottom: calc(0.375rem - 1px);
+  }
+  .mobile .omitdisablestyling[class][class][class] {
+    padding-top: calc(0.75rem - 1px);
+    padding-bottom: calc(0.75rem - 1px);
+  }
+}
+.darkmode .omitdisablestyling[class][class][class] {
+  border: 2px solid;
+}
+
+.omitdisablestyling[class][class][class]:focus, .omitdisablestyling[class][class][class]:hover, .omitdisablestyling[class][class][class]:active {
+  color: #ffffff;
+}
+.omitdisablestyling[class][class][class]:active {
+  box-shadow: none;
+  transform: translateY(1px);
+}
+.darkmode .omitdisablestyling[class][class][class] {
+  border-color: #dcdbed;
+  color: white;
+  background-color: #373741;
+  box-shadow: none;
+}
+
+.omitdisablestyling[class][class][class]:hover, .omitdisablestyling[class][class][class]:active {
+  background-color: #9c9cb9;
+}
+.darkmode .omitdisablestyling[class][class][class]:hover, .darkmode .omitdisablestyling[class][class][class]:active {
+  background-color: #908faa;
+  border-color: transparent;
+}
+
+.tvmode .omitdisablestyling[class][class][class]:hover, .tvmode .omitdisablestyling[class][class][class]:active, .tvmode .omitdisablestyling[class][class][class]:focus {
+  background-color: #9c9cb9;
+}
+.tvmode.darkmode .omitdisablestyling[class][class][class]:hover, .tvmode.darkmode .omitdisablestyling[class][class][class]:active, .tvmode.darkmode .omitdisablestyling[class][class][class]:focus {
+  background-color: #908faa;
+  border-color: transparent;
+}
+
+.omitdisablestyling[class][class][class].completeworkflow, .omitdisablestyling[class][class][class].nextstep {
+  box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  background-color: #00778a;
+}
+@media print {
+  .omitdisablestyling[class][class][class].completeworkflow, .omitdisablestyling[class][class][class].nextstep {
+    border: 1px solid #767676;
+    padding-top: calc(0.375rem - 1px);
+    padding-bottom: calc(0.375rem - 1px);
+  }
+  .mobile .omitdisablestyling[class][class][class].completeworkflow, .mobile .omitdisablestyling[class][class][class].nextstep {
+    padding-top: calc(0.75rem - 1px);
+    padding-bottom: calc(0.75rem - 1px);
+  }
+}
+.darkmode .omitdisablestyling[class][class][class].completeworkflow, .darkmode .omitdisablestyling[class][class][class].nextstep {
+  border: 2px solid;
+}
+
+.omitdisablestyling[class][class][class].completeworkflow:focus, .omitdisablestyling[class][class][class].completeworkflow:hover, .omitdisablestyling[class][class][class].completeworkflow:active, .omitdisablestyling[class][class][class].nextstep:focus, .omitdisablestyling[class][class][class].nextstep:hover, .omitdisablestyling[class][class][class].nextstep:active {
+  color: #ffffff;
+}
+.omitdisablestyling[class][class][class].completeworkflow:active, .omitdisablestyling[class][class][class].nextstep:active {
+  box-shadow: none;
+  transform: translateY(1px);
+}
+.darkmode .omitdisablestyling[class][class][class].completeworkflow, .darkmode .omitdisablestyling[class][class][class].nextstep {
+  border-color: #80bbc5;
+  color: white;
+  background-color: #002429;
+  box-shadow: none;
+}
+
+.omitdisablestyling[class][class][class].completeworkflow:hover, .omitdisablestyling[class][class][class].completeworkflow:active, .omitdisablestyling[class][class][class].nextstep:hover, .omitdisablestyling[class][class][class].nextstep:active {
+  background-color: #006575;
+}
+.darkmode .omitdisablestyling[class][class][class].completeworkflow:hover, .darkmode .omitdisablestyling[class][class][class].completeworkflow:active, .darkmode .omitdisablestyling[class][class][class].nextstep:hover, .darkmode .omitdisablestyling[class][class][class].nextstep:active {
+  background-color: #005d6c;
+  border-color: transparent;
+}
+
+.tvmode .omitdisablestyling[class][class][class].completeworkflow:hover, .tvmode .omitdisablestyling[class][class][class].completeworkflow:active, .tvmode .omitdisablestyling[class][class][class].completeworkflow:focus, .tvmode .omitdisablestyling[class][class][class].nextstep:hover, .tvmode .omitdisablestyling[class][class][class].nextstep:active, .tvmode .omitdisablestyling[class][class][class].nextstep:focus {
+  background-color: #006575;
+}
+.tvmode.darkmode .omitdisablestyling[class][class][class].completeworkflow:hover, .tvmode.darkmode .omitdisablestyling[class][class][class].completeworkflow:active, .tvmode.darkmode .omitdisablestyling[class][class][class].completeworkflow:focus, .tvmode.darkmode .omitdisablestyling[class][class][class].nextstep:hover, .tvmode.darkmode .omitdisablestyling[class][class][class].nextstep:active, .tvmode.darkmode .omitdisablestyling[class][class][class].nextstep:focus {
+  background-color: #005d6c;
+  border-color: transparent;
+}
+
+.omitdisablestyling[class][class][class][class], .omitdisablestyling[class][class][class][class]:focus, .omitdisablestyling[class][class][class][class]:hover {
+  color: transparent;
+  pointer-events: none;
+}
+
+.spinningLoadWheel {
+  display: inline-block;
+  border-color: rgba(255, 255, 255, 0.3);
+  border-top-color: #ffffff;
+  width: 36px;
+  height: 36px;
+  border-width: 6px;
+  border-style: solid;
+  border-radius: 50%;
+  animation: _LoadingWheel-Rotate 0.8s cubic-bezier(0.5, 0.25, 0.3, 0.73) infinite;
+}
+@keyframes _LoadingWheel-Rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#NOTIFY + .spinningLoadWheel {
+  margin: 0.25rem -3.7rem;
+}
+
+#access + .spinningLoadWheel,
+#SIGNUP + .spinningLoadWheel,
+#noActionButton + .spinningLoadWheel {
+  margin: 0.25rem -3.2rem;
+}
+.mobile #access + .spinningLoadWheel,
+.mobile #SIGNUP + .spinningLoadWheel,
+.mobile #noActionButton + .spinningLoadWheel {
+  margin: 0.25rem -3.6rem;
+}
+@media screen and (max-width: 768px) {
+  #access + .spinningLoadWheel,
+#SIGNUP + .spinningLoadWheel,
+#noActionButton + .spinningLoadWheel {
+    margin: -2.3rem auto 1.3rem;
+  }
+  .mobile #access + .spinningLoadWheel,
+.mobile #SIGNUP + .spinningLoadWheel,
+.mobile #noActionButton + .spinningLoadWheel {
+    display: block;
+    margin: -2.6rem auto 0.625rem;
+  }
+}
+
+.login #submit + .spinningLoadWheel {
+  margin: -2.8rem auto 1.3rem;
+  display: block;
+}
+
+@keyframes rotateClockwise180 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-180deg);
+  }
+}
+@keyframes rotateCounterClockwise180 {
+  0% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  /* This animation goes to fully transparent *and hidden* halfway through as a workaround to an IE bug where we can't control the opacity of pseudoelements  */
+  50% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.visitdetails .visitinstructionscontent .readmore {
+  background-color: rgba(244, 244, 249, 0.8);
+}
+
+.visitinstructionscontent {
+  overflow: hidden;
+  position: relative;
+  transition: height, 0.5s;
+}
+.visitinstructionscontent .readmore {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.8rem 0 0.8rem 0;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.visitinstructionscontent .readless {
+  padding-top: 0.5rem;
+}
+.visitinstructionscontent .readless .collapse {
+  padding-left: 1.2rem;
+  background: none no-repeat scroll left center transparent;
+  background-image: url("../images/up_chevron.png");
+}
+@media only screen and (max-width: 768px) {
+  .visitinstructionscontent .readmore,
+.visitinstructionscontent .readless {
+    text-align: center;
+  }
+}
+.visitinstructionscontent .instructionContent:focus {
+  outline: none;
+}
+
+.uploadButtonFocus {
+  outline: #000000 dashed 1px;
+  outline: -webkit-focus-ring-color solid 1px;
+  outline-offset: 1px;
+}
+
+[class*=skeleton-bone] {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: boneShiftGradient;
+  animation-timing-function: linear;
+  background: linear-gradient(to right, #eeeeee 8%, #dbdbdb 18%, #eeeeee 33%);
+  background-size: 800px 100px;
+  position: relative;
+}
+@keyframes boneShiftGradient {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+
+.skeleton-boneRound {
+  border-radius: 50%;
+}
+
+.clicktoexpand, .clicktocollapse {
+  display: none;
+  font-size: 11pt;
+  margin-left: 0.3rem;
+  color: #67639b;
+  vertical-align: bottom;
+  cursor: pointer;
+}
+
+.collapsibleSectionHeader.expanded .clicktocollapse {
+  display: inline;
+}
+.collapsibleSectionHeader.collapsed .clicktoexpand {
+  display: inline;
+}
+.collapsibleSectionHeader.expanded .clicktoexpand {
+  display: none;
+}
+.collapsibleSectionHeader.collapsed .clicktocollapse {
+  display: none;
+}
+@media (pointer: fine) {
+  .collapsibleSectionHeader.expanded .clicktocollapse {
+    display: none;
+  }
+  .collapsibleSectionHeader.collapsed .clicktoexpand {
+    display: none;
+  }
+  .collapsibleSectionHeader.expanded:hover .clicktoexpand {
+    display: none;
+  }
+  .collapsibleSectionHeader.expanded:hover .clicktocollapse {
+    display: inline;
+  }
+  .collapsibleSectionHeader.collapsed:hover .clicktoexpand {
+    display: inline;
+  }
+  .collapsibleSectionHeader.collapsed:hover .clicktocollapse {
+    display: none;
+  }
+}
+.collapsibleSectionHeader.expanded .header, .collapsibleSectionHeader.collapsed .header {
+  display: inline;
+  padding: 0 1em 0.1em 0.1em;
+  margin-left: -0.1em;
+  background-repeat: no-repeat;
+  background-position: 99% 60%;
+  vertical-align: text-bottom;
+  background-size: 0.8rem;
+  cursor: pointer;
+}
+.collapsibleSectionHeader.expanded .header {
+  background-image: url("../images/up_chevron_blue.svg");
+}
+.collapsibleSectionHeader.collapsed .header {
+  background-image: url("../images/down_chevron_blue.svg");
+}
+
+.collapsibleSectionContent {
+  margin-top: 0.75rem;
+}
+
+.no-outline-on-focus:focus {
+  outline: none;
+}
+
+/* status badges */
+.statusBadge {
+  border-radius: 0.25rem;
+  border-style: solid;
+  border-width: 2px;
+}
+.statusBadge .badgeContents {
+  font-size: 0.8rem;
+  padding: 0.1rem 0.5rem;
+}
+
+.verticalSubway {
+  list-style-type: none;
+}
+.verticalSubway .verticalSubwayStop {
+  position: relative;
+  padding-bottom: 10px;
+  padding-left: 1em;
+}
+.verticalSubway .verticalSubwayStop:before {
+  height: 100%;
+  width: 1px;
+  left: 0.28em;
+  content: "";
+  position: absolute;
+}
+.verticalSubway .verticalSubwayStop:last-child:before {
+  height: 6px;
+}
+.verticalSubway .verticalSubwayStop:first-child:before {
+  top: 6px;
+}
+.verticalSubway .verticalSubwayStop .verticalSubwayStopContents:before {
+  display: inline-block;
+  left: 0;
+  top: 5px;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  content: "";
+  position: absolute;
+}
+.verticalSubway .verticalSubwayStop .verticalSubwayStopContents .readmore {
+  margin-left: 2rem;
+}
+
+/* #region Content Linking related */
+.md_crr .section .storyhead,
+.md_showfile .section .storyhead {
+  font-size: 1.2rem;
+  line-height: 1.25rem;
+  margin: 0.25rem 0 0.5rem 0;
+}
+
+/* #endregion */
+/*Skiplinks: links which are hidden from view until they are focused, can be used by screen reader users to jump around the page without interfering with 
+Sighted users. These links need to be visible when focused, they can't always be hidden. 
+Reading: 
+- https://webaim.org/techniques/skipnav/
+- https://webaim.org/techniques/css/invisiblecontent/
+*/
+.skiplink {
+  text-indent: -10000px;
+}
+
+.skiplink:focus {
+  text-indent: 0px;
+  background-color: #f4f4f9;
+}
+
+/* #region Video related */
+.videoCard {
+  min-height: 0 !important;
+  display: block;
+}
+.videoCard .videoHeader {
+  display: inline-flex;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+.videoCard .videoHeader .icon {
+  position: relative;
+  width: auto;
+}
+.videoCard .videoHeader .icon .videoIcon {
+  width: 2rem;
+}
+.videoCard h2 {
+  padding-top: 0.33rem;
+  margin-left: 0.5rem;
+  font-size: 0.9233rem;
+  color: #363636;
+}
+.videoCard .individualVideo {
+  position: relative;
+  padding-bottom: 0.5rem;
+  padding-right: 0.8rem;
+}
+.videoCard .individualVideo .videoDescription {
+  color: #363636;
+  padding-right: 20px;
+}
+.videoCard .individualVideo:hover {
+  background-color: #f4f4f9;
+}
+.videoCard .individualVideo a:focus {
+  background: inherit;
+}
+.videoCard .individualVideo img {
+  outline: 1px solid #cccccc;
+}
+.videoCard .individualVideo:not(:first-child), .videoCard .collapse_expand, .videoCard .moreVideosLabel {
+  padding-top: 0.5em;
+  border-top: solid thin;
+  border-color: #cccccc;
+}
+.videoCard .moreVideosLabel {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.videoCard .collapse_expand div {
+  display: inline;
+}
+.videoCard .collapse_expand button {
+  width: 100%;
+}
+.videoCard .collapse_expand button .expand_label, .videoCard .collapse_expand button .collapse_label {
+  margin-left: auto;
+  margin-right: auto;
+}
+.videoCard .collapse_expand button .expand_label::after, .videoCard .collapse_expand button .collapse_label::after {
+  border-style: solid;
+  border-width: 2px 2px 0 0;
+  content: "";
+  display: inline-block;
+  position: relative;
+  height: 0.4em;
+  vertical-align: baseline;
+  width: 0.4em;
+  margin-left: 0.4em;
+  transform: rotate(135deg);
+}
+.videoCard .collapse_expand button .expand_label:hover, .videoCard .collapse_expand button .collapse_label:hover {
+  text-decoration: underline;
+}
+.videoCard .collapse_expand button .expand_label::after {
+  top: -0.15em;
+  transform: rotate(135deg);
+}
+.videoCard .collapse_expand button .collapse_label::after {
+  top: 0.15em;
+  transform: rotate(-45deg);
+}
+
+@media only screen and (max-width: 1300px) {
+  #sidebar .videoCard.hideSidebarForMobile {
+    display: none;
+  }
+}
+#sidebar .individualVideo .videoThumbnail img {
+  max-height: 80px;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 5%;
+  width: 50%;
+}
+#sidebar .individualVideo .textWrapper {
+  margin-left: 2%;
+}
+
+.header.videoCard .individualVideo img {
+  margin-left: 5%;
+  margin-top: 15px;
+  max-height: 5.5rem;
+}
+@media only screen and (max-width: 426px) {
+  .header.videoCard .individualVideo .col-3, .header.videoCard .individualVideo .col-9 {
+    width: 100%;
+  }
+  .header.videoCard .individualVideo .col-3 img {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .header.videoCard .individualVideo .col-3 img {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .header.videoCard {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1301px) {
+  .header.videoCard {
+    display: none;
+  }
+}
+
+.mobile #sidebar .videoCard.hideSidebarForMobile {
+  display: none;
+}
+.mobile .header.videoCard {
+  display: block;
+  width: 100%;
+}
+.mobile .header.videoCard .videoHeaderText {
+  background: inherit !important;
+}
+.mobile .header.videoCard .individualVideo img {
+  max-width: 100%;
+}
+.mobile .header.videoCard h2 {
+  padding: 0.33rem 0rem 0rem 0rem !important;
+  margin: 0rem 0rem 0rem 0.5rem !important;
+  color: #363636;
+}
+
+/* #endregion */
+#toastWrapper {
+  padding: 0 10px;
+  z-index: 10;
+  right: 0;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+#toastWrapper.animToast {
+  position: fixed;
+  left: 0;
+  bottom: 1.25rem;
+  animation-duration: 0.25s;
+  animation-timing-function: ease-out;
+  z-index: 1000;
+}
+#toastWrapper.animToast:is(.showing, .hiding) {
+  animation-name: showToast;
+}
+#toastWrapper.animToast.hiding {
+  animation-direction: reverse;
+}
+.datatile #toastWrapper.animToast:not(.persistent) {
+  bottom: initial;
+  top: 1.25rem;
+}
+.datatile #toastWrapper.animToast:not(.persistent):is(.showing, .hiding) {
+  animation-name: showDataTileToast;
+}
+@keyframes showToast {
+  from {
+    transform: translateY(calc(100% + 1.25rem));
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes showDataTileToast {
+  from {
+    transform: translateY(calc(0% - 1.25rem));
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+#toastWrapper .toast {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.72);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  padding-right: 0;
+  z-index: 100000000000000000;
+}
+@media screen and (min--moz-device-pixel-ratio: 0) {
+  #toastWrapper .toast {
+    background: rgba(0, 0, 0, 0.944);
+  }
+}
+@media print {
+  #toastWrapper .toast {
+    display: none;
+  }
+}
+#toastWrapper .toast .icon {
+  height: 22px;
+  min-width: 22px;
+  width: 22px;
+  margin-right: 0.75rem;
+}
+#toastWrapper .toast .icon.success {
+  fill: green;
+}
+#toastWrapper .toast .body {
+  color: #ffffff;
+  flex-grow: 1;
+}
+#toastWrapper .toast .body._Text._readOnlyText {
+  margin-bottom: 0;
+}
+#toastWrapper .toast .dismiss {
+  line-height: normal;
+}
+#toastWrapper .toast .dismiss svg {
+  vertical-align: middle;
+  fill: #ffffff;
+}
+#toastWrapper .toast .dismiss svg.dismissIcon {
+  height: 24px;
+  min-width: 24px;
+  margin-right: 0.75rem;
+}
+#toastWrapper .toast .dismiss {
+  display: flex;
+  align-items: center;
+}
+
+.standardBanner {
+  padding: 0.5rem 0.5rem 0.5rem 3rem;
+  background-repeat: no-repeat;
+  background-size: 1.5rem 1.5rem;
+  background-position: left 0.7rem top 0.5rem;
+  border: 1px solid #dbdbdb;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+}
+@media only screen and (max-width: 768px) {
+  .standardBanner {
+    flex-direction: column;
+  }
+}
+.standardBanner .banner-header-text {
+  order: 0;
+  flex: 1 1 auto;
+  align-self: auto;
+  width: auto;
+  word-break: break-word;
+}
+.standardBanner .header {
+  padding: 0.1rem 0 0.3rem 0;
+  outline: none;
+}
+.standardBanner .banner-text.smallBannerFont {
+  font-size: 0.85rem;
+}
+.standardBanner .banner-actions {
+  order: 1;
+  flex: 0 0 auto;
+  align-self: center;
+  width: auto;
+  text-align: right;
+  padding: 0 0.5rem 0 0.75rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+}
+@media only screen and (max-width: 768px) {
+  .standardBanner .banner-actions {
+    flex: 1 1 auto;
+    align-self: auto;
+    text-align: left;
+    width: 100%;
+    padding: 0.75rem 0 0.5rem 0;
+    flex-direction: row;
+    min-width: calc(100% + 2.5rem);
+    margin-left: -2.5rem;
+  }
+}
+.standardBanner .banner-actions a.button {
+  margin: 0.5rem 0;
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .standardBanner .banner-actions a.button {
+    margin: 0 1rem 0 0;
+    width: auto;
+  }
+}
+.standardBanner.successType {
+  background-color: #ccffd8;
+}
+.standardBanner.successType:not(.showIcon) {
+  background-image: url("../images/success_banner_icon.svg");
+}
+.standardBanner.successType .banner-icon {
+  width: 1.5rem;
+  float: left;
+  position: relative;
+  right: 2.3rem;
+  margin-right: -1.5rem;
+}
+.standardBanner.successType .header {
+  color: #0f784a;
+}
+.standardBanner.informationalType {
+  background-color: #e0f1ff;
+}
+.standardBanner.informationalType:not(.showIcon) {
+  background-image: url("../images/informational_banner_icon.svg");
+}
+.standardBanner.informationalType .banner-icon {
+  width: 1.5rem;
+  float: left;
+  position: relative;
+  right: 2.3rem;
+  margin-right: -1.5rem;
+}
+.standardBanner.informationalType .header {
+  color: #7571B0;
+}
+.standardBanner.warningType {
+  background-color: #ffffd0;
+}
+.standardBanner.warningType:not(.showIcon) {
+  background-image: url("../images/warning_banner_icon.svg");
+}
+.standardBanner.warningType .banner-icon {
+  width: 1.5rem;
+  float: left;
+  position: relative;
+  right: 2.3rem;
+  margin-right: -1.5rem;
+}
+.standardBanner.warningType .header {
+  color: #363636;
+}
+.standardBanner.criticalType {
+  background-color: #ffe8e8;
+}
+.standardBanner.criticalType:not(.showIcon) {
+  background-image: url("../images/critical_banner_icon.svg");
+}
+.standardBanner.criticalType .banner-icon {
+  width: 1.5rem;
+  float: left;
+  position: relative;
+  right: 2.3rem;
+  margin-right: -1.5rem;
+}
+.standardBanner.criticalType .header {
+  color: #d80000;
+}
+#self-triage-error-workflow .standardBanner.criticalType {
+  word-break: break-word;
+}
+.standardBanner.inlineBlock {
+  display: inline-block;
+  margin: 0.25rem 0.5%;
+}
+.standardBanner.inlineBlock .banner-text {
+  line-height: 1.5rem;
+  word-wrap: break-word;
+}
+
+.zeroState {
+  text-align: center;
+  min-height: 3.125rem;
+}
+.zeroState .zeroStateIcon {
+  max-width: 40rem;
+  margin: auto;
+}
+.zeroState .zeroStateDisplayText {
+  width: auto;
+  font-size: 1.2rem;
+}
+.zeroState .zeroStateDisplayText:focus {
+  outline: none;
+}
+.zeroState.zeroStateInline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.zeroState.zeroStateInline .zeroStateIcon {
+  flex-shrink: 0;
+  width: auto;
+  margin: 0;
+}
+.zeroState.zeroStateInline .zeroStateIcon svg {
+  height: 3.125rem;
+  width: 3.125rem;
+}
+.zeroState.zeroStateInline .zeroStateDisplayText {
+  display: inline-block;
+  margin: 0 1rem 0 0.5rem;
+}
+
+.adminElevationBanner, .unsupportedBrowserBanner {
+  background-color: #ffffa1;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  padding: 5px;
+  font-size: 15pt;
+  color: #000000;
+  border: 3px solid #000000;
+  box-shadow: 5px 10px 18px #888888;
+}
+.adminElevationBanner .closeBanner, .unsupportedBrowserBanner .closeBanner {
+  color: #000000;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+.adminElevationBanner svg, .unsupportedBrowserBanner svg {
+  top: 50%;
+  height: 1rem;
+  width: 1rem;
+  display: inline;
+  font-size: inherit;
+  vertical-align: middle;
+}
+.adminElevationBanner strong span, .unsupportedBrowserBanner strong span {
+  padding: 0px 5px;
+}
+
+div#nonProdBanner {
+  position: relative;
+  color: red;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  background: repeating-linear-gradient(135deg, black, black 10px, gold 10px, gold 20px);
+}
+div#nonProdBanner strong span {
+  padding: 0px 5px;
+  background: black;
+}
+div#nonProdBanner strong span a {
+  color: red;
+}
+
+.sitebanners {
+  position: sticky;
+  top: 0;
+  z-index: 99999999;
+}
+
+.progressiveDisclosureText {
+  word-break: break-word;
+}
+.progressiveDisclosureText .mainText {
+  display: flex;
+  padding: 0.1rem 0;
+  width: max-content;
+}
+.progressiveDisclosureText .mainText svg.mainTextIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.progressiveDisclosureText .mainText .mainTextContent {
+  margin-top: 0.2rem;
+}
+.progressiveDisclosureText .mainText.expandableMainText {
+  border-radius: 6px;
+  transition: background-color 0.3s;
+  color: #363636;
+  text-decoration: none;
+}
+.progressiveDisclosureText .mainText.expandableMainText:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.progressiveDisclosureText .mainText.expandableMainText svg.expandChevron {
+  width: 1rem;
+  height: 1rem;
+  margin-left: 0.5rem;
+  padding-top: 0.2rem;
+  vertical-align: middle;
+  transition: transform 0.3s;
+  margin-bottom: 0.2rem;
+}
+.progressiveDisclosureText.expanded .expandedText {
+  border-left: 2px solid #cdcdcd;
+  padding-left: 0.5rem;
+  margin-top: 0.3rem;
+  margin-left: 0.5rem;
+  width: auto;
+}
+.progressiveDisclosureText.expanded svg.expandChevron {
+  transform: rotate(-180deg);
+}
+@media screen and (max-width: 768px) {
+  .progressiveDisclosureText {
+    text-align: center;
+  }
+  .progressiveDisclosureText .mainText {
+    margin: auto;
+  }
+  .progressiveDisclosureText.expanded .expandedText {
+    border: none;
+    margin: 0.3rem;
+    padding: 0.5rem;
+  }
+}
+.progressiveDisclosureText.centered {
+  text-align: center;
+}
+.progressiveDisclosureText.centered .mainText {
+  margin: auto;
+}
+.progressiveDisclosureText.centered.expanded .expandedText {
+  border: none;
+  margin: 0.3rem;
+  padding: 0.5rem;
+}
+
+.emergencyDisclaimer .progressiveDisclosureText {
+  color: #d80000;
+}
+.emergencyDisclaimer .progressiveDisclosureText .mainText {
+  background-color: #fceded;
+  padding: 0.1rem 1rem;
+}
+.emergencyDisclaimer .progressiveDisclosureText .mainText.expandableMainText {
+  color: #d80000;
+}
+.emergencyDisclaimer .progressiveDisclosureText .mainText.expandableMainText:hover {
+  background-color: #f9d9d9;
+}
+.emergencyDisclaimer .progressiveDisclosureText .mainText svg {
+  fill: #d80000;
+}
+@media screen and (max-width: 768px) {
+  .emergencyDisclaimer .progressiveDisclosureText .mainText {
+    width: 100%;
+  }
+}
+.emergencyDisclaimer .progressiveDisclosureText .expandedText {
+  border-left: 2px solid #f5bfbf;
+}
+
+.Alerts .content {
+  border-radius: 6px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.Alerts .content a {
+  border-radius: 6px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes floatIn {
+  0% {
+    transform: translateY(8px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.animated {
+  transition-property: all;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+.floatIn {
+  animation-name: floatIn;
+}
+
+.delay {
+  animation-delay: 0.25s;
+}
+
+.longdelay {
+  animation-delay: 0.5s;
+}
+
+.promotedCard .allContent {
+  width: calc(100% - 2rem);
+  margin: 0 1rem;
+  min-height: 4rem;
+}
+
+.PromotedSpecialties .iconContainer,
+.promotedCard .allContent .iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  min-width: 3rem;
+  min-height: 3rem;
+  background-color: white;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  margin: auto;
+}
+.PromotedSpecialties .iconContainer img, .PromotedSpecialties .iconContainer svg,
+.promotedCard .allContent .iconContainer img,
+.promotedCard .allContent .iconContainer svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: cover;
+  position: relative;
+  border-radius: 50%;
+}
+.PromotedSpecialties .iconContainer svg,
+.promotedCard .allContent .iconContainer svg {
+  fill: white;
+}
+.PromotedSpecialties .textContainer,
+.promotedCard .allContent .textContainer {
+  padding-top: 0.5rem;
+  text-align: center;
+}
+@media screen and (max-width: 769px) {
+  .PromotedSpecialties .allContent,
+.promotedCard .allContent .allContent {
+    display: flex;
+    margin: 0;
+  }
+  .PromotedSpecialties .allContent .textContainer,
+.promotedCard .allContent .allContent .textContainer {
+    text-align: left;
+    margin-left: 1rem;
+  }
+}
+
+.PromotedSpecialties .SchedulingOptionsList > li:nth-child(5n+1) .iconContainer:not(.nonFallbackIconContainer) svg,
+.promotedCardContainer:nth-child(5n+1) .iconContainer:not(.nonFallbackIconContainer) svg {
+  background-color: #0098E3;
+}
+.PromotedSpecialties .SchedulingOptionsList > li:nth-child(5n+2) .iconContainer:not(.nonFallbackIconContainer) svg,
+.promotedCardContainer:nth-child(5n+2) .iconContainer:not(.nonFallbackIconContainer) svg {
+  background-color: #FB7373;
+}
+.PromotedSpecialties .SchedulingOptionsList > li:nth-child(5n+3) .iconContainer:not(.nonFallbackIconContainer) svg,
+.promotedCardContainer:nth-child(5n+3) .iconContainer:not(.nonFallbackIconContainer) svg {
+  background-color: #0DB3A6;
+}
+.PromotedSpecialties .SchedulingOptionsList > li:nth-child(5n+4) .iconContainer:not(.nonFallbackIconContainer) svg,
+.promotedCardContainer:nth-child(5n+4) .iconContainer:not(.nonFallbackIconContainer) svg {
+  background-color: #976CEA;
+}
+.PromotedSpecialties .SchedulingOptionsList > li:nth-child(5n+5) .iconContainer:not(.nonFallbackIconContainer) svg,
+.promotedCardContainer:nth-child(5n+5) .iconContainer:not(.nonFallbackIconContainer) svg {
+  background-color: #E85BC7;
+}
+
+.synchronizationLightboxContentContainer {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.progbarsquares {
+  display: inline-block;
+  width: 185px;
+  height: 20px;
+  background: url("../images/progbar.svg");
+  position: relative;
+}
+.progbarsquares:before {
+  content: "";
+  background: #7571B0;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  animation: framesProgbarsquares 2s infinite linear;
+}
+
+@keyframes framesProgbarsquares {
+  0%, 9.99%, to {
+    right: 0px;
+  }
+  10%, 19.99%, 90%, 99.99% {
+    right: 33px;
+  }
+  20%, 29.99%, 80%, 89.99% {
+    right: 66px;
+  }
+  30%, 39.99%, 70%, 79.99% {
+    right: 99px;
+  }
+  40%, 49.99%, 60%, 69.99% {
+    right: 132px;
+  }
+  50%, 59.99% {
+    right: 165px;
+  }
+}
+#mychart_by_epic_logo_wrapper {
+  display: none;
+}
+
+/* #region textarea bucketing */
+/* This area is a little delicate, but the basic logic should be as follows:
+If the wdth of the screen is 900px+, show the textbox as 100%
+If the width of the screen is 701-899px, show the textbox as 600px
+Once we get closer to 600px, just make it 100% to better align with other elements
+Repeat again for 401-599px
+
+Note that in most non-mobile pages, the main component of MyChart does not resize, so only resize based on screen size for responsive views.
+
+Also note that the sizing is different for welcome, and that logic lives in app.scss
+*/
+textarea.textbucket25chars, textarea.textbucket50chars, textarea.textbucket75chars, textarea.textbucket100chars, textarea.textbucket125chars, textarea.textbucket150chars, textarea.textbucket175chars, textarea.textbucket200chars, textarea.textbucket225chars, textarea.textbucket250chars, textarea.textbucket275chars, textarea.textbucket300chars {
+  min-width: 0px;
+  resize: none;
+}
+
+textarea.nonresponsive.textbucket25chars {
+  height: 2.7rem;
+  width: 18rem;
+}
+textarea.nonresponsive.textbucket25chars:not(.singleLineFreeText) {
+  height: 4rem;
+}
+textarea.nonresponsive.textbucket50chars {
+  height: 2.7rem;
+  width: 36rem;
+}
+textarea.nonresponsive.textbucket50chars:not(.singleLineFreeText) {
+  height: 4rem;
+}
+textarea.nonresponsive.textbucket75chars {
+  height: 2.7rem;
+  width: 100%;
+}
+textarea.nonresponsive.textbucket75chars:not(.singleLineFreeText) {
+  height: 4rem;
+}
+textarea.nonresponsive.textbucket100chars, textarea.nonresponsive.textbucket125chars, textarea.nonresponsive.textbucket150chars {
+  height: 4rem;
+  width: 100%;
+}
+textarea.nonresponsive.textbucket175chars, textarea.nonresponsive.textbucket200chars, textarea.nonresponsive.textbucket225chars {
+  height: 5.5rem;
+  width: 100%;
+}
+textarea.nonresponsive.textbucket250chars, textarea.nonresponsive.textbucket275chars, textarea.nonresponsive.textbucket300chars {
+  height: 7rem;
+  width: 100%;
+}
+textarea.nonresponsive.textbucketunlimitedchars {
+  height: 8.5rem;
+  width: 100%;
+}
+
+@media screen and (min-width: 0px) {
+  textarea:not(.nonresponsive).textbucket25chars, .mobile .section [class*=question] textarea.textbucket25chars, .respquestionnaire .section [class*=question] textarea.textbucket25chars {
+    height: 2.7rem;
+    width: 18rem;
+  }
+}
+@media screen and (max-width: 24rem) {
+  textarea:not(.nonresponsive).textbucket25chars, .mobile .section [class*=question] textarea.textbucket25chars, .respquestionnaire .section [class*=question] textarea.textbucket25chars {
+    width: 100%;
+  }
+}
+textarea:not(.nonresponsive).textbucket25chars:not(.singleLineFreeText), .mobile .section [class*=question] textarea.textbucket25chars:not(.singleLineFreeText), .respquestionnaire .section [class*=question] textarea.textbucket25chars:not(.singleLineFreeText) {
+  height: 4rem;
+}
+textarea:not(.nonresponsive).textbucket50chars, .mobile .section [class*=question] textarea.textbucket50chars, .respquestionnaire .section [class*=question] textarea.textbucket50chars {
+  height: 2.7rem;
+  width: 36rem;
+}
+@media screen and (max-width: 42rem) {
+  textarea:not(.nonresponsive).textbucket50chars, .mobile .section [class*=question] textarea.textbucket50chars, .respquestionnaire .section [class*=question] textarea.textbucket50chars {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 35.9rem) {
+  textarea:not(.nonresponsive).textbucket50chars, .mobile .section [class*=question] textarea.textbucket50chars, .respquestionnaire .section [class*=question] textarea.textbucket50chars {
+    width: 18rem;
+    height: 4rem;
+  }
+}
+@media screen and (max-width: 24rem) {
+  textarea:not(.nonresponsive).textbucket50chars, .mobile .section [class*=question] textarea.textbucket50chars, .respquestionnaire .section [class*=question] textarea.textbucket50chars {
+    width: 100%;
+    height: 4rem;
+  }
+}
+textarea:not(.nonresponsive).textbucket50chars:not(.singleLineFreeText), .mobile .section [class*=question] textarea.textbucket50chars:not(.singleLineFreeText), .respquestionnaire .section [class*=question] textarea.textbucket50chars:not(.singleLineFreeText) {
+  height: 4rem;
+}
+textarea:not(.nonresponsive).textbucket75chars, .mobile .section [class*=question] textarea.textbucket75chars, .respquestionnaire .section [class*=question] textarea.textbucket75chars {
+  height: 2.7rem;
+  width: 100%;
+}
+textarea:not(.nonresponsive).textbucket75chars:not(.singleLineFreeText), .mobile .section [class*=question] textarea.textbucket75chars:not(.singleLineFreeText), .respquestionnaire .section [class*=question] textarea.textbucket75chars:not(.singleLineFreeText) {
+  height: 4rem;
+}
+@media screen and (max-width: 53.9rem) {
+  textarea:not(.nonresponsive).textbucket75chars, .mobile .section [class*=question] textarea.textbucket75chars, .respquestionnaire .section [class*=question] textarea.textbucket75chars {
+    width: 36rem;
+    height: 4rem;
+  }
+}
+@media screen and (max-width: 42rem) {
+  textarea:not(.nonresponsive).textbucket75chars, .mobile .section [class*=question] textarea.textbucket75chars, .respquestionnaire .section [class*=question] textarea.textbucket75chars {
+    width: 100%;
+    height: 4rem;
+  }
+}
+@media screen and (max-width: 35.9rem) {
+  textarea:not(.nonresponsive).textbucket75chars, .mobile .section [class*=question] textarea.textbucket75chars, .respquestionnaire .section [class*=question] textarea.textbucket75chars {
+    width: 18rem;
+    height: 5.5rem;
+  }
+}
+@media screen and (max-width: 24rem) {
+  textarea:not(.nonresponsive).textbucket75chars, .mobile .section [class*=question] textarea.textbucket75chars, .respquestionnaire .section [class*=question] textarea.textbucket75chars {
+    width: 100%;
+    height: 5.5rem;
+  }
+  textarea:not(.nonresponsive).textbucket75chars:not(.singleLineFreeText), .mobile .section [class*=question] textarea.textbucket75chars:not(.singleLineFreeText), .respquestionnaire .section [class*=question] textarea.textbucket75chars:not(.singleLineFreeText) {
+    height: 5.5rem;
+  }
+}
+textarea:not(.nonresponsive).textbucket100chars, .mobile .section [class*=question] textarea.textbucket100chars, .respquestionnaire .section [class*=question] textarea.textbucket100chars {
+  height: 4rem;
+  width: 100%;
+}
+@media screen and (max-width: 53.9rem) {
+  textarea:not(.nonresponsive).textbucket100chars, .mobile .section [class*=question] textarea.textbucket100chars, .respquestionnaire .section [class*=question] textarea.textbucket100chars {
+    width: 36rem;
+    height: 4rem;
+  }
+}
+@media screen and (max-width: 42rem) {
+  textarea:not(.nonresponsive).textbucket100chars, .mobile .section [class*=question] textarea.textbucket100chars, .respquestionnaire .section [class*=question] textarea.textbucket100chars {
+    width: 100%;
+    height: 4rem;
+  }
+}
+@media screen and (max-width: 35.9rem) {
+  textarea:not(.nonresponsive).textbucket100chars, .mobile .section [class*=question] textarea.textbucket100chars, .respquestionnaire .section [class*=question] textarea.textbucket100chars {
+    width: 18rem;
+    height: 7rem;
+  }
+}
+@media screen and (max-width: 24rem) {
+  textarea:not(.nonresponsive).textbucket100chars, .mobile .section [class*=question] textarea.textbucket100chars, .respquestionnaire .section [class*=question] textarea.textbucket100chars {
+    width: 100%;
+    height: 7rem;
+  }
+}
+textarea:not(.nonresponsive).textbucket125chars, textarea:not(.nonresponsive).textbucket150chars, .mobile .section [class*=question] textarea.textbucket125chars, .mobile .section [class*=question] textarea.textbucket150chars, .respquestionnaire .section [class*=question] textarea.textbucket125chars, .respquestionnaire .section [class*=question] textarea.textbucket150chars {
+  height: 4rem;
+  width: 100%;
+}
+@media screen and (max-width: 53.9rem) {
+  textarea:not(.nonresponsive).textbucket125chars, textarea:not(.nonresponsive).textbucket150chars, .mobile .section [class*=question] textarea.textbucket125chars, .mobile .section [class*=question] textarea.textbucket150chars, .respquestionnaire .section [class*=question] textarea.textbucket125chars, .respquestionnaire .section [class*=question] textarea.textbucket150chars {
+    width: 36rem;
+    height: 5.5rem;
+  }
+}
+@media screen and (max-width: 42rem) {
+  textarea:not(.nonresponsive).textbucket125chars, textarea:not(.nonresponsive).textbucket150chars, .mobile .section [class*=question] textarea.textbucket125chars, .mobile .section [class*=question] textarea.textbucket150chars, .respquestionnaire .section [class*=question] textarea.textbucket125chars, .respquestionnaire .section [class*=question] textarea.textbucket150chars {
+    width: 100%;
+    height: 5.5rem;
+  }
+}
+@media screen and (max-width: 35.9rem) {
+  textarea:not(.nonresponsive).textbucket125chars, textarea:not(.nonresponsive).textbucket150chars, .mobile .section [class*=question] textarea.textbucket125chars, .mobile .section [class*=question] textarea.textbucket150chars, .respquestionnaire .section [class*=question] textarea.textbucket125chars, .respquestionnaire .section [class*=question] textarea.textbucket150chars {
+    width: 18rem;
+    height: 8.5rem;
+  }
+}
+@media screen and (max-width: 24rem) {
+  textarea:not(.nonresponsive).textbucket125chars, textarea:not(.nonresponsive).textbucket150chars, .mobile .section [class*=question] textarea.textbucket125chars, .mobile .section [class*=question] textarea.textbucket150chars, .respquestionnaire .section [class*=question] textarea.textbucket125chars, .respquestionnaire .section [class*=question] textarea.textbucket150chars {
+    width: 100%;
+    height: 8.5rem;
+  }
+}
+textarea:not(.nonresponsive).textbucket175chars, textarea:not(.nonresponsive).textbucket200chars, .mobile .section [class*=question] textarea.textbucket175chars, .mobile .section [class*=question] textarea.textbucket200chars, .respquestionnaire .section [class*=question] textarea.textbucket175chars, .respquestionnaire .section [class*=question] textarea.textbucket200chars {
+  height: 5.5rem;
+  width: 100%;
+}
+@media screen and (max-width: 53.9rem) {
+  textarea:not(.nonresponsive).textbucket175chars, textarea:not(.nonresponsive).textbucket200chars, .mobile .section [class*=question] textarea.textbucket175chars, .mobile .section [class*=question] textarea.textbucket200chars, .respquestionnaire .section [class*=question] textarea.textbucket175chars, .respquestionnaire .section [class*=question] textarea.textbucket200chars {
+    width: 36rem;
+    height: 7rem;
+  }
+}
+@media screen and (max-width: 42rem) {
+  textarea:not(.nonresponsive).textbucket175chars, textarea:not(.nonresponsive).textbucket200chars, .mobile .section [class*=question] textarea.textbucket175chars, .mobile .section [class*=question] textarea.textbucket200chars, .respquestionnaire .section [class*=question] textarea.textbucket175chars, .respquestionnaire .section [class*=question] textarea.textbucket200chars {
+    width: 100%;
+    height: 7rem;
+  }
+}
+@media screen and (max-width: 35.9rem) {
+  textarea:not(.nonresponsive).textbucket175chars, textarea:not(.nonresponsive).textbucket200chars, .mobile .section [class*=question] textarea.textbucket175chars, .mobile .section [class*=question] textarea.textbucket200chars, .respquestionnaire .section [class*=question] textarea.textbucket175chars, .respquestionnaire .section [class*=question] textarea.textbucket200chars {
+    width: 18rem;
+    height: 8.5rem;
+  }
+}
+@media screen and (max-width: 24rem) {
+  textarea:not(.nonresponsive).textbucket175chars, textarea:not(.nonresponsive).textbucket200chars, .mobile .section [class*=question] textarea.textbucket175chars, .mobile .section [class*=question] textarea.textbucket200chars, .respquestionnaire .section [class*=question] textarea.textbucket175chars, .respquestionnaire .section [class*=question] textarea.textbucket200chars {
+    width: 100%;
+    height: 8.5rem;
+  }
+}
+textarea:not(.nonresponsive).textbucket225chars, .mobile .section [class*=question] textarea.textbucket225chars, .respquestionnaire .section [class*=question] textarea.textbucket225chars {
+  height: 5.5rem;
+  width: 100%;
+}
+@media screen and (max-width: 53.9rem) {
+  textarea:not(.nonresponsive).textbucket225chars, .mobile .section [class*=question] textarea.textbucket225chars, .respquestionnaire .section [class*=question] textarea.textbucket225chars {
+    width: 36rem;
+    height: 8.5rem;
+  }
+}
+@media screen and (max-width: 42rem) {
+  textarea:not(.nonresponsive).textbucket225chars, .mobile .section [class*=question] textarea.textbucket225chars, .respquestionnaire .section [class*=question] textarea.textbucket225chars {
+    width: 100%;
+    height: 8.5rem;
+  }
+}
+@media screen and (max-width: 35.9rem) {
+  textarea:not(.nonresponsive).textbucket225chars, .mobile .section [class*=question] textarea.textbucket225chars, .respquestionnaire .section [class*=question] textarea.textbucket225chars {
+    width: 18rem;
+    height: 8.5rem;
+  }
+}
+@media screen and (max-width: 24rem) {
+  textarea:not(.nonresponsive).textbucket225chars, .mobile .section [class*=question] textarea.textbucket225chars, .respquestionnaire .section [class*=question] textarea.textbucket225chars {
+    width: 100%;
+    height: 8.5rem;
+  }
+}
+@media screen and (min-width: 0px) {
+  textarea:not(.nonresponsive).textbucket250chars, textarea:not(.nonresponsive).textbucket275chars, textarea:not(.nonresponsive).textbucket300chars, .mobile .section [class*=question] textarea.textbucket250chars, .mobile .section [class*=question] textarea.textbucket275chars, .mobile .section [class*=question] textarea.textbucket300chars, .respquestionnaire .section [class*=question] textarea.textbucket250chars, .respquestionnaire .section [class*=question] textarea.textbucket275chars, .respquestionnaire .section [class*=question] textarea.textbucket300chars {
+    height: 7rem;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 53.9rem) {
+  textarea:not(.nonresponsive).textbucket250chars, textarea:not(.nonresponsive).textbucket275chars, textarea:not(.nonresponsive).textbucket300chars, .mobile .section [class*=question] textarea.textbucket250chars, .mobile .section [class*=question] textarea.textbucket275chars, .mobile .section [class*=question] textarea.textbucket300chars, .respquestionnaire .section [class*=question] textarea.textbucket250chars, .respquestionnaire .section [class*=question] textarea.textbucket275chars, .respquestionnaire .section [class*=question] textarea.textbucket300chars {
+    width: 36rem;
+    height: 8.5rem;
+  }
+}
+@media screen and (max-width: 42rem) {
+  textarea:not(.nonresponsive).textbucket250chars, textarea:not(.nonresponsive).textbucket275chars, textarea:not(.nonresponsive).textbucket300chars, .mobile .section [class*=question] textarea.textbucket250chars, .mobile .section [class*=question] textarea.textbucket275chars, .mobile .section [class*=question] textarea.textbucket300chars, .respquestionnaire .section [class*=question] textarea.textbucket250chars, .respquestionnaire .section [class*=question] textarea.textbucket275chars, .respquestionnaire .section [class*=question] textarea.textbucket300chars {
+    width: 100%;
+    height: 8.5rem;
+  }
+}
+@media screen and (max-width: 35.9rem) {
+  textarea:not(.nonresponsive).textbucket250chars, textarea:not(.nonresponsive).textbucket275chars, textarea:not(.nonresponsive).textbucket300chars, .mobile .section [class*=question] textarea.textbucket250chars, .mobile .section [class*=question] textarea.textbucket275chars, .mobile .section [class*=question] textarea.textbucket300chars, .respquestionnaire .section [class*=question] textarea.textbucket250chars, .respquestionnaire .section [class*=question] textarea.textbucket275chars, .respquestionnaire .section [class*=question] textarea.textbucket300chars {
+    width: 18rem;
+    height: 8.5rem;
+  }
+}
+@media screen and (max-width: 24rem) {
+  textarea:not(.nonresponsive).textbucket250chars, textarea:not(.nonresponsive).textbucket275chars, textarea:not(.nonresponsive).textbucket300chars, .mobile .section [class*=question] textarea.textbucket250chars, .mobile .section [class*=question] textarea.textbucket275chars, .mobile .section [class*=question] textarea.textbucket300chars, .respquestionnaire .section [class*=question] textarea.textbucket250chars, .respquestionnaire .section [class*=question] textarea.textbucket275chars, .respquestionnaire .section [class*=question] textarea.textbucket300chars {
+    width: 100%;
+    height: 8.5rem;
+  }
+}
+textarea:not(.nonresponsive).textbucketunlimitedchars, .mobile .section [class*=question] textarea.textbucketunlimitedchars, .respquestionnaire .section [class*=question] textarea.textbucketunlimitedchars {
+  height: 8.5rem;
+  width: 100%;
+}
+@media screen and (max-width: 53.9rem) {
+  textarea:not(.nonresponsive).textbucketunlimitedchars, .mobile .section [class*=question] textarea.textbucketunlimitedchars, .respquestionnaire .section [class*=question] textarea.textbucketunlimitedchars {
+    width: 36rem;
+    height: 8.5rem;
+  }
+}
+@media screen and (max-width: 42rem) {
+  textarea:not(.nonresponsive).textbucketunlimitedchars, .mobile .section [class*=question] textarea.textbucketunlimitedchars, .respquestionnaire .section [class*=question] textarea.textbucketunlimitedchars {
+    width: 100%;
+    height: 8.5rem;
+  }
+}
+@media screen and (max-width: 35.9rem) {
+  textarea:not(.nonresponsive).textbucketunlimitedchars, .mobile .section [class*=question] textarea.textbucketunlimitedchars, .respquestionnaire .section [class*=question] textarea.textbucketunlimitedchars {
+    width: 18rem;
+    height: 8.5rem;
+  }
+}
+@media screen and (max-width: 24rem) {
+  textarea:not(.nonresponsive).textbucketunlimitedchars, .mobile .section [class*=question] textarea.textbucketunlimitedchars, .respquestionnaire .section [class*=question] textarea.textbucketunlimitedchars {
+    width: 100%;
+    height: 8.5rem;
+  }
+}
+
+/* #endregion */
+/* #region debug.js debugging styles */
+div#missingStringsWarning {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 1000000;
+  background-color: #dbff00;
+  border: 2px solid black;
+  color: black;
+  width: auto;
+  padding: 5px;
+  max-height: 50%;
+  overflow-y: scroll;
+}
+div#missingStringsWarning a {
+  color: black;
+}
+
+input#clearClipboard {
+  position: absolute;
+  left: -999;
+  top: -999;
+}
+
+div#WP-Debug-UnitTest-TestingRange table {
+  width: 100%;
+  margin: auto;
+  background-color: white;
+  border: 1px solid black;
+}
+div#WP-Debug-UnitTest-TestingRange table tr {
+  border: 1px solid black;
+}
+div#WP-Debug-UnitTest-TestingRange table tr th {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+div#WP-Debug-UnitTest-TestingRange table tr td {
+  font-size: 1.2rem;
+  text-align: left;
+}
+div#WP-Debug-UnitTest-TestingRange table tr td img.testWarning {
+  margin-top: 3px;
+}
+div#WP-Debug-UnitTest-TestingRange table tr td.testName {
+  width: 30%;
+  text-align: left;
+  color: black;
+  font-weight: bold;
+}
+div#WP-Debug-UnitTest-TestingRange table tr td.testResult {
+  width: 70%;
+  color: white;
+}
+div#WP-Debug-UnitTest-TestingRange table tr td.exceptionThrown, div#WP-Debug-UnitTest-TestingRange table tr td.failedAssertion {
+  background-color: red;
+}
+div#WP-Debug-UnitTest-TestingRange table tr td.noAssertion {
+  background-color: orange;
+}
+div#WP-Debug-UnitTest-TestingRange table tr td.passed {
+  background-color: green;
+}
+
+/* #endregion */
+/* #region error pages, 404.aspx and 500.aspx */
+html.errorPage, html.errorPage * {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+html.errorPage body {
+  overflow: hidden;
+}
+html.errorPage iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* #endregion */
+.ptEduDescription .fmtConv {
+  overflow-x: auto !important;
+}
+.ptEduDescription .fmtConv input {
+  pointer-events: none;
+  -webkit-appearance: checkbox;
+}
+
+.fmtConv_hiddenUrls {
+  visibility: hidden;
+}
+
+img.providerimage.roundedimage {
+  object-fit: cover;
+}
+
+img.providerphoto.noprint {
+  object-fit: cover;
+}
+
+.customform label,
+.publicform label {
+  margin: 0;
+  font-size: 1rem;
+  color: #363636;
+}
+
+#hCaptchaDisclaimer {
+  display: flex;
+  background: #f8f8f8;
+  border: 1px solid #767676;
+  border-radius: 4px;
+  width: fit-content;
+  font-size: 0.85rem;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Helvetica Neue", Arial, sans-serif;
+}
+@media screen {
+  #hCaptchaDisclaimer.floating {
+    position: fixed;
+    top: 80%;
+    inset-inline-end: 0rem;
+    z-index: 1000;
+    border-start-end-radius: 0;
+    border-end-end-radius: 0;
+  }
+  #hCaptchaDisclaimer.slide {
+    transition: top 1s ease 0s, inset-inline-end 0.5s ease 0s;
+  }
+}
+#hCaptchaDisclaimer #hCaptchaLogoContainer {
+  height: 3rem;
+  width: 3rem;
+  flex-shrink: 0;
+  margin: 0.25rem;
+}
+#hCaptchaDisclaimer #hCaptchaLogoContainer img {
+  max-width: 3rem;
+}
+#hCaptchaDisclaimer #hCaptchaDisclaimerText {
+  margin: 0.25rem;
+}
+#hCaptchaDisclaimer #hCaptchaDisclaimerText p {
+  margin: 0px;
+}
+
+.switchPatientsTextOuter:after,
+#localeswitch:not(:only-child):after,
+#header #localeswitch:after {
+  content: "";
+  display: inline-block;
+  border-style: solid;
+  border-width: 4px 4px 0px 4px;
+  border-color: #ffffff transparent transparent transparent;
+}
+
+.instantactivation #locale_container,
+.md_standalone_signup #locale_container,
+.accessPage #locale_container,
+.signupPage #locale_container,
+.notificationPage #locale_container,
+.loginPage #locale_container {
+  height: 1.25rem;
+}
+.instantactivation #locale_container #localeswitch .localename,
+.md_standalone_signup #locale_container #localeswitch .localename,
+.accessPage #locale_container #localeswitch .localename,
+.signupPage #locale_container #localeswitch .localename,
+.notificationPage #locale_container #localeswitch .localename,
+.loginPage #locale_container #localeswitch .localename {
+  margin-right: 0.2rem;
+}
+.instantactivation #locale_container #localeswitch:after,
+.md_standalone_signup #locale_container #localeswitch:after,
+.accessPage #locale_container #localeswitch:after,
+.signupPage #locale_container #localeswitch:after,
+.notificationPage #locale_container #localeswitch:after,
+.loginPage #locale_container #localeswitch:after {
+  border-color: #7571B0 transparent transparent transparent;
+}
